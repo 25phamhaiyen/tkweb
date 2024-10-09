@@ -9,7 +9,9 @@ body {
     overflow-x: hidden;
     font-weight: 500;
 }
-
+/* main{
+    position: relative;
+} */
 * {
     box-sizing: border-box;
     outline: 0;
