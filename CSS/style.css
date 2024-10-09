@@ -57,7 +57,29 @@ header .navbar .top-right{
 }
 .top-right .sign-in .hotro{
     display: flex;
-    gap: 5px;
+    gap: 8px;
+}
+.top-right .sign-in .hotro span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.top-right .sign-in .language-switcher button {
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid, màu hồng */
+    border-radius: 4px;
+    padding: 5px;
+    background: none;
+}
+.top-right .sign-in .language-switcher button span{
+    display: flex;
+    align-items: center;
+    gap : 5px;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bolder;
 }
 header .navbar .top-right .menu{
     display: flex;
