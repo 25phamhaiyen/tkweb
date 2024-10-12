@@ -1,62 +1,64 @@
+header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
+    position: fixed;
+    width: 100%;
+    /* padding: 0 40px; */
+}
 
 header .nav-bar{
     display: flex;
     box-sizing: border-box;
-    position: relative;
     margin: 0;
-    padding: 0 40px;
-    /* top: 0; */
-    justify-content: space-between;
+    justify-content: space-between; /* space-between hiển thị các mục flex có khoảng cách giữa các dòng */
     align-items: center;
     width: 100%;
-    z-index: 1300;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
+    background-color: rgba(0, 0, 0, 0.095);
+    position: absolute;
+    z-index: 1;
 }
 header .nav-bar .logo{
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+    align-items: center; /* center căn chỉnh các mục flex vào giữa vùng chứa */
+    justify-content: flex-start;  /* centertrị căn chỉnh các mục flex vào giữa vùng chứa */
     max-width: 265px;
+    min-width: 84px;
     width: 100%;
-    overflow-clip-margin: content-box;
-    cursor: pointer;
     height: auto;
-    object-fit: contain;
+    
 }
 header .nav-bar .logo img{
     max-width: 265px;
     width: 100%;
-    overflow-clip-margin: content-box;
-    cursor: pointer;
     height: auto;
     object-fit: contain;
+    justify-content: center; 
 }
-header .navbar .top-right{
+.header .navbar .top-right{
+    
+    padding: 0 40px;
     box-sizing: border-box;  
     margin-left: auto;
+    margin-right: 0;
     width: calc(100% - 265px);
-    padding-right: 0;
     flex-direction: column;
-    display: flex;
-    padding-left: 0;
-    justify-content: flex-end;
+    display: flex;  
+    justify-content: flex-end; /* flex-end căn chỉnh các mục flex ở cuối vùng chứa */
 }
 .top-right .sign-in{
-    display: flex;
+    white-space: nowrap;
+    display:flex;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
     box-sizing: border-box;
     color: #ffffff;
     width: 100%;
-    margin-left: 7px;
     font-weight: bold;
-    line-height: 1.13;
-    margin-left: 4px;
+    padding-right: 20px;
+    
 }
 .top-right .sign-in .hotro{
-    display: flex;
+    display: inline-flex;
     gap: 8px;
 }
 .top-right .sign-in .hotro span{
@@ -68,10 +70,16 @@ header .navbar .top-right{
 }
 .top-right .sign-in .language-switcher button {
     box-sizing: border-box;
-    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid, màu hồng */
+    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
     border-radius: 4px;
-    padding: 5px;
-    background: none;
+    font-size: 10px;
+    padding: 4px;
+    /* background: none; */
+    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+}
+.top-right .sign-in .language-switcher button:hover{
+    
+    background-color:rgba(0, 0, 0, 0.095);
 }
 .top-right .sign-in .language-switcher button span{
     display: flex;
@@ -81,8 +89,18 @@ header .navbar .top-right{
     color: #ffffff;
     font-weight: bolder;
 }
+.top-right .sign-in .bar button {
+    box-sizing: border-box;
+    border: none;
+    font-size: 12px;
+    padding: 10px;
+    /* background: none; */
+    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+}
 header .navbar .top-right .menu{
     display: flex;
+    margin-right: 0;
+    padding-right: 0;
 }
 .menu ul{
     display: flex;
@@ -115,35 +133,94 @@ header a{
     font-weight: 600;
     display:block;
     padding: 10px;
+    
 }
-/* header .sign-in a{
-    display:block;
-    padding: 10px;
-}
-header .menu a{
-    display:block;
-    padding: 10px;
-} */
 header .menu a:hover{
     background-color: white;
     color: red;
     border-radius: 10px;
 }
-main .imgs{
+header{
     position: relative;
 }
 .banner img{
     width: 100%;
-    /* position: relative; */
     display: block;
-    height: 100vh; /* Chiều cao full màn hình cho hình ảnh */
-    object-fit: cover; /* Đảm bảo hình ảnh vừa vặn mà không bị biến dạng */
+    height: auto; /* Chiều cao full màn hình cho hình ảnh */
+}
+.DatVe{
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    z-index: 1;
+    display: block;
+    background-color: rgb(255, 0, 0);
 }
 .img-cloud img{
     width: 100%;
+    height: 15%;
     position: absolute;
-    top: 88%; /* Dịch len 20px */
-    display: block;
-    height: 100vh; /* Chiều cao full màn hình cho hình ảnh */
-    object-fit: cover; 
+    object-fit: cover;
+    top: 13.5%;
+    object-position: 50% 100%;  /* thuộc tính này để định vị hình ảnh */
+
 }
+.chat-amy{
+    display: inline-block;
+    position: fixed; /* Đảm bảo ảnh luôn ở cùng một vị trí khi cuộn trang */
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    z-index: 1; /* Đặt giá trị z-index cao để nó luôn trên cùng */
+}
+/* .chat-amy .button{
+    background-color: #ffffff;
+    bottom: 25%;
+    width: max-content;
+    position: absolute;
+    right: 110%;
+    padding: 5px 10px;
+    border-radius: 15px 0px;
+    color: black;
+} */
+.chat-amy .button .button-content{
+    visibility: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    bottom: 55px;
+    width: max-content;
+    position: absolute;
+    right: 95px;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 15px 0px;
+    color: black;
+
+}
+.chat-amy .button .button-content::after{
+    position: absolute;
+    top: 50%; 
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255) ;
+}
+
+.chat-amy .button:hover .button-content{
+    visibility: visible;
+}
+
+.chat-amy img{
+    border-radius: 50%;
+    border-color: #ffffff;
+    position: fixed; /* Đảm bảo ảnh luôn ở cùng một vị trí khi cuộn trang */
+    bottom: 60px;
+    right: 30px;
+    width: auto;
+    height: auto;
+    z-index: 1300; /* Đặt giá trị z-index cao để nó luôn trên cùng */
+}
+
+  
