@@ -144,7 +144,7 @@ header{
 
 .DatVe{
     position: absolute;
-    top: 18%;
+    top:5%;
     right: 4%;
     z-index: 1;
     display: block;
@@ -343,13 +343,7 @@ header{
     display: block;
     height: auto; /* Chiều cao full màn hình cho hình ảnh */
 }
-.img-cloud img{
-    z-index: 1;
-    width: 100%;
-    display: block;
-    height: 70vh; /* Chiều cao full màn hình cho hình ảnh */
-    object-fit: cover; 
-}
+
 .chat-amy{
     display: inline-block;
     position: fixed; /* Đảm bảo ảnh luôn ở cùng một vị trí khi cuộn trang */
@@ -398,3 +392,258 @@ header{
     height: auto;
     z-index: 1300; /* Đặt giá trị z-index cao để nó luôn trên cùng */
 }
+.inner-wrap{
+    margin: 0;
+}
+.inner-wrap .img-cloud img{
+    z-index: 1;
+    width: 100%;
+    display: block;
+    height: 70vh; /* Chiều cao full màn hình cho hình ảnh */
+    object-fit: cover; 
+}
+.inner-wrap .inner-wrap-boxYellow{
+    display: block;
+    padding: 3% 10% 10% 10%;
+    position: absolute;
+    
+}
+/* .inner-wrap .inner-wrap-boxYellow .boxYellow{
+
+} */
+.inner-wrap .inner-wrap-boxYellow .listboxYellow{
+    display: flex;
+    position: relative;
+    opacity: 1;
+    width: 785px;
+    align-items: stretch;
+    width: 157px;
+    height: auto;
+    gap: 90%;
+    min-height: 1px;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a{
+    font-weight: 600;
+    width: auto;
+    /* margin-bottom: 10px; */
+    text-align: center;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ten{
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext1{
+    color: #ff0000;
+    top: 46%;
+    left: 43%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext2{
+    color: #ff0000;
+    top: 37%;
+    left: 219%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext3{
+    color: #ff0000;
+    top: 37%;
+    left: 394%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext4{
+    color: #ff0000;
+    top: 46%;
+    left: 568%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+}
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext5{
+    color: #ff0000;
+    top: 39%;
+    left: 745%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    flex-direction: column;
+}
+.input-inner-wrap {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+}
+.input-inner-wrap #Form{
+    width: 100%;
+    /* padding: 20px; */
+    z-index: 1;
+    top: 0;
+    margin-top: 22%;
+    position: sticky;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.input-inner-wrap #Form .thanhTittle{
+    display: flex;
+    padding-top: 5px;
+}
+.input-inner-wrap #Form .thanhTittle .thanhmaudolon{
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.input-inner-wrap #Form .thanhTittle .thanhmauvang{
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.input-inner-wrap #Form .thanhFooter{
+    display: flex;
+}
+.input-inner-wrap #Form .thanhFooter .thanhmaudonho{
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+}
+.input-inner-wrap #Form .thanhTittle .content{
+    /* float: left; */
+    display: flex;
+    z-index: 2;
+    padding: 8px 20px;
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content1{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-top: -5px; */
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content1 a{
+    
+    display: block;
+    color: inherit;
+    margin-right: 85px;
+    overflow: hidden;
+    white-space: nowrap;
+} 
+.input-inner-wrap #Form .thanhTittle .content .content1 img{
+    margin-right: 5px;
+    margin-bottom: -5px;
+    max-height: 19px;
+}
+.input-inner-wrap #Form .thanhTittle .content .content2{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content2 a{
+    color: inherit;
+    margin-right: 95px;
+    overflow: hidden;
+    white-space: nowrap;
+} 
+.input-inner-wrap #Form .thanhTittle .content .content2 img{
+    margin-right: 5px;
+    margin-bottom: -5px;
+    max-height: 19px;
+}
+.input-inner-wrap #Form .thanhTittle .content .content3{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content3 a{
+    color: inherit;
+    margin-right: 85px;
+    overflow: hidden;
+    white-space: nowrap;
+} 
+.input-inner-wrap #Form .thanhTittle .content .content3 .fa-ticket{
+    margin-right: 5px;
+    margin-bottom: -5px;
+    height: 100%;
+}
+.input-inner-wrap #Form .thanhTittle .content .content4{
+    color: white;
+    /* float: right; */
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content4 a{
+    box-sizing: border-box;
+    width: 100%;
+    color: inherit;
+    margin-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+} 
+.input-inner-wrap #Form .thanhTittle .content .content4 img{
+    margin-right: 5px;
+    margin-bottom: -5px;
+    max-height: 19px;
+}
+.input-inner-wrap #Form .centerbox {
+    background-color: #ffffff;
+}
+.input-inner-wrap #Form .centerbox .DatVe2{
+    display: flex;
+    padding: 16.5px 15px;
+    flex-direction: row;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2{
+    box-sizing:  border-box;
+
+}
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .ChieuBay{
+    box-sizing: border-box;
+    display: flex;
+
+}
+
