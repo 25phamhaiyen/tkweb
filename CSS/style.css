@@ -144,10 +144,13 @@ header{
 
 .DatVe{
     position: absolute;
-    top: 10%;
+    top: 18%;
     right: 4%;
     z-index: 1;
     display: block;
+    max-width: 380px;
+    margin-top: 0;
+
 }
 .DatVe .title{
     display: flex;
@@ -155,22 +158,21 @@ header{
 .DatVe .title .title1{
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
+    display: block;
     color: #ffffff;
-    padding: 5px;
+    padding: 6px 8px;
     font-style: italic;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
     min-height: 45px;
     font-weight:bold;
     text-transform: none;
-    
 }
 .DatVe .title .title2{
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
     color: #000000;
-    padding: 10px;
+    padding: 6px 8px;
     font-style: italic;
-    font-size: 14px;
     min-height: 45px;
     font-weight:bold;
     text-transform: none;
@@ -180,16 +182,160 @@ header{
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
     color: #ffffff;
-    padding: 5px;
-    font-style: italic;
+    padding: 6px 8px;
+        font-style: italic;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
     min-height: 45px;
     font-weight:bold;
     text-transform: none;
     
 }
+#Form1{
+    font-size: 16px;
+    justify-content: space-between;
+    color: #ffffff;
+    background: linear-gradient(30.3deg, rgba(217, 26, 33, 0.73) 33.94%, #6F0000 163.23%);
+    border-radius: 0 0 5px 5px;
+}
+.DatVe .ChieuBay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16.5px 15px 4px 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.DatVe .ChieuBay .VND{
+    color: #ffffff;
+    display: flex;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+.DatVe .ChieuBay .fa-caret-down{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.DatVe .center-box{
+    display: block;
+    justify-content: space-between;
+    padding: 16.5px 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.center-box .start, .center-box .finish{
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 11px;
+    display: flex;
+    overflow: hidden;
+    background-color:#ffffff;
+    border-radius: 10px;
+}
+.center-box .HanhKhach, .center-box .MaKM{
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 11px;
+    display: flex;
+    background-color:#ffffff;
+    border-radius: 10px;
+}
+.center-box .HanhKhach select,.center-box .Di .input #SanBayDen, .center-box .Di .input #SanBayDi, .center-box .MaKM #MaKM{
+    width: 100%;
+    padding: 13px 35px;
+    border: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.center-box .Di{
+    box-sizing: border-box;
+    flex: 4;
+}
+.center-box .start .Di .fa-plane, .center-box .HanhKhach .fa-user, .center-box .MaKM .fa-ticket{
+    width: 25px;
+    padding: 16px 2px;
+    height: 25px;
+    left: 25px;
+    z-index: 1;
+    position: absolute;
+}
+.center-box .finish .Di .fa-plane{
+    width: 25px;
+    padding: 16px 7px;
+    height: 25px;
+    left: 25px;
+    z-index: 1;
+    position: absolute;
+}
+.center-box .Di .input{
+    height: 48px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    padding-left: 33px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.center-box .Di .input label{
+    top: 14.4px;
+    left: 40px;
+    color: #564e4e;
+    font-size: 12px;
+    font-weight: 600;
+}
+.center-box .button{
+    box-sizing: border-box;
+}
+.center-box .button a{
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 13px;
+    background-color: #ffffff;
+    border-left: 2px solid #564e4e;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    color:#333333;
+}
+.center-box .checkbox{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-bottom: -10px;
+    font-size: 18px;
+    align-items: center;
+    margin-left: 15px;
+}
+.Tim{
+    padding: 27px 0;
+}
+.Tim button{
+    width: 50%;
+    height: 45px;
+    background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-self:center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #000000;
+    font-style: italic;
+    min-height: 40px;
+    font-weight:bold;
+    border: none;
+}
 .imgs{
-    position: relative;
+    margin-top: -7%;
+    position: absolute;
     display: block;
 }
 .banner img{
@@ -198,17 +344,10 @@ header{
     height: auto; /* Chiều cao full màn hình cho hình ảnh */
 }
 .img-cloud img{
-    /* width: 100%;
-    height: 30%;
-    position: absolute;
-    object-fit:none;
-    top: 430px;
-    object-position: 50% 100%;  thuộc tính này để định vị hình ảnh */
+    z-index: 1;
     width: 100%;
-    position: absolute;
-    /* Dịch len 20px */
     display: block;
-    height: 80vh; /* Chiều cao full màn hình cho hình ảnh */
+    height: 70vh; /* Chiều cao full màn hình cho hình ảnh */
     object-fit: cover; 
 }
 .chat-amy{
@@ -259,5 +398,3 @@ header{
     height: auto;
     z-index: 1300; /* Đặt giá trị z-index cao để nó luôn trên cùng */
 }
-
-  
