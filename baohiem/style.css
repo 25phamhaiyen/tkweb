@@ -15,6 +15,8 @@ header .nav-bar{
     background-color: rgba(0, 0, 0, 0.095);
     position: absolute;
     z-index: 1;
+    padding: 0%;
+    height: 90px;
 }
 header .nav-bar .logo{
     box-sizing: border-box;
@@ -32,13 +34,12 @@ header .nav-bar .logo img{
     height: auto;
     object-fit: contain;
     justify-content: center; 
+    margin-left: 60%;
 }
 .header .navbar .top-right{
-    
     padding: 0 40px;
     box-sizing: border-box;  
     margin-left: auto;
-    margin-right: 0;
     width: calc(100% - 265px);
     flex-direction: column;
     display: flex;  
@@ -54,8 +55,9 @@ header .nav-bar .logo img{
     color: #ffffff;
     width: 100%;
     font-weight: bold;
-    padding-right: 20px;
-    
+    padding-right: 10px;
+    position: relative;
+    margin-top: 20px;
 }
 .top-right .sign-in .hotro{
     display: inline-flex;
@@ -70,12 +72,13 @@ header .nav-bar .logo img{
 }
 .top-right .sign-in .language-switcher button {
     box-sizing: border-box;
-    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
+    border: 1px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
     border-radius: 4px;
-    font-size: 10px;
-    padding: 4px;
+    font-size: 15px;
+    padding: 1px 7px 0px 7px;
     /* background: none; */
     background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+    margin-right: 170px;
 }
 .top-right .sign-in .language-switcher button:hover{
     
@@ -101,6 +104,9 @@ header .navbar .top-right .menu{
     display: flex;
     margin-right: 0;
     padding-right: 0;
+    position: relative;
+    margin-top: 0%;
+
 }
 .menu ul{
     display: flex;
@@ -109,8 +115,10 @@ header .navbar .top-right .menu{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 20px;
     transition: 0.53s;
+    margin-top: 0px;
+    margin-right: 140px;
     
 }
 .menu ul li{
@@ -119,8 +127,9 @@ header .navbar .top-right .menu{
     padding: 4px 4px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     justify-content: space-between;
+    font-size: 15px;
 }
 header a{
     text-decoration: none;
@@ -141,124 +150,10 @@ header .menu a:hover{
 header{
     position: relative;
 }
+
 .main-img {
-    margin-top: 0px;
-    position: relative;
-    display: block;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
-.header {
-    background-color: #d32f2f;
-    color: white;
-    width: 75%;
-    padding: 7px;
-    text-align: center;
-    margin-left: 13%;
     position: absolute;
-    top: 74%;
-    z-index: 1;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 100%; 
+    height: auto;
+    z-index: -1; 
 }
-
-.header-content button {
-    background: none;
-    border: none;
-    color: white;
-    margin: 0 5px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    padding: 5px 10px;
-}
-
-.header-content button:hover {
-    text-decoration: underline;
-}
-
-.flight-search {
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.trip-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.trip-options label {
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.search-form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.input-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    padding: 5px 10px;
-    width: 200px;
-}
-
-.input-group span {
-    font-size: 1.2em;
-    color: #333;
-    margin-right: 5px;
-}
-
-.search-form input[type="text"],
-.search-form input[type="date"] {
-    border: none;
-    outline: none;
-    padding: 5px;
-    font-size: 1em;
-    width: 100%;
-    background: transparent;
-}
-
-.search-form button {
-    background-color: #ff9800;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.search-form button:hover {
-    background-color: #e68900;
-}
-
