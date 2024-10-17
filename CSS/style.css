@@ -15,6 +15,8 @@ header .nav-bar{
     background-color: rgba(0, 0, 0, 0.095);
     position: absolute;
     z-index: 1;
+    padding: 0%;
+    height: 90px;
 }
 header .nav-bar .logo{
     box-sizing: border-box;
@@ -32,13 +34,12 @@ header .nav-bar .logo img{
     height: auto;
     object-fit: contain;
     justify-content: center; 
+    margin-left: 60%;
 }
 .header .navbar .top-right{
-    
     padding: 0 40px;
     box-sizing: border-box;  
     margin-left: auto;
-    margin-right: 0;
     width: calc(100% - 265px);
     flex-direction: column;
     display: flex;  
@@ -54,8 +55,9 @@ header .nav-bar .logo img{
     color: #ffffff;
     width: 100%;
     font-weight: bold;
-    padding-right: 20px;
-    
+    padding-right: 10px;
+    position: relative;
+    margin-top: 20px;
 }
 .top-right .sign-in .hotro{
     display: inline-flex;
@@ -70,12 +72,13 @@ header .nav-bar .logo img{
 }
 .top-right .sign-in .language-switcher button {
     box-sizing: border-box;
-    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
+    border: 1px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
     border-radius: 4px;
-    font-size: 10px;
-    padding: 4px;
+    font-size: 15px;
+    padding: 1px 7px 0px 7px;
     /* background: none; */
     background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+    margin-right: 170px;
 }
 .top-right .sign-in .language-switcher button:hover{
     
@@ -101,6 +104,9 @@ header .navbar .top-right .menu{
     display: flex;
     margin-right: 0;
     padding-right: 0;
+    position: relative;
+    margin-top: 0%;
+
 }
 .menu ul{
     display: flex;
@@ -109,8 +115,10 @@ header .navbar .top-right .menu{
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 20px;
     transition: 0.53s;
+    margin-top: 0px;
+    margin-right: 140px;
     
 }
 .menu ul li{
@@ -119,8 +127,9 @@ header .navbar .top-right .menu{
     padding: 4px 4px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     justify-content: space-between;
+    font-size: 15px;
 }
 header a{
     text-decoration: none;
@@ -144,8 +153,8 @@ header{
 
 .DatVe{
     position: absolute;
-    top:5%;
-    right: 4%;
+    top:4%;
+    right: 10.5%;
     z-index: 1;
     display: block;
     max-width: 380px;
@@ -160,34 +169,37 @@ header{
     border-radius: 5px 5px 0 0;
     display: block;
     color: #ffffff;
-    padding: 6px 8px;
+    padding: 15px 0px 0px 9px;
     font-style: italic;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
-    min-height: 45px;
+    min-height: 40px;
     font-weight:bold;
     text-transform: none;
+    font-size: 14px;
 }
 .DatVe .title .title2{
     box-sizing: border-box;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0px 6px;
     color: #000000;
-    padding: 6px 8px;
+    padding: 15px 0px 0px 12px;
     font-style: italic;
     min-height: 45px;
     font-weight:bold;
     text-transform: none;
     background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
+    font-size: 14px;
 }
 .DatVe .title .title3{
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
     color: #ffffff;
-    padding: 6px 8px;
-        font-style: italic;
+    padding: 12px 3px 0px 12px;
+    font-style: italic;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
     min-height: 45px;
     font-weight:bold;
     text-transform: none;
+    font-size: 13.5px;
     
 }
 #Form1{
@@ -289,6 +301,10 @@ header{
     color: #564e4e;
     font-size: 12px;
     font-weight: 600;
+    margin-bottom: 0%;
+}
+.center-box .Di .inputBase{
+    padding-left: 0%;
 }
 .center-box .button{
     box-sizing: border-box;
