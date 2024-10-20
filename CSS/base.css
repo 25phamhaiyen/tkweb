@@ -80,7 +80,7 @@ a {
     visibility: hidden;
     background-color: #ffffff;
     text-align: center;
-    bottom: 55px;
+    bottom: 20px;
     width: max-content;
     position: absolute;
     right: 95px;
@@ -107,7 +107,9 @@ a {
 .bg-img{
     background-image: url('../image/background/bg-donate.40a2c077.webp');
     width:100%;
-    padding: 100px;
     background-size: cover;
-    /* justify-content: space-between; */
+}
+.grid{
+    margin: 0 40px;
+    /* align-content: center;    */
 }

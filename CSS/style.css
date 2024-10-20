@@ -5,48 +5,52 @@ header {
     /* padding: 0 40px; */
 }
 
-header .nav-bar{
+header .nav-bar {
     display: flex;
     box-sizing: border-box;
     margin: 0;
-    justify-content: space-between; /* space-between hiển thị các mục flex có khoảng cách giữa các dòng */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.095);
     position: absolute;
     z-index: 1;
 }
-header .nav-bar .logo{
+
+header .nav-bar .logo {
     box-sizing: border-box;
-    align-items: center; /* center căn chỉnh các mục flex vào giữa vùng chứa */
-    justify-content: flex-start;  /* centertrị căn chỉnh các mục flex vào giữa vùng chứa */
+    align-items: center;
+    justify-content: flex-start;
     max-width: 265px;
     min-width: 84px;
     width: 100%;
     height: auto;
-    
+
 }
-header .nav-bar .logo img{
+
+header .nav-bar .logo img {
     max-width: 265px;
     width: 100%;
     height: auto;
     object-fit: contain;
-    justify-content: center; 
+    justify-content: center;
 }
-.header .navbar .top-right{
-    
+
+.header .navbar .top-right {
+
     padding: 0 40px;
-    box-sizing: border-box;  
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: 0;
     width: calc(100% - 265px);
     flex-direction: column;
-    display: flex;  
-    justify-content: flex-end; /* flex-end căn chỉnh các mục flex ở cuối vùng chứa */
+    display: flex;
+    justify-content: flex-end;
 }
-.top-right .sign-in{
+
+.top-right .sign-in {
     white-space: nowrap;
-    display:flex;
+    display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
@@ -55,54 +59,60 @@ header .nav-bar .logo img{
     width: 100%;
     font-weight: bold;
     padding-right: 20px;
-    
+
 }
-.top-right .sign-in .hotro{
+
+.top-right .sign-in .hotro {
     display: inline-flex;
     gap: 8px;
 }
-.top-right .sign-in .hotro span{
+
+.top-right .sign-in .hotro span {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-weight: bolder;
 }
+
 .top-right .sign-in .language-switcher button {
     box-sizing: border-box;
-    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 4px;
     font-size: 10px;
     padding: 4px;
-    /* background: none; */
-    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+    background-color: transparent;
 }
-.top-right .sign-in .language-switcher button:hover{
-    
-    background-color:rgba(0, 0, 0, 0.095);
+
+.top-right .sign-in .language-switcher button:hover {
+
+    background-color: rgba(0, 0, 0, 0.095);
 }
-.top-right .sign-in .language-switcher button span{
+
+.top-right .sign-in .language-switcher button span {
     display: flex;
     align-items: center;
-    gap : 5px;
+    gap: 5px;
     justify-content: center;
     color: #ffffff;
     font-weight: bolder;
 }
+
 .top-right .sign-in .bar button {
     box-sizing: border-box;
     border: none;
     font-size: 12px;
     padding: 10px;
-    /* background: none; */
-    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+    background-color: transparent;
 }
-header .navbar .top-right .menu{
+
+header .navbar .top-right .menu {
     display: flex;
     margin-right: 0;
     padding-right: 0;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
     list-style-type: none;
     margin-block-start: 1em;
@@ -111,9 +121,10 @@ header .navbar .top-right .menu{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     transition: 0.53s;
-    
+
 }
-.menu ul li{
+
+.menu ul li {
     display: block;
     min-height: 20px;
     padding: 4px 4px;
@@ -122,29 +133,32 @@ header .navbar .top-right .menu{
     font-weight: 600;
     justify-content: space-between;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: white;
     cursor: pointer;
     transition: all .35s;
     text-overflow: ellipsis;
     font-weight: 600;
-    display:block;
+    display: block;
     padding: 10px;
-    
+
 }
-header .menu a:hover{
+
+header .menu a:hover {
     background-color: white;
     color: red;
     border-radius: 10px;
 }
-header{
+
+header {
     position: relative;
 }
 
-.DatVe{
+.DatVe {
     position: absolute;
-    top:5%;
+    top: 5%;
     right: 4%;
     z-index: 1;
     display: block;
@@ -152,10 +166,12 @@ header{
     margin-top: 0;
 
 }
-.DatVe .title{
+
+.DatVe .title {
     display: flex;
 }
-.DatVe .title .title1{
+
+.DatVe .title .title1 {
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
     display: block;
@@ -164,40 +180,44 @@ header{
     font-style: italic;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
     min-height: 45px;
-    font-weight:bold;
+    font-weight: bold;
     text-transform: none;
 }
-.DatVe .title .title2{
+
+.DatVe .title .title2 {
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
     color: #000000;
     padding: 6px 8px;
     font-style: italic;
     min-height: 45px;
-    font-weight:bold;
+    font-weight: bold;
     text-transform: none;
     background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
 }
-.DatVe .title .title3{
+
+.DatVe .title .title3 {
     box-sizing: border-box;
     border-radius: 5px 5px 0 0;
     color: #ffffff;
     padding: 6px 8px;
-        font-style: italic;
+    font-style: italic;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
     min-height: 45px;
-    font-weight:bold;
+    font-weight: bold;
     text-transform: none;
-    
+
 }
-#Form1{
+
+#Form1 {
     font-size: 16px;
     justify-content: space-between;
     color: #ffffff;
     background: linear-gradient(30.3deg, rgba(217, 26, 33, 0.73) 33.94%, #6F0000 163.23%);
     border-radius: 0 0 5px 5px;
 }
-.DatVe .ChieuBay{
+
+.DatVe .ChieuBay {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -205,7 +225,8 @@ header{
     font-weight: bold;
     color: #ffffff;
 }
-.DatVe .ChieuBay .VND{
+
+.DatVe .ChieuBay .VND {
     color: #ffffff;
     display: flex;
     font-size: 17px;
@@ -213,39 +234,49 @@ header{
     align-items: center;
     font-weight: bold;
 }
-.DatVe .ChieuBay .fa-caret-down{
+
+.DatVe .ChieuBay .fa-caret-down {
     width: 1em;
     height: 1em;
     display: inline-block;
     font-size: 1.5rem;
 }
-.DatVe .center-box{
+
+.DatVe .center-box {
     display: block;
     justify-content: space-between;
     padding: 16.5px 15px;
     font-weight: bold;
     color: #ffffff;
 }
-.center-box .start, .center-box .finish{
+
+.center-box .start,
+.center-box .finish {
     box-sizing: border-box;
     width: 100%;
     height: 48px;
     margin-bottom: 11px;
     display: flex;
     overflow: hidden;
-    background-color:#ffffff;
+    background-color: #ffffff;
     border-radius: 10px;
 }
-.center-box .HanhKhach, .center-box .MaKM{
+
+.center-box .HanhKhach,
+.center-box .MaKM {
     box-sizing: border-box;
     width: 100%;
     height: 48px;
     margin-bottom: 11px;
     display: flex;
-    background-color:#ffffff;
+    background-color: #ffffff;
     border-radius: 10px;
 }
-.center-box .HanhKhach select,.center-box .Di .input #SanBayDen, .center-box .Di .input #SanBayDi, .center-box .MaKM #MaKM{
+
+.center-box .HanhKhach select,
+.center-box .Di .input #SanBayDen,
+.center-box .Di .input #SanBayDi,
+.center-box .MaKM #MaKM {
     width: 100%;
     padding: 13px 35px;
     border: 0;
@@ -254,11 +285,15 @@ header{
     font-size: 16px;
     border-radius: 10px;
 }
-.center-box .Di{
+
+.center-box .Di {
     box-sizing: border-box;
     flex: 4;
 }
-.center-box .start .Di .fa-plane, .center-box .HanhKhach .fa-user, .center-box .MaKM .fa-ticket{
+
+.center-box .start .Di .fa-plane,
+.center-box .HanhKhach .fa-user,
+.center-box .MaKM .fa-ticket {
     width: 25px;
     padding: 16px 2px;
     height: 25px;
@@ -266,7 +301,8 @@ header{
     z-index: 1;
     position: absolute;
 }
-.center-box .finish .Di .fa-plane{
+
+.center-box .finish .Di .fa-plane {
     width: 25px;
     padding: 16px 7px;
     height: 25px;
@@ -274,7 +310,8 @@ header{
     z-index: 1;
     position: absolute;
 }
-.center-box .Di .input{
+
+.center-box .Di .input {
     height: 48px;
     width: 100%;
     border: 0;
@@ -283,17 +320,20 @@ header{
     display: inline-flex;
     flex-direction: column;
 }
-.center-box .Di .input label{
+
+.center-box .Di .input label {
     top: 14.4px;
     left: 40px;
     color: #564e4e;
     font-size: 12px;
     font-weight: 600;
 }
-.center-box .button{
+
+.center-box .button {
     box-sizing: border-box;
 }
-.center-box .button a{
+
+.center-box .button a {
     display: inline-flex;
     justify-content: center;
     box-sizing: border-box;
@@ -303,9 +343,10 @@ header{
     border-top: none;
     border-right: none;
     border-bottom: none;
-    color:#333333;
+    color: #333333;
 }
-.center-box .checkbox{
+
+.center-box .checkbox {
     width: 100%;
     height: 30px;
     display: flex;
@@ -314,47 +355,51 @@ header{
     align-items: center;
     margin-left: 15px;
 }
-.Tim{
+
+.Tim {
     padding: 27px 0;
 }
-.Tim button{
+
+.Tim button {
     width: 50%;
     height: 45px;
     background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
     border-radius: 10px;
     display: flex;
-    justify-self:center;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     color: #000000;
     font-style: italic;
     min-height: 40px;
-    font-weight:bold;
+    font-weight: bold;
     border: none;
 }
-.imgs{
+
+.imgs {
     margin-top: -7%;
     position: absolute;
     display: block;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     display: block;
-    height: auto; /* Chiều cao full màn hình cho hình ảnh */
+    height: auto;
 }
 
-.chat-amy{
+.chat-amy {
     display: inline-block;
-    position: fixed; /* Đảm bảo ảnh luôn ở cùng một vị trí khi cuộn trang */
+    position: fixed;
     bottom: 20px;
     right: 20px;
     width: auto;
     height: auto;
-    z-index: 1; /* Đặt giá trị z-index cao để nó luôn trên cùng */
+    z-index: 999;
 }
 
-.chat-amy .button .button-content{
+.chat-amy .button .button-content {
     visibility: hidden;
     background-color: #ffffff;
     text-align: center;
@@ -368,50 +413,53 @@ header{
     color: black;
 
 }
-.chat-amy .button .button-content::after{
+
+.chat-amy .button .button-content::after {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 100%;
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent rgb(255, 255, 255) ;
+    border-color: transparent rgb(255, 255, 255);
 }
 
-.chat-amy .button:hover .button-content{
+.chat-amy .button:hover .button-content {
     visibility: visible;
 }
 
-.chat-amy img{
+.chat-amy img {
     border-radius: 50%;
     border-color: #ffffff;
-    position: fixed; /* Đảm bảo ảnh luôn ở cùng một vị trí khi cuộn trang */
+    position: fixed;
     bottom: 60px;
     right: 30px;
     width: auto;
     height: auto;
-    z-index: 1300; /* Đặt giá trị z-index cao để nó luôn trên cùng */
+    z-index: 1300;
 }
-.inner-wrap{
+
+.inner-wrap {
     margin: 0;
+
 }
-.inner-wrap .img-cloud img{
+
+.inner-wrap .img-cloud img {
+
     z-index: 1;
     width: 100%;
-    display: block;
-    height: 70vh; /* Chiều cao full màn hình cho hình ảnh */
-    object-fit: cover; 
+    height: 70vh;
+    object-fit: cover;
 }
-.inner-wrap .inner-wrap-boxYellow{
+
+.inner-wrap .inner-wrap-boxYellow {
     display: block;
     padding: 3% 10% 10% 10%;
     position: absolute;
-    
-}
-/* .inner-wrap .inner-wrap-boxYellow .boxYellow{
 
-} */
-.inner-wrap .inner-wrap-boxYellow .listboxYellow{
+}
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow {
     display: flex;
     position: relative;
     opacity: 1;
@@ -422,20 +470,22 @@ header{
     gap: 90%;
     min-height: 1px;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     display: inline-block;
     object-fit: cover;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a {
     font-weight: 600;
     width: auto;
-    /* margin-bottom: 10px; */
     text-align: center;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ten{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ten {
     font-size: 16px;
     color: #ff0000;
     font-weight: 600;
@@ -443,7 +493,8 @@ header{
     text-align: center;
 
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext1{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext1 {
     color: #ff0000;
     top: 46%;
     left: 43%;
@@ -453,7 +504,8 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext2{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext2 {
     color: #ff0000;
     top: 37%;
     left: 219%;
@@ -463,7 +515,8 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext3{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext3 {
     color: #ff0000;
     top: 37%;
     left: 394%;
@@ -473,7 +526,8 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext4{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext4 {
     color: #ff0000;
     top: 46%;
     left: 568%;
@@ -483,7 +537,8 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext5{
+
+.inner-wrap .inner-wrap-boxYellow .listboxYellow .boxYellow-item .text a .ptext5 {
     color: #ff0000;
     top: 39%;
     left: 745%;
@@ -493,45 +548,52 @@ header{
     align-items: center;
     flex-direction: column;
 }
+
 .input-inner-wrap {
-    margin: 0;
     width: 100%;
     padding: 20px;
-    position: sticky;
-}
-.input-inner-wrap #Form{
-    width: 100%;
-    /* padding: 20px; */
     z-index: 1;
+    position: sticky;
+    top: 20px;
+}
+
+.input-inner-wrap #Form {
+    position: relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     top: 0;
     margin-top: 22%;
-    position: sticky;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.input-inner-wrap #Form .thanhTittle{
+
+.input-inner-wrap #Form .thanhTittle {
     display: flex;
     padding-top: 5px;
 }
-.input-inner-wrap #Form .thanhTittle .thanhmaudolon{
+
+.input-inner-wrap #Form .thanhTittle .thanhmaudolon {
     width: 100%;
     background-size: cover;
     top: 0;
     left: 0;
-    z-index: 1;
     position: absolute;
 }
-.input-inner-wrap #Form .thanhTittle .thanhmauvang{
+
+.input-inner-wrap #Form .thanhTittle .thanhmauvang {
     width: 100%;
     background-size: cover;
     top: 0;
     left: 0;
-    z-index: 1;
     position: absolute;
 }
-.input-inner-wrap #Form .thanhFooter{
+
+.input-inner-wrap #Form .thanhFooter {
     display: flex;
 }
-.input-inner-wrap #Form .thanhFooter .thanhmaudonho{
+
+.input-inner-wrap #Form .thanhFooter .thanhmaudonho {
     width: 100%;
     background-size: cover;
     top: 0;
@@ -539,111 +601,195 @@ header{
     z-index: 1;
     position: absolute;
 }
-.input-inner-wrap #Form .thanhTittle .content{
-    /* float: left; */
-    display: flex;
+
+.input-inner-wrap #Form .thanhTittle .content {
+    width: 100%;
     z-index: 2;
     padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.input-inner-wrap #Form .thanhTittle .content .content1{
+.input-inner-wrap #Form .thanhTittle .content .content1 {
     color: white;
     display: flex;
-    flex-wrap: nowrap;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
-    /* margin-top: -5px; */
 }
 
-.input-inner-wrap #Form .thanhTittle .content .content1 a{
-    
+.input-inner-wrap #Form .thanhTittle .content .content1 a {
+
     display: block;
     color: inherit;
-    margin-right: 85px;
     overflow: hidden;
     white-space: nowrap;
-} 
-.input-inner-wrap #Form .thanhTittle .content .content1 img{
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content1 img {
     margin-right: 5px;
     margin-bottom: -5px;
     max-height: 19px;
 }
-.input-inner-wrap #Form .thanhTittle .content .content2{
+
+.input-inner-wrap #Form .thanhTittle .content .content2 {
     color: white;
     display: flex;
-    flex-wrap: nowrap;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.input-inner-wrap #Form .thanhTittle .content .content2 a{
+.input-inner-wrap #Form .thanhTittle .content .content2 a {
     color: inherit;
-    margin-right: 95px;
     overflow: hidden;
     white-space: nowrap;
-} 
-.input-inner-wrap #Form .thanhTittle .content .content2 img{
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content2 img {
     margin-right: 5px;
     margin-bottom: -5px;
     max-height: 19px;
 }
-.input-inner-wrap #Form .thanhTittle .content .content3{
+
+.input-inner-wrap #Form .thanhTittle .content .content3 {
     color: white;
     display: flex;
     flex-wrap: nowrap;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.input-inner-wrap #Form .thanhTittle .content .content3 a{
+.input-inner-wrap #Form .thanhTittle .content .content3 a {
     color: inherit;
-    margin-right: 85px;
     overflow: hidden;
     white-space: nowrap;
-} 
-.input-inner-wrap #Form .thanhTittle .content .content3 .fa-ticket{
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content3 .fa-ticket {
     margin-right: 5px;
     margin-bottom: -5px;
     height: 100%;
 }
-.input-inner-wrap #Form .thanhTittle .content .content4{
+
+.input-inner-wrap #Form .thanhTittle .content .content4 {
     color: white;
-    /* float: right; */
     display: flex;
     flex-wrap: nowrap;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.input-inner-wrap #Form .thanhTittle .content .content4 a{
+.input-inner-wrap #Form .thanhTittle .content .content4 a {
     box-sizing: border-box;
     width: 100%;
     color: inherit;
     margin-right: 10px;
     overflow: hidden;
     white-space: nowrap;
-} 
-.input-inner-wrap #Form .thanhTittle .content .content4 img{
+}
+
+.input-inner-wrap #Form .thanhTittle .content .content4 img {
     margin-right: 5px;
     margin-bottom: -5px;
     max-height: 19px;
 }
+
 .input-inner-wrap #Form .centerbox {
     background-color: #ffffff;
 }
-.input-inner-wrap #Form .centerbox .DatVe2{
+
+.input-inner-wrap #Form .centerbox .DatVe2 {
     display: flex;
     padding: 16.5px 15px;
     flex-direction: row;
 }
 
-.input-inner-wrap #Form .centerbox .DatVe2 #Form2{
-    box-sizing:  border-box;
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 {
+    box-sizing: border-box;
 
 }
-.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .ChieuBay{
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .ChieuBay {
     box-sizing: border-box;
     display: flex;
 
 }
 
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .ChieuBay .Chieu {
+    display: flex;
+    position: relative;
+    align-self: center;
+    margin-right: 10px;
+    margin-left: 30px;
+
+
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .ChieuBay .VND {
+    cursor: not-allowed;
+    color: black;
+    display: flex;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #9E9E9E;
+    margin: unset;
+    padding: 0px 5px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box {
+    display: flex;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .in {
+    display: flex;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .in .start,
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .in .finish {
+    display: flex;
+    align-items: center;
+    border: 1px solid #9E9E9E;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .in .start .fa-solid {
+    margin-left: 35px;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .in .finish .fa-solid {
+    margin-left: 480px;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .Tim {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.input-inner-wrap #Form .centerbox .DatVe2 #Form2 .center-box .Tim button {
+    width: 100%;
+    padding: 10px;
+}
+
+
+.inner-sticky {
+    position: sticky;
+    top: 0;
+}
