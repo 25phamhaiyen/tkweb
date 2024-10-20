@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #D34334;
+    --primary-color: #fd1900;
     --secondary-color: #FDC70B;
     --third-color: #ffffff;
     --fourth-color: #797979;
@@ -20,7 +20,7 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 @media screen and (max-width: 992px) {
     body {
         /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 480 pixel hoặc rộng hơn (nếu khung nhìn lon hơn 480 pixel, màu nền sẽ là màu hồng) */
-        background: url(../image/background/dammayxanh.jpg) no-repeat center fixed;
+        background: url(../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp) no-repeat center fixed;
         background-size: cover; /* giá trị "cover" giữ nguyên tỷ lệ khung hình và một số phần của hình nền có thể bị cắt bớt */
         font-size: 12px;
     }
@@ -104,4 +104,10 @@ a {
     visibility: visible;
 }
 
-
+.bg-img{
+    background-image: url('../image/background/bg-donate.40a2c077.webp');
+    width:100%;
+    padding: 100px;
+    background-size: cover;
+    /* justify-content: space-between; */
+}

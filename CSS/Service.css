@@ -1,0 +1,30 @@
+.container-flex .bg{
+    background-color: rgba(255,255,255,0.6);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+.Service-item {
+    width: 1200px;
+    height: auto;
+    border-radius: 5px;
+}
+.Service-item .img{
+    width: 380;
+    height: 260;
+    
+}
+.Service-item .bdrs img{
+    border-radius: 5px 5px 0 0;
+}
+.Service-item .img img{
+    border-radius:5px;
+    width: 100%;
+    height: auto;
+}
+
+.Service-item .text {
+    padding: 5px 25px 25px;
+}
+
+.Service{
+    justify-items: center;
+}
