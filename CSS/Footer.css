@@ -104,8 +104,6 @@
 }
 .img-contact{
     width: 26px;
-    gap:5px;
-    display: flex;
 }
 .img-contact img{
     width: 100%;
@@ -114,7 +112,6 @@
 .img-download-app{
     width: 101px;
     gap: 10px;
-    display: flex;
 }
 .img-download-app img{
     width: 100%;
@@ -138,5 +135,13 @@
 
 .flex-content{
     display: flex;
+    gap: 5px;
+}
+.hover h4{
+    font-style: italic;
+    color: var(--fifth-color);
+}
+.hover h4:hover{
+    color: var(--primary-color);
 }
 

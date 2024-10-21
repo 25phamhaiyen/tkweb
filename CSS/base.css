@@ -35,6 +35,9 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     .top-right .menu ul{
     display: none;
     }
+    .white-bookTicket{
+        display: none;
+    }
 }
 @media screen and (min-width: 992px) {
     .top-right .sign-in .bar button{
@@ -112,5 +115,6 @@ a {
 .grid{
     margin: 0 40px;  
     max-width: 1200px;
+    width: 100%;
     justify-self: center;
 }
