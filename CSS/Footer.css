@@ -1,6 +1,6 @@
-
+/* Giai thuong */
 .container-img{
-    padding-top: 20px;
+    padding-top: 40px;
     justify-self: center;
     max-width: 280px;
     height: auto;
@@ -51,9 +51,10 @@
 }
 .bg-blur{
     margin: -10px;
-    padding: 20px 44px;
+    padding: 20px 118px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
 }
+/* Tin tuc va uu dai */
 .bg-blur2{
     margin: -10px;
     padding: 20px 44px;
@@ -88,6 +89,54 @@
 .text-item img{
     padding-right: 5px;
 }
-.contact, .instructions, .address{
+
+/* Thong tin start */
+.contact,  .instructions{
     font-size: 14px; 
+    padding-right: 20px;
 }
+.contact h4, .instructions h4, address h4{
+    padding: 5px 0;
+}
+.address{
+    max-width: 300px;
+    font-size: 12px;
+}
+.img-contact{
+    width: 26px;
+    gap:5px;
+    display: flex;
+}
+.img-contact img{
+    width: 100%;
+    height: auto;
+}
+.img-download-app{
+    width: 101px;
+    gap: 10px;
+    display: flex;
+}
+.img-download-app img{
+    width: 100%;
+    height: auto;
+}
+.img-dathongbao{
+    width: 112px;
+}
+.img-dathongbao img{
+    width: 100%;
+    height: auto;
+}
+.img-instruction{
+    width: 30px;
+    padding-right: 10px;
+}
+.img-instruction img{
+    width: 100%;
+    height: auto;
+}
+
+.flex-content{
+    display: flex;
+}
+

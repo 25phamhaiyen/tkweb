@@ -39,7 +39,6 @@
     display: flex;
     gap: 50px;
     justify-content: space-between;
-    /* align-items: center; */
 }
 .utilities-item{
     justify-items: center;

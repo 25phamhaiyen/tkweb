@@ -72,7 +72,7 @@ a {
 
 .chat-amy {
     position: fixed;
-    bottom: 20px;
+    bottom: 60px;
     right: 20px;
 }
 
@@ -110,6 +110,7 @@ a {
     background-size: cover;
 }
 .grid{
-    margin: 0 40px;
-    /* align-content: center;    */
+    margin: 0 40px;  
+    max-width: 1200px;
+    justify-self: center;
 }
