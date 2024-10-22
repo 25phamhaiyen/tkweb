@@ -13,7 +13,7 @@ body{
     margin: auto; 
     box-sizing: border-box;
     width:fit-content;
-    font-weight: 700;
+    font-weight: 500;
     z-index: 999;
     padding:130px 0 ;
 }
@@ -95,6 +95,7 @@ input{
     }
     
 }
+
  
 .khungtrang .khungphai .khunganh img{
     object-fit: contain;
@@ -107,12 +108,16 @@ input{
     height:39px;
     min-width: 127px;
     margin:auto;
-    background:linear-gradient(26.73deg,#F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%) !important;
+    background:linear-gradient(26.73deg,#F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
     border-radius: 10px;
-    text-transform: inherit;
     margin-top: 15px;
-    border-style: hidden;
-    position:center;
+    align-items: center;
+    font-size: 18px;
+    color: #000000;
+    font-style: italic;
+    min-height: 40px;
+    font-weight: bold;
+    border: none;
 }
 /* @media screen and (max-width: 900px) {
     .khungtrang{
