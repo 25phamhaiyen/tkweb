@@ -1,26 +1,24 @@
-
 .box{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     gap: 50px;
     width: 100%;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 .center-box{
     width: 79%;
     height: 100vh;
-    margin-top: 281px;
+    margin-top: 150px;
     justify-content: center;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.5);
     align-items: center;
     display: flex;
     position: relative;
     border-radius: 10px;
     padding: 30px;
 }
-
 .signup-box{
     margin-right: 40%;
     justify-content: center;
@@ -28,8 +26,7 @@
     height: 100vh;
 }
 .form{
-    padding: 78px 50px 150px 15px;
-    
+    padding: 78px 50px 130px 15px;
 }
 .head{
     text-align: center;
@@ -51,16 +48,18 @@
     border-radius: 3px;
     border: none;
     position: relative;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 #ten {
     padding: 7px 80px 7px 7px;
     border-radius: 3px;
     border: none;
     position: relative;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 .note {
-    font-size: 11px;
-    margin: 5px 70px 20px 65px;
+    font-size: 12px;
+    margin: 2px 70px 20px 65px;
     color: rgb(128, 128, 242);
 }
 .id {
@@ -71,21 +70,24 @@
     border-radius: 3px;
     border: none;
     font-size: 15px;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 #number {
     padding: 8px 0px 8px 8px;
     border-radius: 3px;
     border: none;
     margin-left: 5px;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 #date{
     padding: 8px 23px 8px 20px;
     border-radius: 3px;
     border: none;
     margin-left: 5px;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 .text{
-    font-size: 11px;
+    font-size: 12px;
     margin-left: 65px;
     margin-right: 57px;
     background-color: rgb(244, 244, 172);
@@ -98,6 +100,7 @@
     border: none;
     margin-top: 7px;
     margin-left: 65px;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 .gioithieu {
     padding: 8px 327px 8px 8px;
@@ -105,7 +108,7 @@
     border: none;
     margin-top: 7px;
     margin-left: 65px;
-
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
 }
 .last-note{
     font-size: 9px;
@@ -117,7 +120,7 @@
     align-items: center;
     margin-top: 5px;
 }
-.button-dk{
+.button{
     padding: 10px 85px 10px 85px;
     border-radius: 10px;
     border: none;
@@ -126,21 +129,27 @@
     font-style: italic;
     color: rgb(222, 222, 222)
 }
-.img-box{
-    top:0;
-    left:0;
-    margin-left: 58%;
-    position: absolute;
-    height: 100vh;
-    margin-top: 141px;
+#ho::placeholder{
+    font-size: 14px;
+    color: black;
 }
-.main-img{
-    height: 100vh;
-    width: 479px;
-    object-fit: cover;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+#ten::placeholder{
+    font-size: 14px;
+    color: black;
 }
+.mail-box::placeholder{
+    font-size: 14px;
+    color: black;
+}
+.gioithieu::placeholder{
+    font-size: 14px;
+    color: black;
+}
+#number::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
 .first-ques{
     align-items: center;
     margin-left: 210px;
@@ -173,4 +182,16 @@
     border-radius: 10px;
     border: none;
     background-color: rgb(226, 199, 22);
+}
+.img-box{
+    margin-left: 60%;
+    position: absolute;
+    height: 100vh;
+}
+.main-img{
+    height: 100vh;
+    width: 479px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
