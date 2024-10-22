@@ -97,8 +97,8 @@
 }
 .header .banner {
     position: absolute;
-}
-/* .box1{
+}  
+.box1{
     width: 864.800;
     height: 85.012;
     padding: 30px 50px 0 50px;
@@ -114,7 +114,7 @@
     width: 1038;
     height: 55.013;
 }
-/* .box4{
+ .box4{
     width: 173;
     height: 55.01;
 
@@ -126,7 +126,7 @@
 .box6{
     width: 173;
     height: 20.012;
-} */
+}
 .box4 img{
     width: auto;
     height: auto;
