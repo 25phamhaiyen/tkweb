@@ -7,172 +7,42 @@ body{
     margin: 0;
     padding: 0;
 }
-header {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
-    position: fixed;
-    width: 100%;
-    /* padding: 0 40px; */
-}
 
-header .nav-bar{
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    justify-content: space-between; /* space-between hiển thị các mục flex có khoảng cách giữa các dòng */
-    align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.095);
-    position: absolute;
-    z-index: 1;
-}
-header .nav-bar .logo{
-    box-sizing: border-box;
-    align-items: center; /* center căn chỉnh các mục flex vào giữa vùng chứa */
-    justify-content: flex-start;  /* centertrị căn chỉnh các mục flex vào giữa vùng chứa */
-    max-width: 265px;
-    min-width: 84px;
-    width: 100%;
-    height: auto;
-    
-}
-header .nav-bar .logo img{
-    max-width: 265px;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    justify-content: center; 
-}
-.header .navbar .top-right{
-    
-    padding: 0 40px;
-    box-sizing: border-box;  
-    margin-left: auto;
-    margin-right: 0;
-    width: calc(100% - 265px);
-    flex-direction: column;
-    display: flex;  
-    justify-content: flex-end; /* flex-end căn chỉnh các mục flex ở cuối vùng chứa */
-}
-.top-right .sign-in{
-    white-space: nowrap;
-    display:flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    color: #ffffff;
-    width: 100%;
-    font-weight: bold;
-    padding-right: 20px;
-    
-}
-.top-right .sign-in .hotro{
-    display: inline-flex;
-    gap: 8px;
-}
-.top-right .sign-in .hotro span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    font-weight: bolder;
-}
-.top-right .sign-in .language-switcher button {
-    box-sizing: border-box;
-    border: 2px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
-    border-radius: 4px;
-    font-size: 10px;
-    padding: 4px;
-    /* background: none; */
-    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
-}
-.top-right .sign-in .language-switcher button:hover{
-    
-    background-color:rgba(0, 0, 0, 0.095);
-}
-.top-right .sign-in .language-switcher button span{
-    display: flex;
-    align-items: center;
-    gap : 5px;
-    justify-content: center;
-    color: #ffffff;
-    font-weight: bolder;
-}
-.top-right .sign-in .bar button {
-    box-sizing: border-box;
-    border: none;
-    font-size: 12px;
-    padding: 10px;
-    /* background: none; */
-    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
-}
-header .navbar .top-right .menu{
-    display: flex;
-    margin-right: 0;
-    padding-right: 0;
-}
-.menu ul{
-    display: flex;
-    list-style-type: none;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    transition: 0.53s;
-    
-}
-.menu ul li{
-    display: block;
-    min-height: 20px;
-    padding: 4px 4px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    justify-content: space-between;
-}
-header a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: all .35s;
-    text-overflow: ellipsis;
-    font-weight: 600;
-    display:block;
-    padding: 10px;
-    
-}
-header .menu a:hover{
-    background-color: white;
-    color: red;
-    border-radius: 10px;
-}
-header{
-    position: relative;
-}
-.container{
+.container-chuyenbay{
     align-content: center;
     margin: auto; 
     box-sizing: border-box;
     width:fit-content;
     font-weight: 700;
-    z-index:999;
-    padding:200px 0 0 0;
+    z-index: 999;
+    padding:130px 0 ;
 }
 .madatvachuyenbay{
+    max-width: 1200px;
     display:flex;
     width:60%;
     height:fit-content;
 }
 .chontimkiem{
     width:fit-content;
-    height:fit-content;
-    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
     border: none;
     border-radius: 10px 10px 0 0;
     padding: 2%
 }
-
+.chontimkiem .icon-img{
+    width: 22px;
+    height: 20px;
+    margin-right: 10px;
+}
+.chontimkiem .icon-img img{
+    width: 100%;
+    height: auto;
+}
 
 input{
     font-weight: bold;
@@ -183,7 +53,7 @@ input{
     position: relative;
     width:1200px;
     border-radius:0 10px 10px;
-    background-color:  rgba(255, 255, 255, 0.5);
+    background-color:  rgba(255, 255, 255, 0.6);
     display:flex;
     overflow: hidden;
     box-shadow: 0px 3px 12px 0px rgba(0, 31, 62, 0.08);
@@ -191,7 +61,7 @@ input{
 
     .khungtrai{
         box-sizing: border-box;
-        padding:10px 30px 30px 50px;
+        padding:45px 30px 30px 50px;
         width: 40%;
         
         .form{
@@ -203,9 +73,9 @@ input{
                 text-align: left;
                 margin-top: 15px;
                 width: 100%;
-                height:20px;
-                padding:6px 0 6px 5%;
-                background-color: white;
+                height:40px;
+                padding:10px 0 10px 5%;
+                background-color: rgba(255, 255, 255, 0.6);
                 border-radius: 4px;
             }
         }
@@ -233,7 +103,7 @@ input{
 }
 
 
-.button{
+.khungtrai .button{
     height:39px;
     min-width: 127px;
     margin:auto;
@@ -269,7 +139,7 @@ input{
     
 } */
  @media screen and (max-width: 992px) {
-    .container{
+    .container-chuyenbay{
         width: 90%;
         padding: 200px 5% 0 5%;
     }
@@ -279,7 +149,7 @@ input{
         border-radius: 9px;
         position:center;
         height:fit-content; 
-        background-color:  rgba(255, 255, 255, 0.5);
+        background-color:  rgba(255, 255, 255, 0.6);
         .khungtrai{   
             width: 100%;
             padding: 0 50px 50px 50px;
