@@ -160,7 +160,7 @@
 }
 .ques1{
     display: inline-block;
-    color:rgb(148, 148, 244);
+    color:rgb(86, 86, 241);
     text-decoration: underline;
     font-size: 15px;
     margin-left: -5px;
@@ -190,7 +190,7 @@
 }
 .main-img{
     height: 100vh;
-    width: 479px;
+    width: 100%;
     object-fit: cover;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
