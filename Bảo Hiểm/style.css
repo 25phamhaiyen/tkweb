@@ -1,0 +1,159 @@
+header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
+    position: fixed;
+    width: 100%;
+    /* padding: 0 40px; */
+}
+
+header .nav-bar{
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    justify-content: space-between; /* space-between hiển thị các mục flex có khoảng cách giữa các dòng */
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.095);
+    position: absolute;
+    z-index: 1;
+    padding: 0%;
+    height: 90px;
+}
+header .nav-bar .logo{
+    box-sizing: border-box;
+    align-items: center; /* center căn chỉnh các mục flex vào giữa vùng chứa */
+    justify-content: flex-start;  /* centertrị căn chỉnh các mục flex vào giữa vùng chứa */
+    max-width: 265px;
+    min-width: 84px;
+    width: 100%;
+    height: auto;
+    
+}
+header .nav-bar .logo img{
+    max-width: 265px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    justify-content: center; 
+    margin-left: 60%;
+}
+.header .navbar .top-right{
+    padding: 0 40px;
+    box-sizing: border-box;  
+    margin-left: auto;
+    width: calc(100% - 265px);
+    flex-direction: column;
+    display: flex;  
+    justify-content: flex-end; /* flex-end căn chỉnh các mục flex ở cuối vùng chứa */
+}
+.top-right .sign-in{
+    white-space: nowrap;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    padding-right: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+.top-right .sign-in .hotro{
+    display: inline-flex;
+    gap: 8px;
+}
+.top-right .sign-in .hotro span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.top-right .sign-in .language-switcher button {
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255); /* Độ dày 2px, kiểu solid */
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 1px 7px 0px 7px;
+    /* background: none; */
+    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+    margin-right: 170px;
+}
+.top-right .sign-in .language-switcher button:hover{
+    
+    background-color:rgba(0, 0, 0, 0.095);
+}
+.top-right .sign-in .language-switcher button span{
+    display: flex;
+    align-items: center;
+    gap : 5px;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+.top-right .sign-in .bar button {
+    box-sizing: border-box;
+    border: none;
+    font-size: 12px;
+    padding: 10px;
+    /* background: none; */
+    background-color: transparent; /* làm cho màu nền trong suốt cho một phần tử. tương đương với rgba(0,0,0,0)*/
+}
+header .navbar .top-right .menu{
+    display: flex;
+    margin-right: 0;
+    padding-right: 0;
+    position: relative;
+    margin-top: 0%;
+
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+    transition: 0.53s;
+    margin-top: 0px;
+    margin-right: 140px;
+    
+}
+.menu ul li{
+    display: block;
+    min-height: 20px;
+    padding: 4px 4px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    justify-content: space-between;
+    font-size: 15px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all .35s;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    display:block;
+    padding: 10px;
+    
+}
+header .menu a:hover{
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+}
+header{
+    position: relative;
+}
+
+.main-img {
+    position: absolute;
+    width: 100%; 
+    height: auto;
+    z-index: -1; 
+}
