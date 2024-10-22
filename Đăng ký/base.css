@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #fd1900;
+    --secondary-color: #FDC70B;
+    --third-color: #ffffff;
+    --fourth-color: #797979;
+    --fifth-color: #000000;
+    --gradient-start: var(--primary-color);
+    --gradient-end: var(--secondary-color);
+}
+
+html{
+        background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
+        background-size: cover;
+}
+/* media : truy van phuong tien 
+Truy vấn phương tiện bao gồm một loại phương tiện và có thể chứa một hoặc nhiều tính năng phương tiện, có giá trị trả về là đúng hoặc sai
+@media not|only mediatype and (media feature) and (media feature) {
+  CSS-Code;
+}*/
+@media screen and (max-width: 992px) {
+    body {
+        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 480 pixel hoặc rộng hơn (nếu khung nhìn lon hơn 480 pixel, màu nền sẽ là màu hồng) */
+        background: url(../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp) no-repeat center fixed;
+        background-size: cover; /* giá trị "cover" giữ nguyên tỷ lệ khung hình và một số phần của hình nền có thể bị cắt bớt */
+        font-size: 12px;
+    }
+    header .nav-bar{
+        padding: 0 10px;
+        justify-content: flex-end;
+    }
+    header .nav-bar .logo img{
+        width: 84px;
+        height: auto;
+    }
+    .top-right .menu ul{
+    display: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    .top-right .sign-in .bar button{
+        display: none;
+    }
+    header .nav-bar {
+        padding: 0px 40px;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-weight: 500;
+    /* position: relative; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+}
+body {
+    font-family: 'KoHo', sans-serif;
+}
+main {
+    width: 100%;
+}
+a {
+    text-decoration: none
+}
+
+.chat-amy {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+}
+
+.chat-amy .button .button-content {
+    visibility: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    bottom: 20px;
+    width: max-content;
+    position: absolute;
+    right: 95px;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 15px 0px;
+    color: black;
+
+}
+
+.chat-amy .button .button-content::after {
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255);
+}
+
+.chat-amy .button:hover .button-content {
+    visibility: visible;
+}
+
+.bg-img{
+    background-image: url('../image/background/bg-donate.40a2c077.webp');
+    width:100%;
+    background-size: cover;
+}
+.grid{
+    margin: 0 40px;  
+    max-width: 1200px;
+    justify-self: center;
+}
