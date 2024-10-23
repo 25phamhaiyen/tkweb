@@ -1,0 +1,547 @@
+.DatVe {
+    position: absolute;
+    top: 130px;
+    right: 8.5%;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.DatVe .title {
+    display: flex;
+}
+
+.DatVe .title .title-content {
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    color: var(--third-color);
+    padding: 6px 8px;
+    font-style: italic;
+    background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
+    min-height: 45px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.DatVe .title .title-content-yellow {
+    color: var(--fifth-color);
+    background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
+}
+
+.DatVe .book-ticket__content {
+    font-size: 16px;
+    /* justify-content: space-between; */
+    background: linear-gradient(30.3deg, rgba(217, 26, 33, 0.73) 33.94%, #6F0000 163.23%);
+    border-radius: 0 0 5px 5px;
+}
+
+.DatVe .ChieuBay {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 16.5px 15px 4px 15px;
+    font-weight: bold;
+}
+
+.DatVe .center-box {
+    padding: 16.5px 15px;
+}
+
+.checkbox {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-bottom: -10px;
+    font-size: 18px;
+    align-items: center;
+    margin-left: 15px;
+}
+
+
+.book-ticket__service .service__food {
+    width: 60%;
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-top-left-radius: 10px;
+}
+
+.book-ticket__service .service__send-package {
+    width: 40%;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 2rem;
+    font-size: 1.35rem;
+}
+
+.book-ticket__content {
+    width: 100%;
+    color:var(--third-color);
+}
+
+.book-ticket__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+
+.book-ticket__top span {
+    font-size: 1.7rem;
+}
+
+.top__price {
+    display: flex;
+    align-items: center;
+    cursor: no-drop;
+}
+
+.top__price span {
+    font-size: 1.5rem;
+    margin-right: .8rem;
+}
+
+.top__price i {
+    font-size: 1.5rem;
+}
+
+.book-ticket__middle{
+    padding: 16.5px 15px;
+    color: var(--fifth-color);
+}
+
+.middle__point-start, .middle__point-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.point-start__left i {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+
+.point-start__left span {
+    font-weight: 600;
+}
+
+.point-start__right {
+    display: flex;
+    padding-left: 2rem;
+    border-left: 1px solid #D1D3D4;
+}
+
+.point-start__right span:last-child {
+    font-size: 1.5rem;
+}
+
+.point-start__right span:first-child {
+    font-size: 1.1rem;
+    padding-bottom: 0.2rem;
+}
+
+
+.middle__point-end i {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+    transform: rotate(180deg);
+}
+
+
+.middle__client {
+    background-color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.middle__client i {
+    font-size: 1.7rem;
+    margin-right: 1.5rem;
+}
+
+.middle__client-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle__client .client__title {
+    color: #333333;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.middle__client .client__choose-flyer {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.middle__sale-ticket {
+    background-color: white;
+    padding: 0.8rem 0.6rem;
+    border-radius: 10px;
+}
+
+.middle__sale-ticket i {
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+
+.middle__sale-ticket span {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
+
+/* BUTTON FIND FLY */
+.DatVe .button {
+    padding: 27px 0;
+}
+
+.button__find-fly {
+    width: 50%;
+    height: 45px;
+    background:linear-gradient(26.73deg,#F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #000000;
+    font-style: italic;
+    min-height: 40px;
+    font-weight: bold;
+    border: none;
+}
+
+/* DIỂM KHỞI HÀNH */
+.place-start {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: auto;
+    background-color: white;
+    z-index: 999;
+}
+
+.place-start.active {
+    display: block;
+}
+
+.place-start div {
+    /* font-weight: 300; */
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #eee;
+    color: rgb(58, 38, 38);
+    font-size: 1.7rem;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.place-start div:hover {
+    text-decoration: underline;
+}
+
+.place-start i {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: var(--primary-color);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* ĐIỂM KẾT THÚC */
+.place-end {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: auto;
+    background-color: white;
+    z-index: 999;
+}
+
+.place-end.active {
+    display: block;
+}
+
+.place-end div {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #eee;
+    color: rgb(58, 38, 38);
+    font-size: 1.7rem;
+    font-weight: 400;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.place-end div:hover {
+    text-decoration: underline;
+}
+
+.place-end i {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: var(--primary-color);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* number of clients */
+.client-fly {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+.client-fly.active {
+    display: block;
+}
+
+.client-fly .exit-icon {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+
+}
+
+.client-fly .client__support {
+    padding-left: 13rem;
+    margin-bottom: 2rem;
+}
+
+.client-fly .client__support a {
+    color: #208AEC;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+
+.client-fly .client__support i {
+    color: #208AEC;
+    font-size: 1.3rem;
+}
+
+.client-fly__adult {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.adult__wrapper {
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+
+.adult__number {
+    width: 35%;
+}
+
+.adult__wrapper i{
+    font-size: 4.5rem;
+    color: #939598;
+    margin-right: 1.5rem;
+}
+
+.wrapper__content span {
+    display: block;
+}
+
+.wrapper__content span:first-child {
+    font-size: 1.7rem;
+    color: black;
+}
+
+.wrapper__content span:last-child {
+    font-size: 1.3rem;
+    color: #939598;
+}
+
+.adult__number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adult__number button {
+    width: 30%;
+    position: relative;
+}
+
+.adult__number button {
+    border: none;
+    border: 1px solid #939598;
+    opacity: .7;
+    background-color: #fff;
+    width: 3.2rem;
+    height: 3.2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+
+
+.adult__number button:active {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    background-color: #939598;
+}
+
+
+
+.adult__number button:before {
+    content: '';
+    position: absolute;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.adult__number span {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: var(--third-color);
+}
+
+.adult__wrapper .children-icon {
+    font-size: 3.4rem ;
+}
+
+.adult__wrapper .baby-icon {
+    font-size: 3.4rem;
+}
+
+
+/* WHITE BOOK TICKET START*/
+
+
+.white-bookTicket {
+    z-index: 1200;
+    position: sticky;
+    padding-top: 23%;
+}
+.sticky-box {
+    z-index: 2;
+    top: 0;
+    position: sticky;
+    width: 1200px;
+    margin-left: 20px;
+    margin-top: 22%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.thanhTittle {
+    display: flex;
+}
+
+.thanhmaudolon {
+    width: 100%;
+    position: absolute;
+}
+.thanhmauvang {
+    width: 100%;
+    position: absolute;
+}
+.thanhFooter {
+    display: flex;
+}
+.thanhTittle .content {
+    width: 100%;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .text {
+    font-size: 18px;
+    color: white;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+.content .text a {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.content .text img {
+    margin-right: 5px;
+    margin-top: 1px;
+    max-height: 15px;
+}
+.text .fa-ticket {
+    margin-right: 5px;
+    margin-top: 1px;
+    height: 100%;
+}
+
+.sticky-box .centerbox {
+    background-color: #ffffff;
+}
+
+.DatVe2 {
+    padding: 16.5px 15px 0;
+}
+.DatVe2 .ChieuBay {
+    display: flex;
+    color: #000;
+
+}
+.DatVe2 .ChieuBay .VND {
+    cursor: not-allowed;
+    border: 1px solid #9E9E9E;
+    margin: unset;
+    padding: 0px 5px;
+    margin-left: 15px;
+    border-radius: 8px;
+}
+.DatVe2 .book-ticket__content .book-ticket__middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.DatVe2 .book-ticket__content .book-ticket__middle .middle__point-start, 
+.DatVe2 .book-ticket__content .book-ticket__middle .middle__point-end{
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #9E9E9E;
+    overflow: hidden;
+    width: 40%;
+    height: 20%;
+}
+.DatVe2 .book-ticket__content .book-ticket__middle .button__find-fly {
+    padding: 10px;
+    width: fit-content;
+}
+
+
+
+
+/* WHITE BOOK TICKET END */
