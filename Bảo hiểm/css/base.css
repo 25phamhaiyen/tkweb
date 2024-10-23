@@ -1,7 +1,13 @@
-body,html {
-    font-size: 16px;
-    position: relative;
+:root {
+    --primary-color: #fd1900;
+    --secondary-color: #FDC70B;
+    --third-color: #ffffff;
+    --fourth-color: #797979;
+    --fifth-color: #000000;
+    --gradient-start: var(--primary-color);
+    --gradient-end: var(--secondary-color);
 }
+
 html{
         background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
         background-size: cover;
@@ -14,14 +20,9 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 @media screen and (max-width: 992px) {
     body {
         /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 480 pixel hoặc rộng hơn (nếu khung nhìn lon hơn 480 pixel, màu nền sẽ là màu hồng) */
-        background: url(../image/background/dammayxanh.jpg) no-repeat center fixed;
+        background: url(../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp) no-repeat center fixed;
         background-size: cover; /* giá trị "cover" giữ nguyên tỷ lệ khung hình và một số phần của hình nền có thể bị cắt bớt */
         font-size: 12px;
-    }
-    .header{
-        margin-right: 4px;
-        font-weight: bold;
-        margin-left: 4px;
     }
     header .nav-bar{
         padding: 0 10px;
@@ -34,7 +35,7 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     .top-right .menu ul{
     display: none;
     }
-    .imgs .img-cloud img{
+    .white-bookTicket{
         display: none;
     }
 }
@@ -51,22 +52,64 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 body {
     margin: 0;
     font-weight: 500;
+    /* position: relative; */
 }
 
 * {
-    box-sizing: border-box;
-    outline: 0;
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-*{
-    font-family: sans-serif;
+html {
+    font-size: 15px;
 }
-a,button,input,select,textarea {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+body {
+    font-family: 'KoHo', sans-serif;
+}
+main {
+    width: 100%;
+}
+a {
     text-decoration: none
 }
-img{
-    object-fit: contain;
+
+.chat-amy {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+}
+
+.chat-amy .button .button-content {
+    visibility: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    bottom: 20px;
+    width: max-content;
+    position: absolute;
+    right: 95px;
+    z-index: 1;
+    padding: 5px 10px;
+    border-radius: 15px 0px;
+    color: black;
+
+}
+
+.chat-amy .button .button-content::after {
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255);
+}
+
+.chat-amy .button:hover .button-content {
+    visibility: visible;
+}
+
+.grid{
+    margin: 0 140px;  
+    max-width: 1200px;
+    width: 100%;
+    justify-self: center;
 }

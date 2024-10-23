@@ -1,0 +1,93 @@
+.main-img {
+    position: absolute;
+    width: 100%; 
+    height: auto;
+    z-index: -1; 
+}
+.h2-list {
+    list-style: none; 
+    padding: 0;
+}
+.list {
+    position: relative;
+    padding-left: 20px; 
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.list::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px; 
+    height: 5px;
+    background-color: black; 
+    border-radius: 50%; 
+}
+.main-content{
+    width: 82%;
+    background-color: white;
+    margin-left: 137px;
+    margin-top: -118px;
+    padding: 180px 0px 0px 60px;
+    height: auto;
+}
+.heading-title{
+    margin-right: 30px;
+    margin-bottom: 45px;
+}
+.h1{
+    color: red;
+    font-weight: 900;
+    font-size: 36px;
+}
+.main-box {
+    margin-right: 30px;
+}
+.vietjet-travel-safe, .sky-care {
+    display: inline-block;
+    vertical-align: top; /* Đảm bảo các thẻ sẽ căn hàng từ đỉnh */
+    width: 47%; /* Đảm bảo chúng có cùng kích thước */
+    border: 1px solid rgb(197, 196, 196);
+    border-radius: 10px;
+    padding: 25px 15px; /* Cân đối lại padding */
+}
+.vietjet-travel-safe {
+    padding-bottom: 170px;
+}
+.sky-care {
+    padding-bottom: auto;
+    margin-left: 25px;
+}
+.h2{
+    text-align: center;
+    align-items: center;
+    color: red;
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+.para{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.line{
+    margin: 20px 50px 0px 0px;
+    padding-bottom: 150px;
+}
+.hr{
+    border: none;
+    height: 1px;
+    width: 92%;
+    background-color: rgb(197, 196, 196);
+}
+.hr, .fb-icon, .twit-icon {
+    display: inline-block;
+}
+.fb-icon, .twit-icon{
+    margin-left: 5px;
+}
+  
