@@ -13,16 +13,13 @@
 }
 
 .DatVe .title .title-content {
-    box-sizing: border-box;
     border-radius: 5px 5px 0 0;
-    display: block;
     color: var(--third-color);
-    padding: 6px 8px;
+    padding: 8px 5px;
     font-style: italic;
+    align-items: center;
     background: linear-gradient(20.12deg, rgba(217, 26, 33, 0.8) 19.6%, rgba(111, 0, 0, 0.8) 93.86%);
-    min-height: 45px;
     font-weight: 600;
-    text-transform: none;
 }
 
 .DatVe .title .title-content-yellow {
@@ -41,39 +38,24 @@
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
-    padding: 16.5px 15px 4px 15px;
+    padding: 16.5px 15px 0 15px;
     font-weight: bold;
 }
 
 .DatVe .center-box {
     padding: 16.5px 15px;
 }
-
+.ChieuBay .Chieu{
+    display: flex;
+    gap: 10px;
+}
 .checkbox {
     width: 100%;
     height: 30px;
-    display: flex;
     margin-bottom: -10px;
     font-size: 18px;
     align-items: center;
-    margin-left: 15px;
-}
-
-
-.book-ticket__service .service__food {
-    width: 60%;
-    background-color: var(--secondary-color);
-    padding: 1rem 2rem;
-    font-size: 1.4rem;
-    border-top-left-radius: 10px;
-}
-
-.book-ticket__service .service__send-package {
-    width: 40%;
-    border-top-right-radius: 10px;
-    color: white;
-    padding: 2rem;
-    font-size: 1.35rem;
+    padding:0 20px;
 }
 
 .book-ticket__content {
@@ -92,20 +74,6 @@
     font-size: 1.7rem;
 }
 
-.top__price {
-    display: flex;
-    align-items: center;
-    cursor: no-drop;
-}
-
-.top__price span {
-    font-size: 1.5rem;
-    margin-right: .8rem;
-}
-
-.top__price i {
-    font-size: 1.5rem;
-}
 
 .book-ticket__middle{
     padding: 16.5px 15px;
@@ -117,55 +85,36 @@
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    padding: .5rem 1.5rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
-
-.point-start__left i {
-    font-size: 1.7rem;
-    margin-right: 1rem;
-}
-
-.point-start__left span {
+.point-start__left{
     font-weight: 600;
 }
-
-.point-start__right {
-    display: flex;
-    padding-left: 2rem;
-    border-left: 1px solid #D1D3D4;
+.point-start__left i {
+    font-size: 22px;
+    margin-left: -5px;
+    margin-right: 15px;
 }
-
-.point-start__right span:last-child {
-    font-size: 1.5rem;
-}
-
-.point-start__right span:first-child {
-    font-size: 1.1rem;
-    padding-bottom: 0.2rem;
-}
-
 
 .middle__point-end i {
-    font-size: 1.7rem;
-    margin-right: 1rem;
     transform: rotate(180deg);
 }
 
-
 .middle__client {
     background-color: white;
-    padding: .5rem 1.5rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+    padding: 6px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
 .middle__client i {
-    font-size: 1.7rem;
-    margin-right: 1.5rem;
+    font-size: 22px;
+    margin-left: -3px;
+    margin-right: 22px;
 }
 
 .middle__client-wrapper {
@@ -174,37 +123,28 @@
 }
 
 .middle__client .client__title {
-    color: #333333;
+    color: var(--fifth-color);
     font-weight: 600;
     font-size: 12px;
-}
-
-.middle__client .client__choose-flyer {
-    font-size: 14px;
-    font-weight: 300;
+    margin-bottom: 5px;
 }
 
 .middle__sale-ticket {
     background-color: white;
-    padding: 0.8rem 0.6rem;
+    padding: 15px 20px;
     border-radius: 10px;
 }
 
 .middle__sale-ticket i {
-    font-size: 1.7rem;
-    margin-right: 1rem;
+    font-size: 22px;
+    margin-left: -5px;
+    margin-right: 15px;
 }
-
-.middle__sale-ticket span {
-    font-size: 1.7rem;
-    font-weight: 300;
-}
-
 
 
 /* BUTTON FIND FLY */
 .DatVe .button {
-    padding: 27px 0;
+    padding: 20px 0;
 }
 
 .button__find-fly {
@@ -217,11 +157,10 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    color: #000000;
+    color: var(--fifth-color);
     font-style: italic;
     min-height: 40px;
-    font-weight: bold;
-    border: none;
+    font-weight: 800;
 }
 
 /* DIỂM KHỞI HÀNH */
@@ -442,12 +381,10 @@
 
 
 .white-bookTicket {
-    margin-top: -70px;
-    
+    margin-top: -70px; 
     top: 0;
-    z-index: 1200;
+    z-index: 200;
     position: sticky;
-    padding-top: 0;
 }
 .sticky-box {
     top: 0;
@@ -476,7 +413,7 @@
 .thanhTittle .content {
     width: 100%;
     z-index: 1;
-    padding: 10px 20px;
+    padding: 8px 20px;
     display: flex;
     justify-content: space-between;
 }

@@ -1,23 +1,26 @@
 .inner-wrap {
     margin-top: -5%;
+
 }
 .img-cloud{
     width: 100%;
-    height: 100%;
+    height: 80vh;
 }
 .img-cloud img {
     width: 100%;
-    height: 85vh;
+    height: 100%;
     object-fit: cover;
 }
 .inner-wrap-boxYellow {
-    margin-top: -450px;
+    margin-top: -480px;
+    /* max-width: 1200px; */
     display: block;
     padding:0 18%;
 }
 .listboxYellow {
     display: flex;   
     justify-content: space-between;
+    width: 100%;
 }
 .boxYellow-content{
     color: #ff0000;

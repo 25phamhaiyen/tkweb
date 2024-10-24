@@ -1,12 +1,14 @@
 .calendar {
     display: none; /* Ẩn lịch ban đầu */
     border-radius: 8px;
+    top: 225px;
     right: 15px;
     padding: 30px;
     position: absolute; 
     z-index: 1;
     background: var(--third-color);
 }
+
 .header-calender {
     display: flex;
     justify-content: space-between;
@@ -30,6 +32,10 @@
 }
 .day:hover {
     border: 1px solid var(--primary-color);
+}
+.disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
 }
 .empty {
     background-color: #f9f9f9;

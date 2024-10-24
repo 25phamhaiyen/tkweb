@@ -51,13 +51,13 @@
 }
 .bg-blur{
     margin: -10px;
-    padding: 20px 114px;
+    padding: 20px 100px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
 }
 /* Tin tuc va uu dai */
 .bg-blur2{
     margin: -10px;
-    padding: 20px 44px;
+    padding: 20px 60px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.001) 100%);
 }
 .prize-item{
