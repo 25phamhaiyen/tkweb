@@ -211,15 +211,13 @@
 </body>
 <script>
     function togglePopup() {
-        // Lấy hai phần tử cần thao tác
         const centerContent = document.getElementById("centerContent");
         const displayDiv = document.getElementById("displayDiv");
-
-        // Kiểm tra và thay đổi hiển thị của chúng
         if (centerContent.style.display === "block") {
             centerContent.style.display = "none";
             displayDiv.style.display = "block";
-        } else {
+        } 
+        else {
             centerContent.style.display = "block";
             displayDiv.style.display = "none";
         }
