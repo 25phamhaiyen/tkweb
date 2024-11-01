@@ -33,16 +33,16 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         height: auto;
     }
     .top-right .menu ul{
-    display: none;
+        display: none;
+    }
+    .hamburger {
+        display:block !important;
     }
     .white-bookTicket{
         display: none;
     }
 }
 @media screen and (min-width: 992px) {
-    .top-right .sign-in .bar button{
-        display: none;
-    }
     header .nav-bar {
         padding: 0px 40px;
     }

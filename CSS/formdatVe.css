@@ -45,22 +45,24 @@
 .DatVe .center-box {
     padding: 16.5px 15px;
 }
-.ChieuBay .Chieu{
+
+.ChieuBay .Chieu {
     display: flex;
     gap: 10px;
 }
+
 .checkbox {
     width: 100%;
     height: 30px;
     margin-bottom: -10px;
     font-size: 18px;
     align-items: center;
-    padding:0 20px;
+    padding: 0 20px;
 }
 
 .book-ticket__content {
     width: 100%;
-    color:var(--third-color);
+    color: var(--third-color);
 }
 
 .book-ticket__top {
@@ -75,12 +77,13 @@
 }
 
 
-.book-ticket__middle{
+.book-ticket__middle {
     padding: 16.5px 15px;
     color: var(--fifth-color);
 }
 
-.middle__point-start, .middle__point-end {
+.middle__point-start,
+.middle__point-end {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,10 +92,14 @@
     border-radius: 8px;
     margin-bottom: 10px;
 }
-.point-start__left{
+
+.point-start__left,
+.point-start__right {
     font-weight: 600;
 }
-.point-start__left i {
+
+.point-start__left i,
+.point-start__right i {
     font-size: 22px;
     margin-left: -5px;
     margin-right: 15px;
@@ -102,32 +109,6 @@
     transform: rotate(180deg);
 }
 
-.middle__client {
-    background-color: white;
-    padding: 6px 20px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.middle__client i {
-    font-size: 22px;
-    margin-left: -3px;
-    margin-right: 22px;
-}
-
-.middle__client-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.middle__client .client__title {
-    color: var(--fifth-color);
-    font-weight: 600;
-    font-size: 12px;
-    margin-bottom: 5px;
-}
 
 .middle__sale-ticket {
     background-color: white;
@@ -135,10 +116,166 @@
     border-radius: 10px;
 }
 
+.middle__sale-ticket input {
+    background-color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
 .middle__sale-ticket i {
     font-size: 22px;
     margin-left: -5px;
     margin-right: 15px;
+}
+
+.point-start__left input[type="text"],
+.point-start__right input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: -40px;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 48%;
+    left: 15px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+.dropdown-options li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.dropdown-options li:hover {
+    background-color: #f0f0f0;
+}
+
+.show {
+    display: block;
+}
+ /* HANH KHACH */
+.middle__client {
+    background-color: var(--third-color);
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.middle__client i {
+    font-size: 22px;
+    left: 0;
+    margin-left: -3px;
+    margin-right: 20px;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    right: 0;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    margin-left: auto;
+}
+
+.dropdown-arrow {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.special-request {
+    color: #007bff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.passenger-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.passenger-type {
+    display: flex;
+    font-size: 14px;
+    padding: 10px;
+    align-items: center;
+}
+.passenger-type i{
+    font-size: 28px;
+    padding: 0 10px;
+}
+.passenger-type .passenger{
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.counter {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.counter-btn {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+}
+
+.counter-btn:disabled {
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.dropdown-btn:focus+.dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
 }
 
 
@@ -150,7 +287,7 @@
 .button__find-fly {
     width: 50%;
     height: 45px;
-    background:linear-gradient(26.73deg,#F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
+    background: linear-gradient(26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
     border-radius: 10px;
     display: flex;
     justify-self: center;
@@ -304,7 +441,7 @@
     width: 35%;
 }
 
-.adult__wrapper i{
+.adult__wrapper i {
     font-size: 4.5rem;
     color: #939598;
     margin-right: 1.5rem;
@@ -349,7 +486,7 @@
 
 
 .adult__number button:active {
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background-color: #939598;
 }
 
@@ -369,7 +506,7 @@
 }
 
 .adult__wrapper .children-icon {
-    font-size: 3.4rem ;
+    font-size: 3.4rem;
 }
 
 .adult__wrapper .baby-icon {
@@ -381,11 +518,12 @@
 
 
 .white-bookTicket {
-    margin-top: -70px; 
+    margin-top: -70px;
     top: 0;
     z-index: 200;
     position: sticky;
 }
+
 .sticky-box {
     top: 0;
     position: sticky;
@@ -403,13 +541,16 @@
     width: 100%;
     position: absolute;
 }
+
 .thanhmauvang {
     width: 100%;
     position: absolute;
 }
+
 .thanhFooter {
     display: flex;
 }
+
 .thanhTittle .content {
     width: 100%;
     z-index: 1;
@@ -424,6 +565,7 @@
     font-size: 16px;
     font-weight: bold;
 }
+
 .content .text a {
     overflow: hidden;
     white-space: nowrap;
@@ -434,6 +576,7 @@
     margin-top: 1px;
     max-height: 15px;
 }
+
 .text .fa-ticket {
     margin-right: 5px;
     margin-top: 1px;
@@ -447,11 +590,13 @@
 .DatVe2 {
     padding: 16.5px 15px 0;
 }
+
 .DatVe2 .ChieuBay {
     display: flex;
     color: #000;
 
 }
+
 .DatVe2 .ChieuBay .VND {
     cursor: not-allowed;
     border: 1px solid #9E9E9E;
@@ -460,14 +605,16 @@
     margin-left: 15px;
     border-radius: 8px;
 }
-.DatVe2 .book-ticket__content .book-ticket__middle{
+
+.DatVe2 .book-ticket__content .book-ticket__middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
 }
-.DatVe2 .book-ticket__content .book-ticket__middle .middle__point-start, 
-.DatVe2 .book-ticket__content .book-ticket__middle .middle__point-end{
+
+.DatVe2 .book-ticket__content .book-ticket__middle .middle__point-start,
+.DatVe2 .book-ticket__content .book-ticket__middle .middle__point-end {
     align-items: center;
     margin-top: 10px;
     border: 1px solid #9E9E9E;
@@ -475,6 +622,7 @@
     width: 40%;
     height: 20%;
 }
+
 .DatVe2 .book-ticket__content .book-ticket__middle .button__find-fly {
     padding: 10px;
     width: fit-content;

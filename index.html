@@ -78,12 +78,42 @@
                   <div>Tiếng Việt</div>
                   <i class="fa fa-caret-down"></i>
                 </span>
-            </div>
-            <div class="bar">
               </button type="button">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
               <button>
                 <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
               </button>
+            </div>
+          </div>
+          <div class="dropdown-menu-bar" id="dropdownMenu">
+            <div class="dangky-dangnhap">
+              <i class="fa-solid fa-user" style="color: #ff0000"></i>
+              <span>
+                <a href="./Đăng ký/DangKy.html" target="_blank">Đăng ký</a> 
+                <span style="color: #ffffff;">/</span>
+                <a href="./Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
+              </span>
+            </div>
+            <hr>
+            <a class="title" href="./index.html">Trang chủ</a>
+            <a class="title" href="">SKYJOY</a>
+            <a class="title" href="./Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA
+              TÔI</a>
+            <a class="title" href="">ONLINE CHECK-IN</a>
+            <a class="title" href="./Menu/Menu.html" target="_blank">E-MENU</a>
+            <a class="title" href="">E-VISA</a>
+            <hr>
+            <h4>Kết nối với Vietjet</h4>
+            <div class="flex-content">
+              <a class=" img" href="" target="_blank"><img src="./image/icon/fb.png" alt="facebook"></a>
+              <a class=" img" href="" target="_blank"><img src="./image//icon/instagram.png"
+                  alt="instagram"></a>
+              <a class=" img" href="" target="_blank"><img src="./image//icon/twitter.png" alt="twitter"></a>
+              <a class=" img" href="" target="_blank"><img src="./image//icon/line.png" alt="line"></a>
+              <a class=" img" href="" target="_blank"><img src="./image//icon/wechat.png" alt="wechat"></a>
+              <a class=" img" href="" target="_blank"><img src="./image//icon/zalo.png" alt="zalo"></a>
+              <a class=" img" href="" target="_blank"><img src="./image//icon/youtube.png" alt="youtube"></a>
             </div>
           </div>
           <div class="menu">
@@ -265,60 +295,6 @@
 
       </div>
 
-      <!-- <div class="calendar">
-
-        <div class="calendar-header">
-          <div class="change" id="previous-month">
-            <i class="fas fa-sort-up"></i>
-          </div>
-          <div class="calendar-wrapper">
-            <div class="month-picker" id="month-picker">
-              <span>Tháng</span> <span>10</span>
-            </div>
-            <div class="year-picker" id="year-picker">
-              2024
-            </div>
-          </div>
-          <div class="change" id="next-month">
-            <i class="fas fa-sort-up"></i>
-          </div>
-
-        </div>
-
-        <div class="calendar-body">
-
-          <div class="days-of-week">
-            <span>CN</span>
-            <span>Thứ 2</span>
-            <span>Thứ 3</span>
-            <span>Thứ 4</span>
-            <span>Thứ 5</span>
-            <span>Thứ 6</span>
-            <span>Thứ 7</span>
-          </div>
-
-          <div class="days-of-month">
-            <div>
-              1
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-          </div>
-        </div>
-
-      </div> -->
-
       <div class="place-start">
         <i class="fas fa-backspace"></i>
         <div>TP HCM (SGN)</div>
@@ -362,10 +338,18 @@
         <div class="book-ticket__middle">
 
           <div class="middle__point-start">
-            <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
             <div class="point-start__left">
               <i class="fas fa-plane"></i>
-              <span>Điểm khởi hành</span>
+              <input type="text" placeholder="Điểm khởi hành" id="fromInput" autocomplete="off">
+              <ul class="dropdown-options" id="fromOptions">
+                <li onclick="selectOption('fromInput', 'toInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                  <span>SGN</span></li>
+                <li onclick="selectOption('fromInput', 'toInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                <li onclick="selectOption('fromInput', 'toInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                <li onclick="selectOption('fromInput', 'toInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                <li onclick="selectOption('fromInput', 'toInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                <li onclick="selectOption('fromInput', 'toInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+              </ul>
             </div>
             <div>
               <span>
@@ -385,10 +369,18 @@
           </div>
 
           <div class="middle__point-end">
-            <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-            <div class="point-start__left">
+            <div class="point-start__right">
               <i class="fas fa-plane"></i>
-              <span>Điểm đến</span>
+              <input type="text" id="toInput" placeholder="Điểm đến" autocomplete="off">
+              <ul class="dropdown-options" id="toOptions">
+                <li onclick="selectOption('toInput', 'fromInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                  <span>SGN</span></li>
+                <li onclick="selectOption('toInput', 'fromInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                <li onclick="selectOption('toInput', 'fromInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                <li onclick="selectOption('toInput', 'fromInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                <li onclick="selectOption('toInput', 'fromInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                <li onclick="selectOption('toInput', 'fromInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+              </ul>
             </div>
             <div>
               <span>
@@ -408,12 +400,63 @@
           </div>
 
           <div class="middle__client">
-            <i class="fas fa-user"></i>
-            <div class="middle__client-wrapper">
-              <span class="client__title">Hành khách</span>
-              <span class="client__choose-flyer">1 người lớn</span>
+            <i class="fas fa-user passenger-icon"></i>
+            <span class="client__title">Hành khách</span>
+            <button class="dropdown-btn" onclick="toggleDropdown()">
+              <span id="passenger-count">1 người lớn</span>
+              <span class="dropdown-arrow">▼</span>
+            </button>
+          
+            <div id="dropdown-menu" class="dropdown-menu">
+              <a href="#" class="special-request">Yêu cầu trợ giúp đặc biệt</a>
+          
+              <div class="passenger-option">
+                <span class="passenger-type">
+                  <i class="fa-solid fa-person" style="color: #77797e; font-size: 32px;"></i> 
+                  <div class="passenger">
+                    Người lớn
+                    <small>12 tuổi trở lên</small>
+                  </div>
+                </span>
+                <div class="counter">
+                  <button onclick="decreaseCount('adult')" class="counter-btn">−</button>
+                  <span id="adult-count" style="color: var(--primary-color);">1</span>
+                  <button onclick="increaseCount('adult')" class="counter-btn">+</button>
+                </div>
+              </div>
+          
+              <div class="passenger-option">
+                <span class="passenger-type">
+                  <i class="fa-solid fa-child-reaching " style="color: #77797e;"></i> 
+                  <div class="passenger">
+                    Trẻ em
+                    <small>2-11 tuổi</small>
+                  </div>
+                </span>
+                <div class="counter">
+                  <button onclick="decreaseCount('child')" class="counter-btn">−</button>
+                  <span id="child-count" style="color: var(--primary-color);">0</span>
+                  <button onclick="increaseCount('child')" class="counter-btn">+</button>
+                </div>
+              </div>
+          
+              <div class="passenger-option">
+                <span class="passenger-type">
+                  <i class="fa-solid fa-baby" style="color: #77797e;"></i> 
+                  <div class="passenger">
+                    Em bé
+                    <small>Dưới 2 tuổi</small>
+                  </div>
+                </span>
+                <div class="counter">
+                  <button onclick="decreaseCount('infant')" class="counter-btn">−</button>
+                  <span id="infant-count" style="color: var(--primary-color);">0</span>
+                  <button onclick="increaseCount('infant')" class="counter-btn">+</button>
+                </div>
+              </div>
             </div>
           </div>
+          
 
           <div class="middle__sale-ticket">
             <i class="fas fa-ticket-alt" style="color: #263b5f;"></i>
@@ -538,93 +581,93 @@
     <!-- topbanner end -->
   </div>
 
-    <!-- white book ticket start -->
-    <div class="white-bookTicket grid">
-      <div class="sticky-box">
-        <div class="thanhTittle">
-          <div class="content">
-            <div class="text">
-              <img src="./image/icon/flightHorizontal.edd0202a.svg" alt="">
-              <a href="" class="text">
-                Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
-              </a>
-            </div>
-            <div class="text">
-              <img src="./image/icon/SendFast.0966cc94.svg" alt="">
-              <a href="" class="text">
-                Gửi hàng nhanh
-              </a>
-            </div>
-            <div class="text">
-              <i class="fa-solid fa-ticket"></i>
-              <a href="" class="text">
-                Đổi thưởng và mua SkyPoint
-              </a>
-            </div>
-            <div class="text">
-              <img src="./image/icon/CheckIn.94f94d4b.svg" alt="">
-              <a href="" class="text">
-                Check in
-              </a>
-            </div>
+  <!-- white book ticket start -->
+  <div class="white-bookTicket grid">
+    <div class="sticky-box">
+      <div class="thanhTittle">
+        <div class="content">
+          <div class="text">
+            <img src="./image/icon/flightHorizontal.edd0202a.svg" alt="">
+            <a href="" class="text">
+              Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
+            </a>
           </div>
-          <img class="thanhmaudolon" src="./image/icon/mauthanhdolon.png" alt="mauDo">
-          <img class="thanhmauvang" src="./image/icon/mauthanhvang.png" alt="mauVang">
-        </div>
-
-        <div class="centerbox">
-          <div class="DatVe2">
-            <div class="book-ticket__content">
-
-              <div class="ChieuBay">
-                <div class="Chieu">
-                  <input type="radio" name="object">
-                  <lable for="Khuhoi">Khứ hồi</lable>
-                  </lable>
-                  <input type="radio" name="object">
-                  <lable for="Motchieu">Một chiều</lable>
-                  </lable>
-                </div>
-                <span class="VND">VND <i class="fa fa-caret-down"></i></span>
-              </div>
-
-              <div class="book-ticket__middle">
-
-                <div class="middle__point-start">
-                  <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-                  <div class="point-start__left">
-                    <i class="fas fa-plane"></i>
-                    <span>Điểm khởi hành</span>
-                  </div>
-                  <div class="point-start__right">
-                    <span>Ngày đi</span>
-                  </div>
-                </div>
-
-                <div class="middle__point-end">
-                  <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-                  <div class="point-start__left">
-                    <i class="fas fa-plane"></i>
-                    <span>Điểm đến</span>
-                  </div>
-                  <div class="point-start__right">
-                    <span>Ngày đến</span>
-                  </div>
-                </div>
-
-                <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
-              </div>
-
-
-            </div>
+          <div class="text">
+            <img src="./image/icon/SendFast.0966cc94.svg" alt="">
+            <a href="" class="text">
+              Gửi hàng nhanh
+            </a>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-ticket"></i>
+            <a href="" class="text">
+              Đổi thưởng và mua SkyPoint
+            </a>
+          </div>
+          <div class="text">
+            <img src="./image/icon/CheckIn.94f94d4b.svg" alt="">
+            <a href="" class="text">
+              Check in
+            </a>
           </div>
         </div>
-        <div class="thanhFooter">
-          <img classs="thanhmaudonho" src="./image/icon/mauthanhdonho.png" alt="mauDo">
+        <img class="thanhmaudolon" src="./image/icon/mauthanhdolon.png" alt="mauDo">
+        <img class="thanhmauvang" src="./image/icon/mauthanhvang.png" alt="mauVang">
+      </div>
+
+      <div class="centerbox">
+        <div class="DatVe2">
+          <div class="book-ticket__content">
+
+            <div class="ChieuBay">
+              <div class="Chieu">
+                <input type="radio" name="object">
+                <lable for="Khuhoi">Khứ hồi</lable>
+                </lable>
+                <input type="radio" name="object">
+                <lable for="Motchieu">Một chiều</lable>
+                </lable>
+              </div>
+              <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+            </div>
+
+            <div class="book-ticket__middle">
+
+              <div class="middle__point-start">
+                <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
+                <div class="point-start__left">
+                  <i class="fas fa-plane"></i>
+                  <span>Điểm khởi hành</span>
+                </div>
+                <div class="point-start__right">
+                  <span>Ngày đi</span>
+                </div>
+              </div>
+
+              <div class="middle__point-end">
+                <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
+                <div class="point-start__left">
+                  <i class="fas fa-plane"></i>
+                  <span>Điểm đến</span>
+                </div>
+                <div class="point-start__right">
+                  <span>Ngày đến</span>
+                </div>
+              </div>
+
+              <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
+            </div>
+
+
+          </div>
         </div>
       </div>
+      <div class="thanhFooter">
+        <img classs="thanhmaudonho" src="./image/icon/mauthanhdonho.png" alt="mauDo">
+      </div>
     </div>
-    <!-- white book ticket end -->
+  </div>
+  <!-- white book ticket end -->
 
   <!-- slide 2 ảnh start -->
   <div class="slide grid">
@@ -1158,9 +1201,9 @@
     <!--<script src="./JS/SliderBanner.js"></script>-->
     <!-- <script src="./JS/NumberClients.js"></script> -->
     <script src="./JS/Calendar.js"></script>
-    <script src="./JS/Checkbox.js"></script>
-    <script src="./JS/ChoosePlaceFly.js"></script>
-    <script src="./JS/TextAnimation.js"></script>
+    <script src="./JS/placeInput.js"></script>
+    <script src="./JS/HanhKhach.js"></script>
+    <script src="./JS/dropdownBarMenu.js"></script>
     <script src="./JS/SuperSlider.js"></script>
 
 </body>
