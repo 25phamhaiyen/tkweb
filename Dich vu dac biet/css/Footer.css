@@ -1,0 +1,160 @@
+/* Giai thuong */
+.bg-img{
+    position: absolute;
+    margin-top: -12%;
+}
+.container-img{
+    padding-top: 40px;
+    justify-self: center;
+    max-width: 280px;
+    height: auto;
+}
+.container-item{
+    justify-content: space-between;
+    max-width: 920px;
+    margin: 30px auto 0;
+    padding: 0 16px;
+}
+
+.container-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.container table td{
+    height: 55px;
+    width: 20%;
+    padding: 0 10px;
+    font-weight: 500;
+}
+.container table p{
+    justify-self: center;
+    align-items: center;
+}
+.container table .title{
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-style: italic;
+}
+.container td .text{
+    text-align: center;
+}
+.bg-cloud{
+    width: 100%;
+    height: 6vw;
+    overflow: hidden;
+    background: none;
+}
+.bg-cloud img{
+    margin-top: -8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.bg-blur{
+    width: 100%;
+    overflow: hidden;
+    margin: -10px;
+    padding: 20px 100px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+/* Tin tuc va uu dai */
+.bg-blur2{
+    width: 100%;
+    padding: 20px 60px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.001) 100%);
+}
+.prize-item{
+    margin-top :-60px ;
+    padding:0 3px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+   
+}
+.prize-item .img{
+    height: 70px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.prize-item .img img{
+    width: auto;
+    height: 100%;
+}
+.prize-item p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.text-item{
+    min-width: 200px;
+    font-size: 14px;
+}
+.text-item h3, .text-item a{
+    padding: 5px 0;
+    color: var(--fifth-color);
+}
+.text-item a:hover{
+    color: var(--primary-color);
+}
+.text-item img{
+    padding-right: 5px;
+}
+
+/* Thong tin start */
+.contact,  .instructions{
+    font-size: 14px; 
+    padding-right: 20px;
+    max-width: 100%;
+}
+.contact h4, .instructions h4, address h4{
+    padding: 5px 0;
+}
+.address{
+    max-width: 300px;
+    font-size: 12px;
+}
+.img-contact{
+    width: 26px;
+}
+.img-contact img{
+    width: 100%;
+    height: auto;
+}
+.img-download-app{
+    width: 101px;
+    gap: 10px;
+}
+.img-download-app img{
+    width: 100%;
+    height: auto;
+}
+.img-dathongbao{
+    width: 112px;
+}
+.img-dathongbao img{
+    width: 100%;
+    height: auto;
+}
+.img-instruction{
+    width: 30px;
+    padding-right: 10px;
+}
+.img-instruction img{
+    width: 100%;
+    height: auto;
+}
+
+.flex-content{
+    display: flex;
+    gap: 5px;
+}
+.hover h4{
+    font-style: italic;
+    color: var(--fifth-color);
+}
+.hover h4:hover{
+    color: var(--primary-color);
+}
