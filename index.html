@@ -582,24 +582,64 @@
             <div class="book-ticket__middle">
 
               <div class="middle__point-start">
-                <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
                 <div class="point-start__left">
                   <i class="fas fa-plane"></i>
-                  <span>Điểm khởi hành</span>
+                  <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                  <ul class="dropdown-options" id="fromOptions">
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                      <span>SGN</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                  </ul>
                 </div>
-                <div class="point-start__right">
-                  <span>Ngày đi</span>
+                <div>
+                  <span>
+                    <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                    <div class="calendar di">
+                      <div class="header-calender">
+                        <button id="previous-month">«</button>
+                        <div>
+                          <span id="content-month"></span> <span id="content-year"></span>
+                        </div>
+                        <button id="next-month">»</button>
+                      </div>
+                      <div class="days"></div>
+                    </div>
+                  </span>
                 </div>
               </div>
 
               <div class="middle__point-end">
-                <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-                <div class="point-start__left">
-                  <i class="fas fa-plane"></i>
-                  <span>Điểm đến</span>
-                </div>
                 <div class="point-start__right">
-                  <span>Ngày đến</span>
+                  <i class="fas fa-plane"></i>
+                  <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                  <ul class="dropdown-options" id="toOptions">
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                      <span>SGN</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                  </ul>
+                </div>
+                <div>
+                  <span>
+                    <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                    <div class="calendar den">
+                      <div class="header-calender">
+                        <button id="previous-month">«</button>
+                        <div>
+                          <span id="content-month"></span> <span id="content-year"></span>
+                        </div>
+                        <button id="next-month">»</button>
+                      </div>
+                      <div class="days"></div>
+                    </div>
+                  </span>
                 </div>
               </div>
 
@@ -618,23 +658,39 @@
   <!-- white book ticket end -->
 
   <!-- slide 2 ảnh start -->
-  <div class="slide grid">
-    <img src="./image/icon/angle-left.svg" alt="angle left">
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 1"></a>
+  <div class=" carousel2">
+    <div class="carousel-slide2">
+      <div class="slide2">
+        <div class="mySlides">
+          <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 1a"></a>
+        </div>
+        <div class="mySlides">
+          <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 2a"></a>
+        </div>
       </div>
-
-      <div class="mySlides fade">
-        <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 2"></a>
+      <div class="slide2">
+        <div class="mySlides ">
+          <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 1b"></a>
+        </div>
+        <div class="mySlides">
+          <a href=""><img src="./image/banner/artboard216418031278341695094349731-1715833806513.webp" alt="Slide 2b"></a>
+        </div>
       </div>
-
-      <!-- <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="./image/slide/slide3.jpg" alt="Slide 3">
-        </div> -->
+      <div class="slide2">
+        <div class="mySlides">
+          <a href=""><img src="./image/banner/artboard216418031278341695094349731-1715833806513.webp" alt="Slide 1c"></a>
+        </div>
+        <div class="mySlides">
+          <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 2c"></a>
+        </div>
+      </div>
     </div>
-    <img src="./image/icon/angle-right.svg" alt="angle right">
+    <button class="prev" onclick="moveSlide2(-1)">
+      <img src="./image/icon/angle-left.svg" alt="angle left">
+    </button>
+    <button class="next" onclick="moveSlide2(1)">
+      <img src="./image/icon/angle-right.svg" alt="angle-right">
+    </button>
   </div>
   <!-- slide 2 ảnh end -->
 
@@ -683,21 +739,63 @@
   <!-- Tiện ich end -->
 
   <!-- Slide 1 ảnh start -->
-  <div class="slide grid">
-    <img src="./image/icon/angle-left.svg" alt="angle left">
-    <div class="slideshow-container ">
-      <div class="Tag slide-tag">
-        <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-        <h3>HDBank Vietjet Platinum</h3>
-        <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-      </div>
-      <a href="">
-        <div class="mySlide">
-          <img src="./image/banner/anhviber20240917110241929-1727233354235.jpg" alt="Slide 1">
+  <div class="carousel">
+    <div class="slideshow-container carousel-slide">
+      <div class="slide">
+        <div class="Tag slide-tag">
+          <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+          <h3>HDBank Vietjet Platinum</h3>
+          <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
         </div>
-      </a>
+        <a href="">
+          <div class="mySlide">
+            <img src="./image/banner/anhviber20240917110241929-1727233354235.jpg" alt="Slide 1">
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <div class="Tag slide-tag">
+          <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+          <h3>Vikki Digital Bank</h3>
+          <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+        </div>
+        <a href="">
+          <div class="mySlide">
+            <img src="./image/banner/1600x320-1729832853729.png" alt="Slide 1">
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <div class="Tag slide-tag">
+          <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+          <h3>Tận hưởng chuyến bay</h3>
+          <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+        </div>
+        <a href="">
+          <div class="mySlide">
+            <img src="./image/banner/pc1-1695094513048.webp" alt="Slide 1">
+          </div>
+        </a>
+      </div>
+      <div class="slide">
+        <div class="Tag slide-tag">
+          <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+          <h3>Tận hưởng chuyến bay</h3>
+          <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+        </div>
+        <a href="">
+          <div class="mySlide">
+            <img src="./image/banner/pc2-1695094522549.webp" alt="Slide 1">
+          </div>
+        </a>
+      </div>
     </div>
-    <img src="./image/icon/angle-right.svg" alt="angle-right">
+    <button class="prev" onclick="moveSlide(-1)">
+      <img src="./image/icon/angle-left.svg" alt="angle left">
+    </button>
+    <button class="next" onclick="moveSlide(1)">
+      <img src="./image/icon/angle-right.svg" alt="angle-right">
+    </button>
   </div>
   <!-- Slide 1 ảnh end -->
 
@@ -1153,6 +1251,8 @@
     <script src="./JS/HanhKhach.js"></script>
     <script src="./JS/dropdownBarMenu.js"></script>
     <script src="./JS/SlideBaner.js"></script>
+    <script src="./JS/Slide1.js"></script>
+    <script src="./JS/Slide2.js"></script>
 
 </body>
 
