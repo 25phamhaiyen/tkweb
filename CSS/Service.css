@@ -8,12 +8,8 @@
     border-radius: 5px;
 }
 .Service-item .img{
-    width: 380;
-    height: 260;
-    
-}
-.Service-item .bdrs img{
-    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: auto;
 }
 .Service-item .img img{
     border-radius:5px;
@@ -28,4 +24,7 @@
 
 .Service{
     justify-items: center;
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
 }

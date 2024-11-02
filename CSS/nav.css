@@ -4,15 +4,55 @@
     background-size: cover;
     justify-items: center;
 }
-.banner img {
+/* Slide Banner Start */
+.banner-slideshow {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+.myslide{
+    display: none;
+}
+.myslide img{
     width: 100%;
-    display: block;
     height: auto;
 }
+/* Hiệu ứng fade */
+.fade {
+    animation: fade 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+/* Các dấu chấm */
+.dot-container {
+    text-align: center;
+    padding: 10px;
+    margin-top: -150px;
+    position: relative;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: var(--third-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active{
+    background-color: var(--primary-color);
+}
+/* Slide Banner End */
+
 .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.095) 100%);
     width: 100%;
     position: absolute;
+    z-index:1;
 }
 
 .header .nav-bar {
@@ -65,13 +105,15 @@
     color: #ffffff;
     font-weight: bolder;
 }
-
-.top-right .sign-in .language-switcher button {
-    box-sizing: border-box;
-    border: 2px solid var(--third-color);
+.top-right .sign-in .language-switcher{
     border-radius: 4px;
     font-size: 14px;
+}
+.top-right .sign-in .language-switcher button {
+    border: 1.7px solid var(--third-color);
+    border-radius: 4px;
     padding: 4px;
+    width: 100%;
     background-color: transparent;
 }
 
@@ -159,6 +201,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
+    z-index: 1;
     max-width: 70%;
     width: 100%;
     top: 0;

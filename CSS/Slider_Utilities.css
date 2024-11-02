@@ -1,9 +1,10 @@
 
 /* Slide 2 anh */
 .slide{
-    margin: 40px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .slideshow-container{
     display: flex;
@@ -22,24 +23,29 @@
 }
 
 /* Tien ich */
-.question{
-    margin-left: 20px;
-    margin-top: -10px;
-}
 .container-flex{
-    padding: 40px;
     display: flex;
-    gap: 50px;
+    margin: 40px;
+    gap: 30px;
     justify-content: space-between;
+}
+.container-flex .img-item{
+    max-width: 180px;
+    width: 100%;
+    border-radius: 5px;
+}
+.container-flex .img-item img{
+    width: 100%;
+    height: auto;
 }
 .utilities-item{
     justify-items: center;
-    width: 148px;
-    height: 148px;
+    max-width: 148px;
+    width: 100%;
 }
 .utilities-item img{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 .utilities-item .text{
     color: var(--fifth-color);

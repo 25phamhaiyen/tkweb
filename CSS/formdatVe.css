@@ -140,6 +140,7 @@
 .dropdown-options {
     display: none;
     position: absolute;
+    z-index: 1;
     top: 48%;
     left: 15px;
     max-width: 350px;
@@ -299,262 +300,39 @@
     min-height: 40px;
     font-weight: 800;
 }
-
-/* DIỂM KHỞI HÀNH */
-.place-start {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30rem;
-    height: auto;
-    background-color: white;
-    z-index: 999;
-}
-
-.place-start.active {
-    display: block;
-}
-
-.place-start div {
-    /* font-weight: 300; */
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid #eee;
-    color: rgb(58, 38, 38);
-    font-size: 1.7rem;
-    transition: all .3s linear;
-    cursor: pointer;
-}
-
-.place-start div:hover {
-    text-decoration: underline;
-}
-
-.place-start i {
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    color: var(--primary-color);
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-/* ĐIỂM KẾT THÚC */
-.place-end {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30rem;
-    height: auto;
-    background-color: white;
-    z-index: 999;
-}
-
-.place-end.active {
-    display: block;
-}
-
-.place-end div {
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid #eee;
-    color: rgb(58, 38, 38);
-    font-size: 1.7rem;
-    font-weight: 400;
-    transition: all .3s linear;
-    cursor: pointer;
-}
-
-.place-end div:hover {
-    text-decoration: underline;
-}
-
-.place-end i {
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    color: var(--primary-color);
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-/* number of clients */
-.client-fly {
-    display: none;
-    position: absolute;
-    border-radius: 5px;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 95%;
-    padding: 1rem 2rem;
-    background-color: #fff;
-}
-
-.client-fly.active {
-    display: block;
-}
-
-.client-fly .exit-icon {
-    position: absolute;
-    left: 1rem;
-    right: 1rem;
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    cursor: pointer;
-
-}
-
-.client-fly .client__support {
-    padding-left: 13rem;
-    margin-bottom: 2rem;
-}
-
-.client-fly .client__support a {
-    color: #208AEC;
-    font-size: 1.7rem;
-    margin-right: 1rem;
-}
-
-.client-fly .client__support i {
-    color: #208AEC;
-    font-size: 1.3rem;
-}
-
-.client-fly__adult {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.adult__wrapper {
-    display: flex;
-    align-items: center;
-    width: 65%;
-}
-
-.adult__number {
-    width: 35%;
-}
-
-.adult__wrapper i {
-    font-size: 4.5rem;
-    color: #939598;
-    margin-right: 1.5rem;
-}
-
-.wrapper__content span {
-    display: block;
-}
-
-.wrapper__content span:first-child {
-    font-size: 1.7rem;
-    color: black;
-}
-
-.wrapper__content span:last-child {
-    font-size: 1.3rem;
-    color: #939598;
-}
-
-.adult__number {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.adult__number button {
-    width: 30%;
-    position: relative;
-}
-
-.adult__number button {
-    border: none;
-    border: 1px solid #939598;
-    opacity: .7;
-    background-color: #fff;
-    width: 3.2rem;
-    height: 3.2rem;
-    overflow: hidden;
-    border-radius: 50%;
-    transition: all .5s linear;
-}
-
-
-.adult__number button:active {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background-color: #939598;
-}
-
-
-
-.adult__number button:before {
-    content: '';
-    position: absolute;
-    width: 3.2rem;
-    height: 3.2rem;
-}
-
-.adult__number span {
-    font-weight: bold;
-    font-size: 1.7rem;
-    color: var(--third-color);
-}
-
-.adult__wrapper .children-icon {
-    font-size: 3.4rem;
-}
-
-.adult__wrapper .baby-icon {
-    font-size: 3.4rem;
-}
-
-
 /* WHITE BOOK TICKET START*/
 
 
 .white-bookTicket {
-    margin-top: -70px;
+    margin-top: 200px;
     top: 0;
     z-index: 200;
     position: sticky;
+    max-width: 1200px;
 }
 
 .sticky-box {
-    top: 0;
-    position: sticky;
-    width: 1200px;
-    margin: auto;
+    position: relative;
+    width: 100%;
     margin-top: 22%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.thanhTittle {
+.thanhTittle, .thanhFooter {
     display: flex;
 }
-
-.thanhmaudolon {
+.thanhmaudolon, .thanhmauvang {
     width: 100%;
     position: absolute;
 }
-
-.thanhmauvang {
+.thanhFooter img {
     width: 100%;
-    position: absolute;
-}
-
-.thanhFooter {
-    display: flex;
 }
 
 .thanhTittle .content {
     width: 100%;
     z-index: 1;
-    padding: 8px 20px;
+    padding: 8px 20px 0;
     display: flex;
     justify-content: space-between;
 }

@@ -75,6 +75,7 @@ a {
 
 .chat-amy {
     position: fixed;
+    z-index: 1;
     bottom: 60px;
     right: 20px;
 }
@@ -87,7 +88,6 @@ a {
     width: max-content;
     position: absolute;
     right: 95px;
-    z-index: 1;
     padding: 5px 10px;
     border-radius: 15px 0px;
     color: black;
@@ -109,8 +109,9 @@ a {
 
 .bg-img{
     background-image: url('../image/background/bg-donate.40a2c077.webp');
-    width:100%;
+    width: 100%;
     background-size: cover;
+    
 }
 .grid{
     margin: 0 40px;  

@@ -230,90 +230,38 @@
     </header>
     <!-- header end -->
 
-    <div class="banner">
-      <a href="#">
-        <img src="./image/banner/webvie-1725983454736.jpg" alt="VietJet Air" />
-      </a>
+    <div class="banner-slideshow">
+      <div class="fade myslide">
+        <a href="#">
+          <img src="./image/banner/webvie-1725983454736.jpg" alt="VietJet Air" />
+        </a>
+      </div>
+      <div class="fade myslide">
+        <a href="#">
+          <img src="./image/banner/skyfi1920x960vn-1726632778598.jpg" alt="VietJet Air" />
+        </a>
+      </div>
+      <div class="fade myslide">
+        <a href="#">
+          <img src="./image/banner/qsswwsx-1724233851279.jpg" alt="VietJet Air" />
+        </a>
+      </div>
+      <div class="fade myslide">
+        <a href="#">
+          <img src="./image/banner/anhviber20240917110241272-1727233273083.jpg" alt="VietJet Air" />
+        </a>
+      </div>
+      <!-- Các dấu chấm chỉ số slide -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
     </div>
 
     <!-- book ticket start -->
     <div class="DatVe grid">
-
-      <div class="client-fly">
-
-        <i class="fas fa-backspace exit-icon"></i>
-
-        <div class="client__support">
-          <a href="#"><i>Yêu cầu trợ giúp đặc biệt</i></a>
-          <i class="fa fa-exclamation-circle"></i>
-        </div>
-
-        <div class="client-fly__adult">
-          <div class="adult__wrapper">
-            <i class="fas fa-male"></i>
-            <div class="wrapper__content">
-              <span>Người lớn</span>
-              <span>12 tuổi trở lên</span>
-            </div>
-          </div>
-          <div class="adult__number">
-            <button><i class="fas fa-minus"></i></button>
-            <span class="adult-number">0</span>
-            <button><i class="fas fa-plus"></i></button>
-          </div>
-        </div>
-
-        <div class="client-fly__adult">
-          <div class="adult__wrapper">
-            <i class="fas fa-child children-icon"></i>
-            <div class="wrapper__content">
-              <span>Trẻ em</span>
-              <span>2-11 tuổi</span>
-            </div>
-          </div>
-          <div class="adult__number">
-            <button><i class="fas fa-minus"></i></button>
-            <span class="children-number">0</span>
-            <button><i class="fas fa-plus"></i></button>
-          </div>
-        </div>
-
-        <div class="client-fly__adult">
-          <div class="adult__wrapper">
-            <i class="fas fa-baby baby-icon"></i>
-            <div class="wrapper__content">
-              <span>Em bé</span>
-              <span>Dưới 2 tuổi</span>
-            </div>
-          </div>
-          <div class="adult__number">
-            <button><i class="fas fa-minus"></i></button>
-            <span class="baby-number">0</span>
-            <button><i class="fas fa-plus"></i></button>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="place-start">
-        <i class="fas fa-backspace"></i>
-        <div>TP HCM (SGN)</div>
-        <div>Đà Nẵng (DAD)</div>
-        <div>Phú Quốc (PQC)</div>
-        <div>Nha Trang (CXR)</div>
-        <div>Cà Mau (CAH)</div>
-        <div>Đà Lạt (DLI)</div>
-      </div>
-
-      <div class="place-end">
-        <i class="fas fa-backspace"></i>
-        <div>TP HCM (SGN)</div>
-        <div>Đà Nẵng (DAD)</div>
-        <div>Phú Quốc (PQC)</div>
-        <div>Nha Trang (CXR)</div>
-        <div>Cà May (CAH)</div>
-        <div>Đà Lạt (DLI)</div>
-      </div>
 
       <div class="title">
         <div class="title-content">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</div>
@@ -460,7 +408,7 @@
 
           <div class="middle__sale-ticket">
             <i class="fas fa-ticket-alt" style="color: #263b5f;"></i>
-            <input type="text" id="MaKM" placeholder="Mã khuyến mãi" style="border: none;" required>
+            <input type="text" id="MaKM" placeholder="Mã khuyến mãi" style="border: none;">
           </div>
 
         </div>
@@ -825,7 +773,7 @@
           <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
         </div>
         <a href="" target="_blank">
-          <div class="img" style="width: 1200px">
+          <div class="img">
             <img src="./image/banner/banner1200x240vn-1698743606086.jpg" alt="skycare">
           </div>
         </a href="" target="_blank">
@@ -933,12 +881,12 @@
 
   <!-- Câu hỏi thường gặp Start -->
   <div class="grid">
-    <div class="Tag question">
+    <div class="Tag">
       <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
       <h3>Câu hỏi thường gặp</h3>
       <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
     </div>
-    <div class="container-flex" style="gap: 13px;">
+    <div class="container-flex" style="gap: 15px; padding-top: 30px; margin-left: 0;">
       <a href="" target="_blank">
         <div class="img-item"><img src="./image/icon/vibooking-1662643022630.svg" alt="booking"></div>
       </a>
@@ -1006,8 +954,8 @@
         <div class="bg-cloud">
           <img src="./image/background/cloudBG-desktop.4a58264d.webp" alt="bg cloud">
         </div>
-        <div class="bg-blur">
-          <div class="container-flex grid" style="max-width: 1200px; justify-self: center;">
+        <div class="bg-blur ">
+          <div class="container-flex grid">
             <div class="prize-item">
               <div class="img">
                 <img src="./image/logo_giaithuong/giai6-1592297512599.png" alt="Giai 6">
@@ -1062,8 +1010,8 @@
       <!-- Giải thưởng end -->
 
       <!-- Tin tức & ưu đãi start -->
-      <div class="container bg-blur2" style="margin-top: 10px;">
-        <div class="container-flex grid" style="margin-left: 70px; margin-top: -40px;">
+      <div class="bg-blur2" style="margin-top: 10px;">
+        <div class="container-flex grid" style="overflow: hidden;">
           <div class="text-item">
             <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Để có chuyến bay tốt đẹp</h3>
             <a href="">Điều lệ vận chuyển</a><br>
@@ -1136,7 +1084,7 @@
 
       <!-- Thong tin start -->
       <div class=" grid">
-        <div class="container-flex" style="padding-left: 20px;">
+        <div class="container-flex" style="margin-bottom: 0; overflow: hidden;">
           <div class="contact">
             <h4>Kết nối với Vietjet</h4>
             <div class="flex-content">
@@ -1204,7 +1152,7 @@
     <script src="./JS/placeInput.js"></script>
     <script src="./JS/HanhKhach.js"></script>
     <script src="./JS/dropdownBarMenu.js"></script>
-    <script src="./JS/SuperSlider.js"></script>
+    <script src="./JS/SlideBaner.js"></script>
 
 </body>
 
