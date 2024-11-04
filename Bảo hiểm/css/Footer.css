@@ -1,7 +1,28 @@
 /* Giai thuong */
 .bg-img{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+.first-cloud-img{
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    margin-top: -50px;
+}
+.first-cloud-img img{
+    width: 100%;
+    height: auto;
+}
+.container-footer{
     position: absolute;
-    margin-top: -12%;
+    z-index: 2;
+    top: 210%; 
+    left: 0;
+    width: 100%; 
+}
+.container-footer2{
+    margin-top: -85px;
 }
 .container-img{
     padding-top: 40px;
