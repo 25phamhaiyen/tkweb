@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vietjet Air</title>
+  <title>Esim</title>
 
   <link rel="icon" href="./img/favicon.ico" />
 
@@ -28,9 +28,11 @@
   <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/esim.css">
   <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Footer.css">
   <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Slider_Utilities.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Calendar.css">
 
   <!-- file javascript-->
   <script src="script.js"></script>
+  <script src="placeInput.js"></script>
   
 </head>
 <body>
@@ -63,8 +65,8 @@
                 <span>
                   <i class="fa-solid fa-user" style="color: #ff0000"></i>
                   <span>
-                    <a href="../Đăng ký/DangKy.html" target="_blank">Đăng ký</a> |
-                    <a href="../Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
+                    <a href="./Đăng ký/DangKy.html" target="_blank">Đăng ký</a> |
+                    <a href="./Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
                   </span>
                 </span>
               </div>
@@ -85,9 +87,9 @@
             <div class="menu">
               <ul>
                 <li><a class="title" href="">SKYJOY</a></li>
-                <li><a class="title" href="../Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA TÔI</a></li>
+                <li><a class="title" href="./Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA TÔI</a></li>
                 <li><a class="title" href="">ONLINE CHECK-IN</a></li>
-                <li><a class="title" href="../Menu/Menu.html" target="_blank">E-MENU</a></li>
+                <li><a class="title" href="./Menu/Menu.html" target="_blank">E-MENU</a></li>
                 <li><a class="title" href="">E-VISA</a></li>
                 <li class="hover-a">
                   <p class="title">DỊCH VỤ CHUYẾN BAY</p>
@@ -100,14 +102,14 @@
                           <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
                         </div>
                         <div class="dropdown-item">
-                          <a href="../Bảo hiểm/BaoHiem.html" target="_blank"><h3>Bảo hiểm</h3></a>
+                          <a href="" target="_blank"><h3>Bảo hiểm</h3></a>
                           <hr>
                           <p>Thật yên tâm và thoải mái với các chương trình bảo hiểm uy tín đến từ các đối tác bảo hiểm tin cậy của Vietjet</p>
                         </div>
                       </div>
                       <div class="flex-content">
                         <div class="dropdown-item">
-                          <a href="../Khách sạn/khachsan.html" target="_blank"><h3>Khách sạn</h3></a>
+                          <a href="" target="_blank"><h3>Khách sạn</h3></a>
                           <hr>
                           <p>Sẵn sàng tận hưởng ưu đãi giảm giá lên đến 70% các khách sạn trên toàn thế giới</p>
                         </div>
@@ -119,12 +121,12 @@
                       </div>
                       <div class="flex-content">
                         <div class="dropdown-item">
-                          <a href="../Dich vu dac biet/dichvudacbiet.html" target="_blank"><h3>Dịch vụ đặc biệt</h3></a>
+                          <a href="" target="_blank"><h3>Dịch vụ đặc biệt</h3></a>
                           <hr>
                           <p>Vận chuyển thú cưng, trẻ em đi một mình, hỗ trợ thủ tục tại sân bay và hơn thế nữa!</p>
                         </div>
                         <div class="dropdown-item">
-                          <a href="../eSim/esim.html" target="_blank"><h3>eSIM</h3></a>
+                          <a href="" target="_blank"><h3>eSIM</h3></a>
                           <hr>
                           <p>Với SkyFi eSIM, hãy tận thưởng kết nối internet tốc độ cao trong mọi chuyến đi của bạn tới bất cứ nơi đâu</p>
                         </div>
@@ -180,89 +182,130 @@
         </div>
       </div>
 
-      <div class="white-bookTicket grid">
-        <div class="sticky-box">
-          <div class="thanhTittle">
-            <div class="content">
-              <div class="text">
-                <img src="./img/muahanhly.svg" alt="">
-                <a href="" class="text">
-                  Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
-                </a>
-              </div>
-              <div class="text">
-                <img src="./img/guihangnhanh.svg" alt="">
-                <a href="" class="text">
-                  Gửi hàng nhanh
-                </a>
-              </div>
-              <div class="text">
-                <i class="fa-solid fa-ticket"></i>
-                <a href="" class="text">
-                  Đổi thưởng và mua SkyPoint
-                </a>
-              </div>
-              <div class="text">
-                <img src="./img/checkin.svg" alt="">
-                <a href="" class="text">
-                  Check in
-                </a>
-              </div>
-            </div>
-            <img class="thanhmaudolon" src="./img/mauthanhdolon.png" alt="mauDo">
-            <img class="thanhmauvang" src="./img/mauthanhvang.png" alt="mauVang">
+      <!-- white book ticket start -->
+  <div class="white-bookTicket grid">
+    <div class="sticky-box">
+      <div class="thanhTittle">
+        <div class="content">
+          <div class="text">
+            <img src="../image/icon/flightHorizontal.edd0202a.svg" alt="">
+            <a href="" class="text">
+              Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
+            </a>
           </div>
-  
-          <div class="centerbox">
-            <div class="DatVe2">
-              <div class="book-ticket__content">
-  
-                <div class="ChieuBay">
-                  <div class="Chieu">
-                    <input type="radio" name="object">
-                    <lable for="Khuhoi">Khứ hồi</lable>
-                    </lable>
-                    <input type="radio" name="object">
-                    <lable for="Motchieu">Một chiều</lable>
-                    </lable>
-                  </div>
-                  <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+          <div class="text">
+            <img src="../image/icon/SendFast.0966cc94.svg" alt="">
+            <a href="" class="text">
+              Gửi hàng nhanh
+            </a>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-ticket"></i>
+            <a href="" class="text">
+              Đổi thưởng và mua SkyPoint
+            </a>
+          </div>
+          <div class="text">
+            <img src="../image/icon/CheckIn.94f94d4b.svg" alt="">
+            <a href="" class="text">
+              Check in
+            </a>
+          </div>
+        </div>
+        <img class="thanhmaudolon" src="../image/icon/mauthanhdolon.png" alt="mauDo">
+        <img class="thanhmauvang" src="../image/icon/mauthanhvang.png" alt="mauVang">
+      </div>
+
+      <div class="centerbox">
+        <div class="DatVe2">
+          <div class="book-ticket__content">
+
+            <div class="ChieuBay">
+              <div class="Chieu">
+                <input type="radio" name="object">
+                <lable for="Khuhoi">Khứ hồi</lable>
+                </lable>
+                <input type="radio" name="object">
+                <lable for="Motchieu">Một chiều</lable>
+                </lable>
+              </div>
+              <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+            </div>
+
+            <div class="book-ticket__middle">
+
+              <div class="middle__point-start">
+                <div class="point-start__left">
+                  <i class="fas fa-plane"></i>
+                  <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                  <ul class="dropdown-options" id="fromOptions">
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                      <span>SGN</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                    <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                  </ul>
                 </div>
-  
-                <div class="book-ticket__middle">
-  
-                  <div class="middle__point-start">
-                    <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-                    <div class="point-start__left">
-                      <i class="fas fa-plane"></i>
-                      <span>Điểm khởi hành</span>
+                <div>
+                  <span>
+                    <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                    <div class="calendar di">
+                      <div class="header-calender">
+                        <button id="previous-month">«</button>
+                        <div>
+                          <span id="content-month"></span> <span id="content-year"></span>
+                        </div>
+                        <button id="next-month">»</button>
+                      </div>
+                      <div class="days"></div>
                     </div>
-                    <div class="point-start__right">
-                      <span>Ngày đi</span>
-                    </div>
-                  </div>
-  
-                  <div class="middle__point-end">
-                    <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-                    <div class="point-start__left">
-                      <i class="fas fa-plane"></i>
-                      <span>Điểm đến</span>
-                    </div>
-                    <div class="point-start__right">
-                      <span>Ngày đến</span>
-                    </div>
-                  </div>
-  
-                  <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
+                  </span>
                 </div>
               </div>
+
+              <div class="middle__point-end">
+                <div class="point-start__right">
+                  <i class="fas fa-plane"></i>
+                  <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                  <ul class="dropdown-options" id="toOptions">
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                      <span>SGN</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                    <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                  </ul>
+                </div>
+                <div>
+                  <span>
+                    <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                    <div class="calendar den">
+                      <div class="header-calender">
+                        <button id="previous-month">«</button>
+                        <div>
+                          <span id="content-month"></span> <span id="content-year"></span>
+                        </div>
+                        <button id="next-month">»</button>
+                      </div>
+                      <div class="days"></div>
+                    </div>
+                  </span>
+                </div>
+              </div>
+
+              <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
             </div>
-          </div>
-          <div class="thanhFooter">
-            <img classs="thanhmaudonho" src="./img/mauthanhdonho.png" alt="mauDo">
           </div>
         </div>
       </div>
+      <div class="thanhFooter">
+        <img classs="thanhmaudonho" src="../image/icon/mauthanhdonho.png" alt="mauDo">
+      </div>
+    </div>
+  </div>
 
       <div class="nav">
         <a href="" target="_blank" style="color:purple;">Trang chủ</a>
@@ -318,349 +361,351 @@
                 </div>
             </div>
           </div>
-          <div class="display-div" id="close" style="display: none; position: absolute;">
-            <span class="close" onclick="dongkhung()">&times;</span>
-            <div class="main-display-div">
-              <div class="heading-bar-display">
-                <h4>Thiết bị di động có hỗ trợ eSIM </h4>
-                <p class="display-para">Lưu ý: eSIM là một loại sim điện tử (sử dụng mã QR) và không phải là thẻ sim vật lý lắp vào điện thoại , eSIM không dùng cho các loại đồng hồ thông minh</p>
-              </div>
-              <div class="search-bar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M17.8809 17.5601L14.9643 14.6434M17.0475 9.64339C17.0475 13.5554 13.8762 16.7267 9.96419 16.7267C6.05218 16.7267 2.88086 13.5554 2.88086 9.64339C2.88086 5.73137 6.05218 2.56006 9.96419 2.56006C13.8762 2.56006 17.0475 5.73137 17.0475 9.64339Z" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                <input type="text" placeholder="Nhập tên máy (ví dụ Iphone 15, SS Galaxy Fold,...)">
-              </div>
-              <div class="scrollable-content">
-                <div class="main-content-display">
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Hammer
+          <div class="dp" id="close" >
+            <div class="display-div">
+              <span class="close" onclick="dongkhung()">&times;</span>
+              <div class="main-display-div">
+                <div class="heading-bar-display">
+                  <h4>Thiết bị di động có hỗ trợ eSIM </h4>
+                  <p class="display-para">Lưu ý: eSIM là một loại sim điện tử (sử dụng mã QR) và không phải là thẻ sim vật lý lắp vào điện thoại , eSIM không dùng cho các loại đồng hồ thông minh</p>
+                </div>
+                <div class="search-bar">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none"><path d="M17.8809 17.5601L14.9643 14.6434M17.0475 9.64339C17.0475 13.5554 13.8762 16.7267 9.96419 16.7267C6.05218 16.7267 2.88086 13.5554 2.88086 9.64339C2.88086 5.73137 6.05218 2.56006 9.96419 2.56006C13.8762 2.56006 17.0475 5.73137 17.0475 9.64339Z" stroke="#ADADAD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  <input type="text" placeholder="Nhập tên máy (ví dụ Iphone 15, SS Galaxy Fold,...)">
+                </div>
+                <div class="scrollable-content">
+                  <div class="main-content-display">
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Hammer
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Teclast
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Teclast
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Motorola Solutions
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Motorola Solutions
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        DOOGEE
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          DOOGEE
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        OPPO
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          OPPO
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Sharp
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Sharp
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        isafemobile
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          isafemobile
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        BALMUDA
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          BALMUDA
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        TAGTECH
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          TAGTECH
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        vivo
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          vivo
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        DOCOMO
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          DOCOMO
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        CIBER
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          CIBER
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        dtab
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          dtab
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Lenovo
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Lenovo
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Google
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Google
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        surface
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          surface
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        TAG-TECH
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          TAG-TECH
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Fossil
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Fossil
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Hamic
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Hamic
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        google
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          google
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        ABCTECH
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          ABCTECH
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Myphone
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Myphone
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Samsung
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Samsung
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        VIKUSHA
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          VIKUSHA
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Nokia
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Nokia
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        KDDI
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          KDDI
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        ZONKO
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          ZONKO
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Xiaomi
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Xiaomi
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Zebra
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Zebra
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Razer
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Razer
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        ZTE
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          ZTE
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Evolveo
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Evolveo
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        Surface
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          Surface
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        bq
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          bq
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        HONOR
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          HONOR
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        samsung
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          samsung
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
+                      <div class="endline"></div>
                     </div>
-                    <div class="endline"></div>
-                  </div>
-                  <div class="select">
-                    <div class="main-select">
-                      <div class="name-title">
-                        SG
+                    <div class="select">
+                      <div class="main-select">
+                        <div class="name-title">
+                          SG
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="rotate-0 transition-all duration-300"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.4107 6.91082C4.73614 6.58539 5.26378 6.58539 5.58922 6.91082L9.99996 11.3216L14.4107 6.91082C14.7361 6.58539 15.2638 6.58539 15.5892 6.91082C15.9146 7.23626 15.9146 7.7639 15.5892 8.08934L10.5892 13.0893C10.2638 13.4147 9.73613 13.4147 9.41071 13.0893L4.4107 8.08934C4.08527 7.7639 4.08527 7.23626 4.4107 6.91082Z" fill="#5C5C5C"></path></svg>
                     </div>
                   </div>
                 </div>
