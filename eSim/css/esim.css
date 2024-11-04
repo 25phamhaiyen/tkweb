@@ -163,6 +163,9 @@ h3{
 .shopping:hover{
     color: rgb(255, 208, 0)
 }
+.giohang-button{
+    cursor: pointer;
+}
 .giohang{
     font-size: 18px;
     margin-left: 10px;
@@ -193,17 +196,26 @@ h1{
 }
 
 /* display-div */
+.dp{
+    width: 77%;
+    height: 103vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: none; 
+    position: absolute;
+    top: 108%;
+    z-index: 1;
+}
 .display-div{
-    display: none;
     background-color: white;
     padding: 20px 50px 20px 20px;
     width: 46%;
-    height: 93vh;
+    height: 95vh;
     margin-left: 28px;
     border-radius: 10px;
     position: absolute;
-    top: 112%;
+    top: 3%;
     left: 25%;
+    z-index: 3;
 }
 .main-display-div{
     width: 100%;
