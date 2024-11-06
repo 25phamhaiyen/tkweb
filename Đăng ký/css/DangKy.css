@@ -141,7 +141,7 @@ body{
     pointer-events: none;
 }
 .button.active {
-    background-color: yellow; /* Màu khi hợp lệ */
+    background: linear-gradient(26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%); /* Màu khi hợp lệ */
     color: black;
     pointer-events: auto;
     cursor: pointer;
@@ -190,7 +190,7 @@ body{
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: rgb(226, 199, 22);
+    background: linear-gradient(26.73deg, #F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
 }
 .img-box{
     margin-left: 60%;

@@ -164,7 +164,7 @@ function validatePhoneNumber() {
     }
     // Định nghĩa các mẫu số điện thoại cho từng mã vùng (bao gồm số 0 đầu tiên)
     const phonePatterns = {
-        "+84": /^0\d{9}$/,    // Việt Nam - 10 chữ số
+        "+84": /^(0|(\+84))[0-9]{9}$/,    // Việt Nam - 10 chữ số
         "+44": /^0\d{10}$/,   // Anh - 11 chữ số
         "+1": /^0\d{10}$/,    // Mỹ - 11 chữ số
         "+49": /^0\d{10,11}$/, // Đức - 11 hoặc 12 chữ số
@@ -230,7 +230,7 @@ function validateEmail() {
         existingError.remove();
     }
 
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const emailPattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     errorMessage.className = 'mail-error-message';
 
     // kiểm tra thanh input có rỗng hay không
