@@ -1,5 +1,113 @@
+:root {
+    --primary-color: #fd1900;
+    --secondary-color: #FDC70B;
+    --third-color: #ffffff;
+    --fourth-color: #797979;
+    --fifth-color: #000000;
+    --gradient-start: var(--primary-color);
+    --gradient-end: var(--secondary-color);
+}
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 12px;
+    }
+    header .nav-bar{
+        padding: 0 10px;
+        justify-content: flex-end;
+    }
+    header .nav-bar .logo img{
+        width: 84px;
+        height: auto;
+    }
+    .top-right .menu ul{
+        display: none;
+    }
+    .hamburger {
+        display:block !important;
+    }
+    .white-bookTicket{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    header .nav-bar {
+        padding: 0px 40px;
+    }
+}
+
+body {
+    margin: 0;
+    font-weight: 500;
+    /* position: relative; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+}
+body {
+    font-family: 'KoHo', sans-serif;
+}
+main {
+    width: 100%;
+}
+a {
+    text-decoration: none
+}
+
+.chat-amy {
+    position: fixed;
+    z-index: 1;
+    bottom: 60px;
+    right: 20px;
+}
+
+.chat-amy .button .button-content {
+    visibility: hidden;
+    background-color: #ffffff;
+    text-align: center;
+    bottom: 20px;
+    width: max-content;
+    position: absolute;
+    right: 95px;
+    padding: 5px 10px;
+    border-radius: 15px 0px;
+    color: black;
+
+}
+
+.chat-amy .button .button-content::after {
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(255, 255, 255);
+}
+
+.chat-amy .button:hover .button-content {
+    visibility: visible;
+}
+
+.bg-img{
+    background-image: url('../image/background/bg-donate.40a2c077.webp');
+    width: 100%;
+    background-size: cover;
+    
+}
+.grid{
+    margin: 0 40px;  
+    max-width: 1200px;
+    width: 100%;
+    justify-self: center;
+}
+
 html{
-    background-color: rgb(236, 236, 236);
+    background-color: #DFF0FA;
     line-height: 1.43;
 }
 .flex-content-DoAn{
@@ -24,7 +132,7 @@ html{
     margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
-    color: var(--fifth-color);
+    color: #000;
 }
 .body{
     margin: 1%;
