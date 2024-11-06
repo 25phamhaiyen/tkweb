@@ -137,7 +137,14 @@ body{
     background-color: rgb(242, 242, 242);
     font-weight: bold;
     font-style: italic;
-    color: rgb(222, 222, 222)
+    color: rgb(222, 222, 222);
+    pointer-events: none;
+}
+.button.active {
+    background-color: yellow; /* Màu khi hợp lệ */
+    color: black;
+    pointer-events: auto;
+    cursor: pointer;
 }
 .ho::placeholder, 
 .ten::placeholder, 
@@ -148,8 +155,9 @@ body{
     color: black;
 }
 .question{
-    margin-top: 100px;
-    width: 95%;
+    position: absolute;
+    top: 75%;
+    width: 55%;
 }
 .first-ques{
     margin-top: 20px;

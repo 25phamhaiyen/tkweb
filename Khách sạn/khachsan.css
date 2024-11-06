@@ -138,22 +138,33 @@ body {
     color: white;
 }
 .user-bar{
-    display: block;
+    display: flex;
     top: 300px;
     margin-left: 220px;
     position: absolute;
-    z-index: 1;
-    height: auto;
+    gap: 5px;
 }
-.search-box{
-    width: 360px;
-    z-index: 10;
-    display: block;
+.search-box, .date-bar{
+    width: 340px;
     align-items: center;
     background-color: #fff;
     border-radius: 5px;
-    padding: 22px 0px 22px 10px;
-    width: 360px;
+    padding: 20px 0px 20px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.date-bar{
+    justify-content: space-between;
+    display: flex;
+    padding: 0 40px;
+}
+.select-bar{
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 22px 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .search-box input[type="text"] {
@@ -164,6 +175,140 @@ body {
     color: #333;
     margin-left: 15px;
     margin-right: 15px;
+}
+/* date */
+.calendar {
+    display: none; /* Ẩn lịch ban đầu */
+    border-radius: 8px;
+    top: 70px;
+    right: 250px;
+    padding: 10px;
+    position: absolute; 
+    background:#fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .15);
+}
+
+.header-calender {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.days {
+    display: grid;   
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+.day, .empty {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.day:hover {
+    background-color: #A6C6FD;
+}
+.disabled {
+    color: #e0e0e0;
+    cursor: not-allowed;
+}
+.empty {
+    background-color: #f9f9f9;
+}
+.select-start-date, .select-end-date {
+    display: inline-block;
+    cursor: pointer;
+    position: relative; 
+}
+
+/* select room */
+/* select room */
+.dropdown-container {
+    position: relative;
+    width: 250px;
+    height: 60px;
+}
+
+.dropdown-btn {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    height: 100%;
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 16px;
+    /* box-sizing: border-box; */
+}
+
+.dropdown-arrow {
+    font-size: 14px;
+    color: #666;
+    /* pointer-events: none;  */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+.dropdown-option {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* fine button */
+.find-button{
+    display: flex;
+    width: 130px;
+    height: 60px;
+    background-color: #5392f9;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .15);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.timkiem:hover{
+    background-color: #75A8F9;
+}
+.timkiem{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #5392f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .15);
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
 }
 .center-content{
     display: block;
