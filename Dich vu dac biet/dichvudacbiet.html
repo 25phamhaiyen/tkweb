@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vietjet Air</title>
+  <title>Dịch vụ đặc biệt</title>
 
   <link rel="icon" href="./img/favicon.ico" />
 
@@ -28,9 +28,7 @@
   <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/dichvudacbiet.css">
   <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Footer.css">
   <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Slider_Utilities.css">
-
-  <!-- file javascript-->
-  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Calendar.css">
   
 </head>
 <body>
@@ -179,13 +177,13 @@
             <div class="thanhTittle">
               <div class="content">
                 <div class="text">
-                  <img src="./img/muahanhly.svg" alt="">
+                  <img src="../image/icon/flightHorizontal.edd0202a.svg" alt="">
                   <a href="" class="text">
                     Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
                   </a>
                 </div>
                 <div class="text">
-                  <img src="./img/guihangnhanh.svg" alt="">
+                  <img src="../image/icon/SendFast.0966cc94.svg" alt="">
                   <a href="" class="text">
                     Gửi hàng nhanh
                   </a>
@@ -197,20 +195,20 @@
                   </a>
                 </div>
                 <div class="text">
-                  <img src="./img/checkin.svg" alt="">
+                  <img src="../image/icon/CheckIn.94f94d4b.svg" alt="">
                   <a href="" class="text">
                     Check in
                   </a>
                 </div>
               </div>
-              <img class="thanhmaudolon" src="./img/mauthanhdolon.png" alt="mauDo">
-              <img class="thanhmauvang" src="./img/mauthanhvang.png" alt="mauVang">
+              <img class="thanhmaudolon" src="../image/icon/mauthanhdolon.png" alt="mauDo">
+              <img class="thanhmauvang" src="../image/icon/mauthanhvang.png" alt="mauVang">
             </div>
-    
+      
             <div class="centerbox">
               <div class="DatVe2">
                 <div class="book-ticket__content">
-    
+      
                   <div class="ChieuBay">
                     <div class="Chieu">
                       <input type="radio" name="object">
@@ -222,41 +220,81 @@
                     </div>
                     <span class="VND">VND <i class="fa fa-caret-down"></i></span>
                   </div>
-    
+      
                   <div class="book-ticket__middle">
-    
+      
                     <div class="middle__point-start">
-                      <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
                       <div class="point-start__left">
                         <i class="fas fa-plane"></i>
-                        <span>Điểm khởi hành</span>
+                        <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                        <ul class="dropdown-options" id="fromOptions">
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                            <span>SGN</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                        </ul>
                       </div>
-                      <div class="point-start__right">
-                        <span>Ngày đi</span>
+                      <div>
+                        <span>
+                          <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                          <div class="calendar di">
+                            <div class="header-calender">
+                              <button id="previous-month">«</button>
+                              <div>
+                                <span id="content-month"></span> <span id="content-year"></span>
+                              </div>
+                              <button id="next-month">»</button>
+                            </div>
+                            <div class="days"></div>
+                          </div>
+                        </span>
                       </div>
                     </div>
-    
+      
                     <div class="middle__point-end">
-                      <!-- PUSH ĐIỂM KHỞI HÀNH HERE -->
-                      <div class="point-start__left">
-                        <i class="fas fa-plane"></i>
-                        <span>Điểm đến</span>
-                      </div>
                       <div class="point-start__right">
-                        <span>Ngày đến</span>
+                        <i class="fas fa-plane"></i>
+                        <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                        <ul class="dropdown-options" id="toOptions">
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                            <span>SGN</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <span>
+                          <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                          <div class="calendar den">
+                            <div class="header-calender">
+                              <button id="previous-month">«</button>
+                              <div>
+                                <span id="content-month"></span> <span id="content-year"></span>
+                              </div>
+                              <button id="next-month">»</button>
+                            </div>
+                            <div class="days"></div>
+                          </div>
+                        </span>
                       </div>
                     </div>
-    
                     <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="thanhFooter">
-              <img classs="thanhmaudonho" src="./img/mauthanhdonho.png" alt="mauDo">
+              <img classs="thanhmaudonho" src="../image/icon/mauthanhdonho.png" alt="mauDo">
             </div>
           </div>
         </div>
+
         <div class="main-box">
             <div class="main-box-content">
                 <div class="heading">
@@ -589,239 +627,237 @@
                   <div class="twit-img">
                     <img src="https://www.vietjetair.com/static/media/social-twitter.2013caeb.svg" alt="">
                   </div>
-                </div>
-                
+                </div>  
             </div>
-        </div>
-        <div class="bg-img">
-          <!-- FlyGreen start -->
-          <div class="container" style="padding: 100px 0 50px ">
-            <div class="container">
-              <div class="bg-cloud">
-                <img src="./img/bg-donate.40a2c077.webp" alt="bg cloud">
-              </div>
-              <div class="container-img">
-                <img src="./img/bay-vao-tuong-lai.png"
-                  alt="cungvietjetbayvaotuonglai">
-              </div>
-              <div class="container-item">
-                <table>
-                  <td>
-                    <p class="title">120+</p>
-                    <p class="text">Đường bay nội địa và quốc tế</p>
-                  </td>
-                  <td style="width: 15%;">
-                    <p class="title">400+</p>
-                    <p class="text">Chuyến bay mỗi ngày</p>
-                  </td>
-                  <td>
-                    <p class="title">6000+</p>
-                    <p class="text">Nhân viên thân thiện, tận tình</p>
-                  </td>
-                  <td>
-                    <p class="title">100+</p>
-                    <p class="text">Tàu bay mới hiện đại, bảo vệ môi trường</p>
-                  </td>
-                  <td style="width: 24%;">
-                    <p class="title">7 <i class="fa-solid fa-star" style="color: #ff0000;"></i></p>
-                    <p class="text" >Xếp hạng hàng không an toàn cao nhất thế giới mức 7 sao</p>
-                  </td>
-                </table>
-              </div>
-            </div>
-            <div class=" container-img">
-                      <img src="./img/fly-green.png" alt="flygreen">
-              </div>
-          </div>
-          <!-- FlyGreen end -->
-      
-          <!-- Giải thưởng start -->
-          <div class=" container">
-            <div class="bg-cloud">
-              <img src="./img/cloudBG-desktop.4a58264d.webp" alt="bg cloud">
-            </div>
-            <div class="bg-blur">
-              <div class="container-flex grid" style="max-width: 1200px; justify-self: center;">
-                <div class="prize-item">
-                  <div class="img">
-                    <img src="./img/cup1.png" alt="Giai 6">
-                  </div>
-                  <div class="text">
-                    <p>Hãng hàng không chi phí thấp dẫn đầu Châu Á Thái Bình Dương</p>
-                  </div>
-                </div>
-                <div class="prize-item">
-                  <div class="img">
-                    <img src="./img/cup2.png" alt="Giai 5">
-                  </div>
-                  <div class="text">
-                    <p>Doanh nghiệp tốt nhất Ngành Hàng không tại Đông Nam Á</p>
-                  </div>
-                </div>
-                <div class="prize-item">
-                  <div class="img">
-                    <img src="./img/cup3.png" alt="Giai 2">
-                  </div>
-                  <div class="text">
-                    <p>Top các công ty niêm yết tốt nhất theo xếp hạng Forbes</p>
-                  </div>
-                </div>
-                <div class="prize-item">
-                  <div class="img">
-                    <img src="./img/cup4.png" alt="Giai 3">
-                  </div>
-                  <div class="text">
-                    <p>Thương hiệu tốt nhất Châu Á</p>
-                  </div>
-                </div>
-                <div class="prize-item">
-                  <div class="img">
-                    <img src="./img/cup5.png" alt="Giai 1">
-                  </div>
-                  <div class="text">
-                    <p>Môi trường làm việc tốt nhất Châu Á</p>
-                  </div>
-                </div>
-                <div class="prize-item">
-                  <div class="img">
-                    <img src="./img/cup6.png" alt="Giai 4">
-                  </div>
-                  <div class="text">
-                    <p>Doanh nghiệp phát triển bền vững</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Giải thưởng end -->
-      
-          <!-- Tin tức & ưu đãi start -->
-          <div class="container bg-blur2" style="margin-top: 10px;">
-            <div class="container-flex grid" style="margin-left: 70px; margin-top: -40px;">
-              <div class="text-item">
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Để có chuyến bay tốt đẹp</h3>
-                <a href="">Điều lệ vận chuyển</a><br>
-                <a href="">Điều kiện vé</a><br>
-                <a href="">Vietjet e-Voucher</a><br>
-                <a href="">Vietjet e-Forms</a><br>
-                <a href="">Thông tin bồi thường</a><br>
-                <a href="">Phí và lệ phí</a><br>
-                <a href="">Giấy tờ tùy thân</a><br>
-                <a href="">Sân bay và nhà ga quốc tế</a><br>
-                <a href="">Quy định hành lý</a><br>
-                <a href="">Tìm kiếm hành lý</a><br>
-                <a href="">Hành lý tồn kho Quốc tế</a><br>
-                <a href="">Thông tin nối chuyến</a><br>
-                <a href="">Kênh thanh toán</a><br>
-                <a href="">Hóa đơn VAT</a><br>
-                <a href="">Hướng dẫn làm thủ tục chuyến bay</a><br>
-                <a href="">Khuyến cáo di chuyển</a><br>
-              </div>
-              <div class="text-item" style="max-width: 200px;">
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Mua hành lý, suất ăn, chọn chỗ
-                  ngồi và hơn thế nữa...</h3>
-                <a href="">Chọn chỗ ngồi ưu tiên</a><br>
-                <a href="">Mua trước hành lý</a><br>
-                <a href="">Đặt trước suất ăn - Jet cafe</a><br>
-                <a href="">Hàng miễn thuế</a><br>
-                <a href="">Quà lưu niệm</a><br>
-                <a href="">Giải trí</a><br>
-                <a href="">Dịch vụ vận chuyển thú cưng</a><br>
-                <a href="">Dịch vụ trẻ em đi một mình</a><br>
-                <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
-              </div>
-              <div class="text-item">
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Dịch vụ cao cấp</h3>
-                <a href="">Hạng vé thương gia - Business</a><br>
-                <a href="">Hạng vé Skyboss</a><br>
-                <a href="">Phòng chờ sang trọng</a><br>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Về Vietjet</h3>
-                <a href="">Giới thiệu công ty</a><br>
-                <a href="">Nhà đàu tư</a><br>
-                <a href="">Cơ hội nghề nghiệp</a><br>
-                <a href="">Tin tức</a><br>
-                <a href="">Khuyến mại</a><br>
-                <a href="">Cẩm nang du lịch</a><br>
-                <a href="">Tổng đài phục vụ khách hàng</a><br>
-                <a href="">Dịch vụ trẻ em đi một mình</a><br>
-                <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
-              </div>
-              <div class="text-item">
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Mua vé ở đâu ?</h3>
-                <a href="">Tổng đài bán vé</a><br>
-                <a href="">Phòng bán vé</a><br>
-                <a href="">Pại lý bán vé</a><br>
-                <a href="">GDS/ Chuyến Bay Liên Danh</a><br>
-                <a href="">Đăng ký khách hàng Doanh nghiệp</a><br>
-                <a href="">Đăng ký làm đại lý online</a><br>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Thẻ tín dụng HDBank Vietjet</h3>
-              </div>
-              <div class="text-item">
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Đăng nhập đại lý</h3>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Câu hỏi thường gặp</h3>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Nhà đàu tư</h3>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Cơ hội nghề nghiệp</h3>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Dịch vụ hàng hóa</h3>
-                <h3><img src="./img/mini-plane.svg" alt="flight icon">Chính sách về quyền riêng tư</h3>
-              </div>
-            </div>
-          </div>
-          <!-- Tin tức & ưu đãi end -->
-      
-          <!-- Thong tin start -->
-          <div class=" grid">
-            <div class="container-flex" style="padding-left: 20px;">
-              <div class="contact">
-                <h4>Kết nối với Vietjet</h4>
-                <div class="flex-content">
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/fb.png" alt="facebook"></a>
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/ig.png" alt="instagram"></a>
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/twiter.png" alt="twitter"></a>
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/line.png" alt="line"></a>
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/wechat.png" alt="wechat"></a>
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/zalo.png" alt="zalo"></a>
-                  <a class=" img-contact" href="" target="_blank"><img src="./img/youtube.png" alt="youtube"></a>
-                </div>
-      
-                <div class="flex-content">
-                  <h4 style="padding-right: 10px;">Cập nhật thông tin chuyến bay <br> Flightradar</h4>
-                  <img src="./img/rada.svg" alt="rada">
-                </div>
-              </div>
-              <div class="instructions">
-                <div >
-                  <a class="flex-content hover" href="" target="_blank">
-                    <div class="img-instruction"><img src="./img/huongdan.svg" alt="huong dan"></div>
-                    <h4>Hướng dẫn đặt chuyến bay</h4>
-                  </a>
-                </div>
-                <div>
-                  <h4>Tải ứng dụng di động Vietjet Air</h4>
-                  <div class="flex-content">
-                    <a class="img-download-app" href="" target="_blank"><img src="./img/apstore.png" alt="appstore"></a>
-                    <a class="img-download-app" href="" target="_blank"><img src="./img/ggplay.png" alt="google play"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="instructions">
-                <div >
-                  <a class="flex-content hover" href="" target="_blank">
-                    <div class="img-instruction"><img src="./img/thanhtoan.svg" alt="pay"></div>
-                    <h4>Hướng dẫn thanh toán</h4>
-                  </a>
-                </div>
-      
-              </div>
-              <div class="address">
-                <h4>CÔNG TY CỔ PHẦN HÀNG KHÔNG VIETJET</h4>
-                <p>302/3 Phố Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, TP. Hà Nội, Việt Nam</p>
-                <p>Chịu trách nhiệm nội dung: Ông Nguyễn Thanh Sơn</p>
-                <a href="" target="_blank"><div class="img-dathongbao"><img src="./img/dathongbao.webp" alt="da thong bao"></div></a>
-              </div>
-            </div>
-          </div>
-          <!-- Thong tin end -->
         </div>
       </div>
-      
+      <div class="bg-img">
+        <div class="first-cloud-img">
+          <img src="../image/background/bg-donate.40a2c077.webp" alt="">
+        </div>
+        <!-- FlyGreen start -->
+        <div class="container-footer" style="padding: 100px 0 50px ">
+          <div class="container">
+            <div class="container-img">
+              <img src="../image/logo_giaithuong/cungvietjetbayvaotuonglai-1592297893727.png"
+                alt="cungvietjetbayvaotuonglai">
+            </div>
+            <div class="container-item">
+              <table>
+                <td>
+                  <p class="title">120+</p>
+                  <p class="text">Đường bay nội địa và quốc tế</p>
+                </td>
+                <td style="width: 15%;">
+                  <p class="title">400+</p>
+                  <p class="text">Chuyến bay mỗi ngày</p>
+                </td>
+                <td>
+                  <p class="title">6000+</p>
+                  <p class="text">Nhân viên thân thiện, tận tình</p>
+                </td>
+                <td>
+                  <p class="title">100+</p>
+                  <p class="text">Tàu bay mới hiện đại, bảo vệ môi trường</p>
+                </td>
+                <td style="width: 24%;">
+                  <p class="title">7 <i class="fa-solid fa-star" style="color: #ff0000;"></i></p>
+                  <p class="text" >Xếp hạng hàng không an toàn cao nhất thế giới mức 7 sao</p>
+                </td>
+              </table>
+            </div>
+          </div>
+          <div class=" container-img">
+            <img src="../image/logo_giaithuong/flygreenvi-1602759084211.png" alt="flygreen">
+          </div>
+        </div>
+        <!-- FlyGreen end -->
+    
+        <!-- Giải thưởng start -->
+        <div class="container-footer2">
+          <div class="bg-cloud">
+            <img src="../image/background/cloudBG-desktop.4a58264d.webp" alt="bg cloud">
+          </div>
+          <div class="bg-blur">
+            <div class="container-flex grid" style="max-width: 1200px; justify-self: center;">
+              <div class="prize-item">
+                <div class="img">
+                  <img src="../image/logo_giaithuong/giai6-1592297512599.png" alt="Giai 6">
+                </div>
+                <div class="text">
+                  <p>Hãng hàng không chi phí thấp dẫn đầu Châu Á Thái Bình Dương</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="../image/logo_giaithuong/giai5-1592297595995.png" alt="Giai 5">
+                </div>
+                <div class="text">
+                  <p>Doanh nghiệp tốt nhất Ngành Hàng không tại Đông Nam Á</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="../image/logo_giaithuong/giai2-1592297520999.png" alt="Giai 2">
+                </div>
+                <div class="text">
+                  <p>Top các công ty niêm yết tốt nhất theo xếp hạng Forbes</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="../image/logo_giaithuong/giai3-1592297547966.png" alt="Giai 3">
+                </div>
+                <div class="text">
+                  <p>Thương hiệu tốt nhất Châu Á</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="../image/logo_giaithuong/giai1-1592297529179.png" alt="Giai 1">
+                </div>
+                <div class="text">
+                  <p>Môi trường làm việc tốt nhất Châu Á</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="../image/logo_giaithuong/giai4-1592297571379.png" alt="Giai 4">
+                </div>
+                <div class="text">
+                  <p>Doanh nghiệp phát triển bền vững</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Giải thưởng end -->
+    
+        <!-- Tin tức & ưu đãi start -->
+        <div class="container bg-blur2" style="margin-top: 10px;">
+          <div class="container-flex grid" style="margin-left: 70px; margin-top: -40px;">
+            <div class="text-item">
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Để có chuyến bay tốt đẹp</h3>
+              <a href="">Điều lệ vận chuyển</a><br>
+              <a href="">Điều kiện vé</a><br>
+              <a href="">Vietjet e-Voucher</a><br>
+              <a href="">Vietjet e-Forms</a><br>
+              <a href="">Thông tin bồi thường</a><br>
+              <a href="">Phí và lệ phí</a><br>
+              <a href="">Giấy tờ tùy thân</a><br>
+              <a href="">Sân bay và nhà ga quốc tế</a><br>
+              <a href="">Quy định hành lý</a><br>
+              <a href="">Tìm kiếm hành lý</a><br>
+              <a href="">Hành lý tồn kho Quốc tế</a><br>
+              <a href="">Thông tin nối chuyến</a><br>
+              <a href="">Kênh thanh toán</a><br>
+              <a href="">Hóa đơn VAT</a><br>
+              <a href="">Hướng dẫn làm thủ tục chuyến bay</a><br>
+              <a href="">Khuyến cáo di chuyển</a><br>
+            </div>
+            <div class="text-item" style="max-width: 200px;">
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Mua hành lý, suất ăn, chọn chỗ
+                ngồi và hơn thế nữa...</h3>
+              <a href="">Chọn chỗ ngồi ưu tiên</a><br>
+              <a href="">Mua trước hành lý</a><br>
+              <a href="">Đặt trước suất ăn - Jet cafe</a><br>
+              <a href="">Hàng miễn thuế</a><br>
+              <a href="">Quà lưu niệm</a><br>
+              <a href="">Giải trí</a><br>
+              <a href="">Dịch vụ vận chuyển thú cưng</a><br>
+              <a href="">Dịch vụ trẻ em đi một mình</a><br>
+              <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
+            </div>
+            <div class="text-item">
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Dịch vụ cao cấp</h3>
+              <a href="">Hạng vé thương gia - Business</a><br>
+              <a href="">Hạng vé Skyboss</a><br>
+              <a href="">Phòng chờ sang trọng</a><br>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Về Vietjet</h3>
+              <a href="">Giới thiệu công ty</a><br>
+              <a href="">Nhà đàu tư</a><br>
+              <a href="">Cơ hội nghề nghiệp</a><br>
+              <a href="">Tin tức</a><br>
+              <a href="">Khuyến mại</a><br>
+              <a href="">Cẩm nang du lịch</a><br>
+              <a href="">Tổng đài phục vụ khách hàng</a><br>
+              <a href="">Dịch vụ trẻ em đi một mình</a><br>
+              <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
+            </div>
+            <div class="text-item">
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Mua vé ở đâu ?</h3>
+              <a href="">Tổng đài bán vé</a><br>
+              <a href="">Phòng bán vé</a><br>
+              <a href="">Pại lý bán vé</a><br>
+              <a href="">GDS/ Chuyến Bay Liên Danh</a><br>
+              <a href="">Đăng ký khách hàng Doanh nghiệp</a><br>
+              <a href="">Đăng ký làm đại lý online</a><br>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Thẻ tín dụng HDBank Vietjet</h3>
+            </div>
+            <div class="text-item">
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Đăng nhập đại lý</h3>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Câu hỏi thường gặp</h3>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Nhà đàu tư</h3>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Cơ hội nghề nghiệp</h3>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Dịch vụ hàng hóa</h3>
+              <h3><img src="../image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Chính sách về quyền riêng tư</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Tin tức & ưu đãi end -->
+    
+        <!-- Thong tin start -->
+        <div class=" grid">
+          <div class="container-flex" style="padding-left: 20px;">
+            <div class="contact">
+              <h4>Kết nối với Vietjet</h4>
+              <div class="flex-content">
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/fb.png" alt="facebook"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/instagram.png" alt="instagram"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/twitter.png" alt="twitter"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/line.png" alt="line"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/wechat.png" alt="wechat"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/zalo.png" alt="zalo"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="../image/icon/youtube.png" alt="youtube"></a>
+              </div>
+    
+              <div class="flex-content">
+                <h4 style="padding-right: 10px;">Cập nhật thông tin chuyến bay <br> Flightradar</h4>
+                <img src="../image/icon/flight-rada.38e79fd2.svg" alt="rada">
+              </div>
+            </div>
+            <div class="instructions">
+              <div >
+                <a class="flex-content hover" href="" target="_blank">
+                  <div class="img-instruction"><img src="../image/icon/huongdan-1634321105674.svg" alt="huong dan"></div>
+                  <h4>Hướng dẫn đặt chuyến bay</h4>
+                </a>
+              </div>
+              <div>
+                <h4>Tải ứng dụng di động Vietjet Air</h4>
+                <div class="flex-content">
+                  <a class="img-download-app" href="" target="_blank"><img src="../image/icon/applestore-1607148441670.png" alt="appstore"></a>
+                  <a class="img-download-app" href="" target="_blank"><img src="../image/icon/googleplay-1607148441674.png" alt="google play"></a>
+                </div>
+              </div>
+            </div>
+            <div class="instructions">
+              <div >
+                <a class="flex-content hover" href="" target="_blank">
+                  <div class="img-instruction"><img src="../image/icon/pay-1634321105685.svg" alt="pay"></div>
+                  <h4>Hướng dẫn thanh toán</h4>
+                </a>
+              </div>
+    
+            </div>
+            <div class="address">
+              <h4>CÔNG TY CỔ PHẦN HÀNG KHÔNG VIETJET</h4>
+              <p>302/3 Phố Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, TP. Hà Nội, Việt Nam</p>
+              <p>Chịu trách nhiệm nội dung: Ông Nguyễn Thanh Sơn</p>
+              <a href="" target="_blank"><div class="img-dathongbao"><img src="../image/icon/dathongbao.407800de.webp" alt="da thong bao"></div></a>
+            </div>
+          </div>
+        </div>
+        <!-- Thong tin end -->
+      </div>
 </body>

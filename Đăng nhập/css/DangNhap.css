@@ -1,0 +1,188 @@
+body{
+    background-image: url('../img/dammayhong.jpg');
+    background-size: cover;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    gap: 50px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.center-box{
+    width: 79%;
+    height: 100vh;
+    margin-top: 150px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    padding: 30px;
+}
+.signin-box{
+    width: 100%;
+    margin-right: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+    padding: 85px 50px 110px 15px;
+}
+.id, .number {
+    display: inline-block;
+}
+.id{
+    margin-left: 118px;
+}
+.head{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.mavung {
+    padding: 6px 6px 8px 6px;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
+}
+.number{
+    margin-left: 5px;
+    width: 300px;
+}
+.number-box{
+    margin: 0;
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 5px;
+    box-shadow: 3px 3px 10px rgba(94, 93, 93, 0.3);
+}
+/* ẩn nút tăng giảm */
+.number-box::-webkit-inner-spin-button, 
+.number-box::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-box::placeholder{
+    color: black;
+    font-size: 14px;
+}
+.signin{
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.button-signin{
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(222, 222, 222)
+}
+.note{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.copyright {
+    margin-left: 205px;
+}
+.taitro{
+    margin-left: 215px;
+    margin-top: -10px;
+}
+.galaxy-pay, .vietjet, .skyloy {
+    display: inline-block;
+}
+.first-img, .third-img{
+    display: flex;
+    width: 55px;
+    height: 55px;
+    margin-left: 5px;
+}
+.second-img{
+    display: flex;
+    width: 90px;
+    height: 55px;
+    margin-left: 5px;
+}
+.question{
+    margin-left: 215px;
+    margin-top: -10px;
+}
+.icon{
+    display: inline-block;
+}
+.ques-content{
+    display: inline-block;
+    color:rgb(86, 86, 241);
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+}
+.img-box{
+    margin-left: 60%;
+    position: absolute;
+    height: 100vh;
+}
+.main-img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* khung hiển thị */
+.sj-con{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+} 
+.main-content{
+    background-color: #fff;
+    padding: 20px 30px 20px 30px;
+    border-radius: 8px;
+    width: 68%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.close-button{
+    position: absolute;
+    top: 37%;
+    right: 17%;
+    font-size: 30px;
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+}
+.para{
+    text-align: left;
+    margin-top: 15px;
+    font-size: 16px;
+}
+/* thông báo lỗi */
+.error-message {
+    position: absolute;
+    color: red; 
+    margin-top: 5px; 
+    font-size: 12px;
+}
+  

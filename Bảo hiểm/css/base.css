@@ -9,7 +9,7 @@
 }
 
 html{
-        background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
+        background: url('../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp') no-repeat center fixed;
         background-size: cover;
 }
 /* media : truy van phuong tien 
@@ -77,6 +77,7 @@ a {
     position: fixed;
     bottom: 60px;
     right: 20px;
+    z-index: 3;
 }
 
 .chat-amy .button .button-content {

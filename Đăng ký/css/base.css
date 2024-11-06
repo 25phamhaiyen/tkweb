@@ -9,7 +9,7 @@
 }
 
 html{
-        background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
+        background-image: url('../img/dammayhong.jpg') no-repeat center fixed;
         background-size: cover;
 }
 /* media : truy van phuong tien 
@@ -33,13 +33,16 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         height: auto;
     }
     .top-right .menu ul{
-    display: none;
+        display: none;
+    }
+    .hamburger {
+        display:block !important;
+    }
+    .white-bookTicket{
+        display: none;
     }
 }
 @media screen and (min-width: 992px) {
-    .top-right .sign-in .bar button{
-        display: none;
-    }
     header .nav-bar {
         padding: 0px 40px;
     }
@@ -72,11 +75,12 @@ a {
 
 .chat-amy {
     position: fixed;
+    z-index: 1;
     bottom: 60px;
     right: 20px;
 }
 
-.chat-amy .button .button-content {
+.chat-amy .button2 .button-content {
     visibility: hidden;
     background-color: #ffffff;
     text-align: center;
@@ -84,14 +88,13 @@ a {
     width: max-content;
     position: absolute;
     right: 95px;
-    z-index: 1;
     padding: 5px 10px;
     border-radius: 15px 0px;
     color: black;
 
 }
 
-.chat-amy .button .button-content::after {
+.chat-amy .button2 .button-content::after {
     top: 50%;
     left: 100%;
     margin-top: -5px;
@@ -100,17 +103,19 @@ a {
     border-color: transparent rgb(255, 255, 255);
 }
 
-.chat-amy .button:hover .button-content {
+.chat-amy .button2:hover .button-content {
     visibility: visible;
 }
 
 .bg-img{
     background-image: url('../image/background/bg-donate.40a2c077.webp');
-    width:100%;
+    width: 100%;
     background-size: cover;
+    
 }
 .grid{
     margin: 0 40px;  
     max-width: 1200px;
+    width: 100%;
     justify-self: center;
 }
