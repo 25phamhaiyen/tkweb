@@ -60,7 +60,22 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
-
+// tạo các biến để check mỗi ô nhập có hợp lệ hay không
+let isHoValid = false;
+let isTenValid = false;
+let isPhoneNumberValid = false;
+let isEmailValid = false;
+let isBirthday = false;
+// check các ô đã nhập đúng dữ liệu
+function checkFormValidity() {
+    const registerButton = document.querySelector('.button'); 
+    if( isHoValid && isTenValid && isPhoneNumberValid && isEmailValid && isBirthday ) {
+        registerButton.classList.add('active');
+    } 
+    else {
+        registerButton.classList.remove('active');
+    }
+}
 
 // hàm kiểm tra họ tên
 document.addEventListener('DOMContentLoaded', function() {
@@ -87,17 +102,21 @@ document.addEventListener('DOMContentLoaded', function() {
             hoErrorMessage.textContent = 'Thông tin bắt buộc';
             hoErrorMessage.style.marginLeft = '70px';  // tạo margin
             document.querySelector('.note').style.marginTop = '25px';
+            isHoValid = false;
         } 
         // Kiểm tra xem họ có hợp lệ không
         else if (!hoPattern.test(hoValue)) {
             hoErrorMessage.style.marginLeft = '0px'; // xóa margin
             hoErrorMessage.textContent = 'Chỉ nhập tiếng Việt có dấu, và sử dụng ký tự [’].';
             document.querySelector('.note').style.marginTop = '25px';
+            isHoValid = false;
         }
         else {
             hoErrorMessage.style.marginLeft = '0px';
             document.querySelector('.note').style.marginTop = '2px';
+            isHoValid = true;
         }
+        checkFormValidity();
     }
     function validateTen() {
         const tenValue = tenInput.value.trim();
@@ -112,17 +131,21 @@ document.addEventListener('DOMContentLoaded', function() {
             tenErrorMessage.textContent = 'Thông tin bắt buộc';
             tenErrorMessage.style.marginLeft = '70px';
             document.querySelector('.note').style.marginTop = '25px';
+            isTenValid = false;
         } 
         // Kiểm tra xem tên có hợp lệ không
         else if (!tenPattern.test(tenValue)) {
             tenErrorMessage.style.marginLeft = '0px';
             tenErrorMessage.textContent = 'Chỉ nhập tiếng Việt có dấu, và sử dụng ký tự [’].';
             document.querySelector('.note').style.marginTop = '25px';
+            isTenValid = false;
         }
         else {
             tenErrorMessage.style.marginLeft = '0px';
             document.querySelector('.note').style.marginTop = '2px';
+            isTenValid = true;
         }
+        checkFormValidity();
     }
 });
 
@@ -160,22 +183,40 @@ function validatePhoneNumber() {
         errorMessage.textContent = 'Thông tin bắt buộc';
         document.querySelector('.number').appendChild(errorMessage);
         document.querySelector('.mail').style.marginTop = '20px';
+        isPhoneNumberValid = false;
     }
     else if (!selectedPattern.test(phoneNumber)) {
         errorMessage.textContent = 'Số điện thoại không hợp lệ';
         document.querySelector('.number').appendChild(errorMessage); // gắn thẻ thông báo lỗi vào thẻ number
         document.querySelector('.mail').style.marginTop = '20px'; // tạo margin của thẻ mail với dòng thông báo lỗi
+        isPhoneNumberValid = false;
     } 
     else {
         // xóa margin
         document.querySelector('.mail').style.marginTop = '0px';
+        isPhoneNumberValid = true;
     }
+    checkFormValidity();
 }
 // Thêm sự kiện khi người dùng nhập vào ô số điện thoại
 document.querySelector('.number-box').addEventListener('input', function() {
     validatePhoneNumber(); // Gọi hàm kiểm tra số điện thoại
 });
 
+// kiểm tra ô ngày sinh đã có dữ liệu chưa
+function checkBirthday() {
+    const dobInput = document.getElementById('date');
+    if (dobInput.value === '') {
+        isBirthday = false;
+    } 
+    else {
+        isBirthday = true;
+    }
+    checkFormValidity();
+}
+document.querySelector('.date-box').addEventListener('input', function() {
+    checkBirthday()// Gọi hàm kiểm tra số điện thoại
+});
 
 // hàm kiểm tra email
 function validateEmail() {
@@ -198,18 +239,23 @@ function validateEmail() {
         errorMessage.textContent = 'Thông tin bắt buộc';
         document.querySelector('.text').appendChild(errorMessage);
         document.querySelector('.magioithieu').style.marginTop = '20px';
+        isEmailValid = false;
     }
     else if (!emailPattern.test(mail)) {
         errorMessage.style.marginLeft = '160px';
         errorMessage.textContent = 'Địa chỉ email không hợp lệ';
         document.querySelector('.text').appendChild(errorMessage); // gắn thẻ thông báo lỗi vào thẻ text
         document.querySelector('.magioithieu').style.marginTop = '20px'; // tạo margin của mã giới thiệu với dòng thông báo lỗi
+        isEmailValid = false;
     } 
     else {
         // xóa margin
         document.querySelector('.magioithieu').style.marginTop = '0px';
+        isEmailValid = true;
     }
+    checkFormValidity();
 }
+
 // Thêm sự kiện khi người dùng nhập mail
 document.querySelector('.mail-box').addEventListener('input', function() {
     validateEmail(); // Gọi hàm kiểm tra mail
