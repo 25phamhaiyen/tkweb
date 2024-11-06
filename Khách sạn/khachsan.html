@@ -115,32 +115,31 @@
                                 <span id="selection-display">2 người lớn</span>
                                 <span class="dropdown-arrow">▼</span>
                             </button>
-
+                    
                             <div id="dropdown-menu" class="dropdown-menu">
                                 <div class="dropdown-option" onclick="selectOption('Đi một mình', '1 phòng, 1 người lớn')">
                                     Đi một mình
                                     <small>1 phòng, 1 người lớn</small>
                                 </div>
-                                <div class="dropdown-option"
-                                    onclick="selectOption('Cặp đôi/2 người', '1 phòng, 2 người lớn')">
-                                    <span>Cặp đôi/2 người</span>
+                                <div class="dropdown-option" onclick="selectOption('Cặp đôi/2 người', '1 phòng, 2 người lớn')">
+                                    Cặp đôi/2 người
                                     <small>1 phòng, 2 người lớn</small>
                                 </div>
                                 <div class="dropdown-option" onclick="selectOption('Theo gia đình', '')">
-                                    <span>Theo gia đình</span>
+                                    Theo gia đình
                                     <span class="dropdown-arrow">></span>
                                 </div>
                                 <div class="dropdown-option" onclick="selectOption('Theo đoàn/nhóm', '')">
-                                    <span>Theo đoàn/nhóm</span>
+                                    Theo đoàn/nhóm
                                     <span class="dropdown-arrow">></span>
                                 </div>
                                 <div class="dropdown-option" onclick="selectOption('Đi công tác', '')">
-                                    <span>Đi công tác</span>
+                                    Đi công tác
                                     <span class="dropdown-arrow">></span>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                    
                     <div class="find-button">
                         <button class="timkiem" >
                             TÌM
@@ -387,23 +386,24 @@
 
 
     function toggleDropdown() {
-        const dropdownMenu = document.getElementById('dropdown-menu');
-        dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
-    }
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
+}
 
-    function selectOption(label, details) {
-        const selectionDisplay = document.getElementById('selection-display');
-        selectionDisplay.innerHTML = `${label} <small>${details}</small>`;
-        toggleDropdown(); // Đóng dropdown sau khi chọn
-    }
+function selectOption(label, details) {
+    const selectionDisplay = document.getElementById('selection-display');
+    selectionDisplay.innerHTML = `${label} <small>${details}</small>`;
+    toggleDropdown(); // Đóng dropdown sau khi chọn
+}
 
-    // Đóng dropdown khi nhấn ngoài
-    window.onclick = function (event) {
-        const dropdownMenu = document.getElementById('dropdown-menu');
-        if (!event.target.matches('.dropdown-btn')) {
-            dropdownMenu.style.display = 'none';
-        }
-    };
+// Đóng dropdown khi nhấn ngoài
+window.onclick = function (event) {
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    if (!event.target.closest('.dropdown-container')) {
+        dropdownMenu.style.display = 'none';
+    }
+};
+
 
 
 </script>

@@ -226,6 +226,7 @@ body {
 }
 
 /* select room */
+/* select room */
 .dropdown-container {
     position: relative;
     width: 250px;
@@ -235,18 +236,22 @@ body {
 .dropdown-btn {
     background-color: #ffffff;
     border: none;
+    border-radius: 8px;
     height: 100%;
-    padding: 20px 0px;
+    padding: 0 15px;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     cursor: pointer;
     font-size: 16px;
+    /* box-sizing: border-box; */
 }
 
 .dropdown-arrow {
-    font-size: 12px;
+    font-size: 14px;
     color: #666;
+    /* pointer-events: none;  */
 }
 
 .dropdown-menu {
@@ -269,12 +274,13 @@ body {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .dropdown-option:hover {
     background-color: #f0f0f0;
 }
+
 
 /* fine button */
 .find-button{
