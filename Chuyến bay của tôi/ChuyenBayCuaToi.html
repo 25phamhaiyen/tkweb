@@ -239,10 +239,7 @@
                             <input type="text" id="Ten" name="Ten" placeholder="Tên và tên đệm*" required
                                 style="border-style: hidden;">
                         </div>
-                        <button class="button" type="submit">Tìm kiếm</button>
-
-
-
+                        <button class="button" onclick="CheckThongTin()">Tìm kiếm</button>
 
                     </div>
                 </div>
@@ -265,6 +262,78 @@
     </div>
     <!-- chat amy end -->
     <script src="../JS/dropdownBarMenu.js"></script>
+
+    <div class="overlay" id="overlay">
+      <div class="popup">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <div class="icon">⚠️</div>
+        <div class="message">Bạn ơi! Vui lòng điền đủ thông tin</div>
+      </div>
+    </div>
+    <div class="overlay" id="saiDinhDang">
+      <div class="popup">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <div class="icon">⚠️</div>
+        <div class="message">Bạn ơi! Mã đặt chỗ hoặc họ hoặc tên bị sai định dạng</div>
+      </div>
+    </div>
+
+
+    <script>
+      function CheckThongTin() {
+          var name = document.getElementById("Ten").value;
+          var lastname = document.getElementById("Ho").value;
+          var id = document.getElementById("MaDatCho").value;
+
+          var nameCheck=/^[A-Za-z]+$/;
+          var lastnameCheck=/^[A-Za-z]+$/;
+          var idCheck= /^[A-Za-z0-9]+$/;
+          
+
+          if (name == "" ||lastname==""||id==""){
+            const openPopupButton = document.querySelector('.button');
+            const overlay = document.getElementById('overlay');
+            const closeButton = document.getElementById('close-btn');
+
+            openPopupButton.addEventListener('click', () => {
+              overlay.style.display = 'block';
+            });
+
+            closeButton.addEventListener('click', () => {
+              overlay.style.display = 'none';
+            });
+
+            overlay.addEventListener('click', (e) => {
+              if (e.target === overlay) {
+                overlay.style.display = 'none';
+              }
+            });
+          } 
+
+
+          if (!nameCheck.test(name) ||!idCheck.test(id)||!lastnameCheck.test(lastname)){
+            const openPopupButton = document.querySelector('.button');
+            const overlay = document.getElementById('saiDinhDang');
+            const closeButton = document.getElementById('close-btn');
+
+            openPopupButton.addEventListener('click', () => {
+              overlay.style.display = 'block';
+            });
+
+            closeButton.addEventListener('click', () => {
+              overlay.style.display = 'none';
+            });
+
+            overlay.addEventListener('click', (e) => {
+              if (e.target === overlay) {
+                overlay.style.display = 'none';
+              }
+            });
+          } 
+
+
+      }
+  </script>
 </body>
 
 </html>
