@@ -48,7 +48,7 @@
 
         <a class="logo" href="">
           <div>
-            <img src="./image/icon/vj-logo.0f71c68b.svg" alt="VietJet Air" />
+            <img src="./image/icon/vj-logo.0f71c68b.svg" alt="VietJet Air" class="logo" />
           </div>
         </a>
 
@@ -258,166 +258,170 @@
 
   <!-- book ticket start -->
   <div class="DatVe grid">
+    <div class="inner-wrap">
 
-    <div class="title">
-      <div class="title-content">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</div>
-      <div class="title-content title-content-yellow">Đổi thưởng & My SkyPoint</div>
-      <div class="title-content">Gửi hàng nhanh</div>
-    </div>
-    <div class="book-ticket__content">
-
-      <div class="ChieuBay">
-        <div class="Chieu">
-          <input type="radio" name="object">
-          <lable for="Khuhoi">Khứ hồi</lable>
-          </lable>
-          <div></div>
-          <input type="radio" name="object">
-          <lable for="Motchieu">Một chiều</lable>
-          </lable>
+      <div class="form">
+        <div class="title">
+          <div class="title-content">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</div>
+          <div class="title-content title-content-yellow">Đổi thưởng & My SkyPoint</div>
+          <div class="title-content">Gửi hàng nhanh</div>
         </div>
-        <span style="cursor: not-allowed;">VND <i class="fa fa-caret-down"></i></span>
-      </div>
+        <div class="book-ticket__content">
 
-      <div class="book-ticket__middle">
-
-        <div class="middle__point-start">
-          <div class="point-start__left">
-            <i class="fas fa-plane"></i>
-            <input type="text" placeholder="Điểm khởi hành" id="fromInput" autocomplete="off">
-            <ul class="dropdown-options" id="fromOptions">
-              <li onclick="selectOption('fromInput', 'toInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
-                <span>SGN</span>
-              </li>
-              <li onclick="selectOption('fromInput', 'toInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
-              <li onclick="selectOption('fromInput', 'toInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
-              <li onclick="selectOption('fromInput', 'toInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
-              <li onclick="selectOption('fromInput', 'toInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
-              <li onclick="selectOption('fromInput', 'toInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
-            </ul>
+          <div class="ChieuBay">
+            <div class="Chieu">
+              <input type="radio" name="object">
+              <lable for="Khuhoi">Khứ hồi</lable>
+              </lable>
+              <div></div>
+              <input type="radio" name="object">
+              <lable for="Motchieu">Một chiều</lable>
+              </lable>
+            </div>
+            <span style="cursor: not-allowed;">VND <i class="fa fa-caret-down"></i></span>
           </div>
-          <div>
-            <span>
-              <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
-              <div class="calendar di">
-                <div class="header-calender">
-                  <button id="previous-month">«</button>
-                  <div>
-                    <span id="content-month"></span> <span id="content-year"></span>
+
+          <div class="book-ticket__middle">
+
+            <div class="middle__point-start">
+              <div class="point-start__left">
+                <i class="fas fa-plane"></i>
+                <input type="text" placeholder="Điểm khởi hành" id="fromInput" autocomplete="off">
+                <ul class="dropdown-options" id="fromOptions">
+                  <li onclick="selectOption('fromInput', 'toInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                    <span>SGN</span>
+                  </li>
+                  <li onclick="selectOption('fromInput', 'toInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                  <li onclick="selectOption('fromInput', 'toInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                  <li onclick="selectOption('fromInput', 'toInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                  <li onclick="selectOption('fromInput', 'toInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                  <li onclick="selectOption('fromInput', 'toInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                </ul>
+              </div>
+              <div>
+                <span>
+                  <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                  <div class="calendar di">
+                    <div class="header-calender">
+                      <button id="previous-month">«</button>
+                      <div>
+                        <span id="content-month"></span> <span id="content-year"></span>
+                      </div>
+                      <button id="next-month">»</button>
+                    </div>
+                    <div class="days"></div>
                   </div>
-                  <button id="next-month">»</button>
-                </div>
-                <div class="days"></div>
+                </span>
               </div>
-            </span>
-          </div>
-        </div>
+            </div>
 
-        <div class="middle__point-end">
-          <div class="point-start__right">
-            <i class="fas fa-plane"></i>
-            <input type="text" id="toInput" placeholder="Điểm đến" autocomplete="off">
-            <ul class="dropdown-options" id="toOptions">
-              <li onclick="selectOption('toInput', 'fromInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
-                <span>SGN</span>
-              </li>
-              <li onclick="selectOption('toInput', 'fromInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
-              <li onclick="selectOption('toInput', 'fromInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
-              <li onclick="selectOption('toInput', 'fromInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
-              <li onclick="selectOption('toInput', 'fromInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
-              <li onclick="selectOption('toInput', 'fromInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
-            </ul>
-          </div>
-          <div>
-            <span>
-              <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
-              <div class="calendar den">
-                <div class="header-calender">
-                  <button id="previous-month">«</button>
-                  <div>
-                    <span id="content-month"></span> <span id="content-year"></span>
+            <div class="middle__point-end">
+              <div class="point-start__right">
+                <i class="fas fa-plane"></i>
+                <input type="text" id="toInput" placeholder="Điểm đến" autocomplete="off">
+                <ul class="dropdown-options" id="toOptions">
+                  <li onclick="selectOption('toInput', 'fromInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                    <span>SGN</span>
+                  </li>
+                  <li onclick="selectOption('toInput', 'fromInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                  <li onclick="selectOption('toInput', 'fromInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                  <li onclick="selectOption('toInput', 'fromInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                  <li onclick="selectOption('toInput', 'fromInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                  <li onclick="selectOption('toInput', 'fromInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                </ul>
+              </div>
+              <div>
+                <span>
+                  <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                  <div class="calendar den">
+                    <div class="header-calender">
+                      <button id="previous-month">«</button>
+                      <div>
+                        <span id="content-month"></span> <span id="content-year"></span>
+                      </div>
+                      <button id="next-month">»</button>
+                    </div>
+                    <div class="days"></div>
                   </div>
-                  <button id="next-month">»</button>
-                </div>
-                <div class="days"></div>
+                </span>
               </div>
-            </span>
+            </div>
+
+            <div class="middle__client">
+              <i class="fas fa-user passenger-icon"></i>
+              <span class="client__title">Hành khách</span>
+              <button class="dropdown-btn" onclick="toggleDropdown()">
+                <span id="passenger-count">1 người lớn</span>
+                <span class="dropdown-arrow">▼</span>
+              </button>
+
+              <div id="dropdown-menu" class="dropdown-menu">
+                <a href="#" class="special-request">Yêu cầu trợ giúp đặc biệt</a>
+
+                <div class="passenger-option">
+                  <span class="passenger-type">
+                    <i class="fa-solid fa-person" style="color: #77797e; font-size: 32px;"></i>
+                    <div class="passenger">
+                      Người lớn
+                      <small>12 tuổi trở lên</small>
+                    </div>
+                  </span>
+                  <div class="counter">
+                    <button onclick="decreaseCount('adult')" class="counter-btn">−</button>
+                    <span id="adult-count" style="color: var(--primary-color);">1</span>
+                    <button onclick="increaseCount('adult')" class="counter-btn">+</button>
+                  </div>
+                </div>
+
+                <div class="passenger-option">
+                  <span class="passenger-type">
+                    <i class="fa-solid fa-child-reaching " style="color: #77797e;"></i>
+                    <div class="passenger">
+                      Trẻ em
+                      <small>2-11 tuổi</small>
+                    </div>
+                  </span>
+                  <div class="counter">
+                    <button onclick="decreaseCount('child')" class="counter-btn">−</button>
+                    <span id="child-count" style="color: var(--primary-color);">0</span>
+                    <button onclick="increaseCount('child')" class="counter-btn">+</button>
+                  </div>
+                </div>
+
+                <div class="passenger-option">
+                  <span class="passenger-type">
+                    <i class="fa-solid fa-baby" style="color: #77797e;"></i>
+                    <div class="passenger">
+                      Em bé
+                      <small>Dưới 2 tuổi</small>
+                    </div>
+                  </span>
+                  <div class="counter">
+                    <button onclick="decreaseCount('infant')" class="counter-btn">−</button>
+                    <span id="infant-count" style="color: var(--primary-color);">0</span>
+                    <button onclick="increaseCount('infant')" class="counter-btn">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="middle__sale-ticket">
+              <i class="fas fa-ticket-alt" style="color: #263b5f;"></i>
+              <input type="text" id="MaKM" placeholder="Mã khuyến mãi" style="border: none;">
+            </div>
+
           </div>
-        </div>
 
-        <div class="middle__client">
-          <i class="fas fa-user passenger-icon"></i>
-          <span class="client__title">Hành khách</span>
-          <button class="dropdown-btn" onclick="toggleDropdown()">
-            <span id="passenger-count">1 người lớn</span>
-            <span class="dropdown-arrow">▼</span>
-          </button>
-
-          <div id="dropdown-menu" class="dropdown-menu">
-            <a href="#" class="special-request">Yêu cầu trợ giúp đặc biệt</a>
-
-            <div class="passenger-option">
-              <span class="passenger-type">
-                <i class="fa-solid fa-person" style="color: #77797e; font-size: 32px;"></i>
-                <div class="passenger">
-                  Người lớn
-                  <small>12 tuổi trở lên</small>
-                </div>
-              </span>
-              <div class="counter">
-                <button onclick="decreaseCount('adult')" class="counter-btn">−</button>
-                <span id="adult-count" style="color: var(--primary-color);">1</span>
-                <button onclick="increaseCount('adult')" class="counter-btn">+</button>
-              </div>
-            </div>
-
-            <div class="passenger-option">
-              <span class="passenger-type">
-                <i class="fa-solid fa-child-reaching " style="color: #77797e;"></i>
-                <div class="passenger">
-                  Trẻ em
-                  <small>2-11 tuổi</small>
-                </div>
-              </span>
-              <div class="counter">
-                <button onclick="decreaseCount('child')" class="counter-btn">−</button>
-                <span id="child-count" style="color: var(--primary-color);">0</span>
-                <button onclick="increaseCount('child')" class="counter-btn">+</button>
-              </div>
-            </div>
-
-            <div class="passenger-option">
-              <span class="passenger-type">
-                <i class="fa-solid fa-baby" style="color: #77797e;"></i>
-                <div class="passenger">
-                  Em bé
-                  <small>Dưới 2 tuổi</small>
-                </div>
-              </span>
-              <div class="counter">
-                <button onclick="decreaseCount('infant')" class="counter-btn">−</button>
-                <span id="infant-count" style="color: var(--primary-color);">0</span>
-                <button onclick="increaseCount('infant')" class="counter-btn">+</button>
-              </div>
-            </div>
+          <div class="checkbox">
+            <input type="checkbox" id="DongY" required>
+            <label for="DongY">Tìm vé rẻ nhất</label>
           </div>
+
+          <div class="button"><a href="" class="button__find-fly">Tìm chuyến bay</a></div>
+
         </div>
-
-
-        <div class="middle__sale-ticket">
-          <i class="fas fa-ticket-alt" style="color: #263b5f;"></i>
-          <input type="text" id="MaKM" placeholder="Mã khuyến mãi" style="border: none;">
-        </div>
-
       </div>
-
-      <div class="checkbox">
-        <input type="checkbox" id="DongY" required>
-        <label for="DongY">Tìm vé rẻ nhất</label>
-      </div>
-
-      <div class="button"><a href="" class="button__find-fly">Tìm chuyến bay</a></div>
-
     </div>
 
   </div>
@@ -433,91 +437,94 @@
   <!-- chat amy end -->
 
   <!-- topbanner start -->
-  <div class="inner-wrap">
-    <div class="img-cloud">
-      <img src="./image/background/topnen-1610536365157.png" alt="">
-    </div>
-    <div class="inner-wrap-boxYellow">
-      <div class="boxYellow">
-        <div class="listboxYellow">
-          <div class="boxYellow-item">
-            <div class="boxYellow-content">
-              <a href="">
-                <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
-                <div class="boxYellow-img">
-                  <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                  <div class="ptext">
-                    <p style="font-size: 12px">Chỉ từ </p>
-                    <p style="font-size: 26px; font-style: italic;">390,000 </p>
-                    <p class="vnd-boxYellow">VND</p>
-                  </div>
-                </div>
-                <div class="ten"><span class="black-text">Đến</span> Tây An</div>
-              </a>
+  <div class="topbanner">
+    <div class="inner-wrap "
+      style="background: url(./image/background/topnen-1610536365157.png) center top / cover no-repeat;">
+      <!-- <div class="img-cloud">
+        <img src="./image/background/topnen-1610536365157.png" alt="">
+      </div> -->
+      <div class="inner-wrap-boxYellow">
+        <div class="boxYellow">
+          <div class="listboxYellow" style="width: 1055px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+            <div class="boxYellow-item">
+              <div class="boxYellow-content">
+                <a href="">
+                  <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
+                    <div class="boxYellow-img">
+                      <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                      <div class="ptext">
+                        <p style="font-size: 12px">Chỉ từ </p>
+                        <p style="font-size: 26px; font-style: italic;">390,000 </p>
+                        <p>VND</p>
+                      </div>
+                    </div>
+                    <div class="ten"><span class="black-text">Đến</span> Tây An</div>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="boxYellow-item">
-            <div class="boxYellow-content">
-              <a href="">
-                <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
-                <div class="boxYellow-img">
-                  <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                  <div class="ptext">
-                    <p style="font-size: 12px">Chỉ từ </p>
-                    <p style="font-size: 26px; font-style: italic;">900,000 </p>
-                    <p class="vnd-boxYellow">VND</p>
+            <div class="boxYellow-item">
+              <div class="boxYellow-content">
+                <a href="">
+                  <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
+                  <div class="boxYellow-img">
+                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                    <div class="ptext">
+                      <p style="font-size: 12px">Chỉ từ </p>
+                      <p style="font-size: 26px; font-style: italic;">900,000 </p>
+                      <p class="vnd-boxYellow">VND</p>
+                    </div>
                   </div>
-                </div>
-                <div class="ten"><span class="black-text">Đến</span> Melbourne</div>
-              </a>
+                  <div class="ten"><span class="black-text">Đến</span> Melbourne</div>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="boxYellow-item">
-            <div class="boxYellow-content">
-              <a href="">
-                <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
-                <div class="boxYellow-img">
-                  <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                  <div class="ptext">
-                    <p style="font-size: 12px">Chỉ từ </p>
-                    <p style="font-size: 26px; font-style: italic;">900,000 </p>
-                    <p class="vnd-boxYellow">VND</p>
+            <div class="boxYellow-item">
+              <div class="boxYellow-content">
+                <a href="">
+                  <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
+                  <div class="boxYellow-img">
+                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                    <div class="ptext">
+                      <p style="font-size: 12px">Chỉ từ </p>
+                      <p style="font-size: 26px; font-style: italic;">900,000 </p>
+                      <p class="vnd-boxYellow">VND</p>
+                    </div>
                   </div>
-                </div>
-                <div class="ten"><span class="black-text">Đến</span> Sydney</div>
-              </a>
+                  <div class="ten"><span class="black-text">Đến</span> Sydney</div>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="boxYellow-item">
-            <div class="boxYellow-content">
-              <a href="">
-                <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
-                <div class="boxYellow-img">
-                  <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                  <div class="ptext">
-                    <p style="font-size: 12px">Chỉ từ </p>
-                    <p style="font-size: 26px; font-style: italic;">690,000 </p>
-                    <p class="vnd-boxYellow">VND</p>
+            <div class="boxYellow-item">
+              <div class="boxYellow-content">
+                <a href="">
+                  <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
+                  <div class="boxYellow-img">
+                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                    <div class="ptext">
+                      <p style="font-size: 12px">Chỉ từ </p>
+                      <p style="font-size: 26px; font-style: italic;">690,000 </p>
+                      <p class="vnd-boxYellow">VND</p>
+                    </div>
                   </div>
-                </div>
-                <div class="ten"><span class="black-text">Đến</span> Thượng Hải</div>
-              </a>
+                  <div class="ten"><span class="black-text">Đến</span> Thượng Hải</div>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="boxYellow-item">
-            <div class="boxYellow-content">
-              <a href="">
-                <div class="ten"><span class="black-text">Từ</span> Đà Nẵng</div>
-                <div class="boxYellow-img">
-                  <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                  <div class="ptext">
-                    <p style="font-size: 12px">Chỉ từ </p>
-                    <p style="font-size: 26px; font-style: italic;">260,000 </p>
-                    <p class="vnd-boxYellow">VND</p>
+            <div class="boxYellow-item">
+              <div class="boxYellow-content">
+                <a href="">
+                  <div class="ten"><span class="black-text">Từ</span> Đà Nẵng</div>
+                  <div class="boxYellow-img">
+                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                    <div class="ptext">
+                      <p style="font-size: 12px">Chỉ từ </p>
+                      <p style="font-size: 26px; font-style: italic;">260,000 </p>
+                      <p class="vnd-boxYellow">VND</p>
+                    </div>
                   </div>
-                </div>
-                <div class="ten"><span class="black-text">Đến</span> Ahmedabd</div>
-              </a>
+                  <div class="ten"><span class="black-text">Đến</span> Ahmedabd</div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

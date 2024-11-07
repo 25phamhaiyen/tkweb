@@ -4,6 +4,14 @@
     background-size: cover;
     justify-items: center;
 }
+/* logo */
+.logo{
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    max-width: 115px;
+    object-fit: contain;
+}
 /* Slide Banner Start */
 .banner-slideshow {
     position: relative;
@@ -15,7 +23,8 @@
 }
 .myslide img{
     width: 100%;
-    height: auto;
+    height: 720px;
+    object-fit: cover;
 }
 /* Hiệu ứng fade */
 .fade {
@@ -78,24 +87,33 @@
     object-fit: contain;
 }
 
-.header .navbar .top-right {
-    margin-left: auto;
-    width: calc(100% - 265px);
+.header .navbar .top-right { 
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-end;
 }
 
 .top-right .sign-in {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: flex-end;
     color: var(--third-color);
     font-weight: bold;
-    padding-right: 10px;
+    padding-right: 10px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
 
 }
 
 .top-right .sign-in .hotro {
-    display: inline-flex;
-    gap: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .top-right .sign-in .hotro span {
@@ -132,20 +150,43 @@
 
 
 .header .navbar .top-right .menu {
-    margin: 0;
+    position: relative;
 }
 
 .menu ul {
     display: flex;
     align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    justify-content: flex-end;
 
 }
 
 .menu ul li {
-    display: block;
-    padding: 4px 4px;
-    text-align: center;
-    justify-content: space-between;
+    display: none;
+    padding: 5px 10px;
+    min-height: 33px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.menu ul li a{
+    color: inherit;
+    width: 100%
+}
+.menu .title{
+    color: #ffffff;
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 16px;
+    transition: all .35s;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    cursor: pointer;
 }
 .hover-a .container-dropdown {
     display: none;
