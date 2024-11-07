@@ -48,6 +48,7 @@ body {
 }
 html {
     font-size: 15px;
+
 }
 body {
     font-family: 'KoHo', sans-serif;
@@ -157,6 +158,7 @@ html{
         background-color: rgb(255, 0, 0);
         border: none;
         border-radius: 0 10px 10px 0;
+        color: white;
     }
     /* box-shadow: ; */
 }
@@ -413,14 +415,17 @@ input{
     }
 }
 .anhTaiMenu-area{
-    width: fit-content;
-    height: fit-content ;
+    width: 100%;
+    height: auto ;
     position: relative;
+    img{
+        width: 100%;
+    }
     .button{
         cursor: pointer;
         position: absolute;
-        right:21%;
-        bottom: 27%;
+        right:25%;
+        bottom: 29%;
         height:40px;
         min-width: 194.3px;
         background:linear-gradient(26.73deg,#F9A51A 13.7%, #FBB612 29.8%, #FFDD00 66.81%);
