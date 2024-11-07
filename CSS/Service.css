@@ -1,3 +1,21 @@
+.container-flex .content{
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.container-flex .content .content1{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-right:35px;
+}
+.container-flex .content .content2{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-left:35px;
+}
 .container-flex .bg{
     background-color: rgba(255,255,255,0.6);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);

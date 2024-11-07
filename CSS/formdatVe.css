@@ -17,7 +17,6 @@
 }
 .DatVe .inner-wrap .form{
     position: relative;
-    margin-top: -45px;
     min-height: 315px;
 }
 .DatVe .title {
@@ -312,21 +311,22 @@
     min-height: 40px;
     font-weight: 800;
 }
+
+
 /* WHITE BOOK TICKET START*/
 
-
 .white-bookTicket {
-    margin-top: 200px;
     top: 0;
-    z-index: 200;
+    z-index: 999;
     position: sticky;
-    max-width: 1200px;
+    padding-top: 0;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .sticky-box {
+    margin: 0 auto;
     position: relative;
-    width: 100%;
-    margin-top: 22%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -422,3 +422,8 @@
 
 
 /* WHITE BOOK TICKET END */
+
+.noidung{
+        background: url(../image/background/bg-mb.b54724f5.webp) no-repeat center top;
+        background-size: cover;
+}

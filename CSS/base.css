@@ -22,13 +22,23 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         max-width: 84px;
     }
 }
+@media (max-width: 1023.95px) {
+    .noidung {
+        margin-top: -80px;
+        padding-top: 80px;
+    }
+}
 @media (max-width: 1099.95px) {
     .menu ul li {
         padding: 4px 1.5px;
     }
 }
 @media (max-width: 1199.95px) {
-    .DatVe .inner-wrap {
+    .DatVe .inner-wrap, .container-flex  {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .white-bookTicket, .carousel2 {
         padding-left: 0;
         padding-right: 0;
     }
@@ -50,7 +60,17 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     }
 }
 @media (min-width: 1280px) {
-    .DatVe .inner-wrap {
+    .DatVe .inner-wrap, .container-flex {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .white-bookTicket {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .carousel2 {
         max-width: 1200px;
         padding-left: 0;
         padding-right: 0;
@@ -104,8 +124,6 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
             bottom: 0;
             height: 100%;
             position: absolute;
-            margin-top: initial;
-            
     }
     .DatVe .inner-wrap{
             height: 100%;
@@ -118,7 +136,6 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     }
     .DatVe .inner-wrap .form{
             right: 0;
-            z-index: 3;
             max-width: 380px;
             margin-top: 0;
     }
@@ -147,7 +164,40 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         margin: 0px 36px;
         font-size: 14px;
     }
-
+    /* .white-bookTicket {
+        padding-left: 20px;
+        padding-right: 20px;
+    } */
+    .noidung {
+        padding-top: 180px;
+        padding-bottom: 200px;
+        background-size: cover;
+        background-color: transparent;
+        background-image: url(/static/media/bgBannerHomePage.72a61446.webp);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+    }
+    .carousel-slide2 {
+        background: transparent;
+        margin: 0 -15px;
+        padding: 0;
+    }
+    .container-flex .content{
+        width: 100%;
+        display: block;
+    }
+    .container-flex .content .content1{
+        /* width: 100%; */
+        /* display: flex; */
+        justify-content: space-between;  
+    }
+}
+@media (min-width: 1024px) and (max-width: 1439.95px) {
+    .carousel2, .container-flex {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
 @media screen and (max-width: 992px) {
     body {
