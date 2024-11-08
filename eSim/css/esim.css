@@ -343,8 +343,8 @@ h4{
 .esimToanCau-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: ;
-    row-gap: ;
+    column-gap:1.5rem ;
+    row-gap: 2.5rem;
 
 }
 .esimToanCau-grid .esimToanCau-card{
@@ -385,14 +385,33 @@ h4{
         .tieude{
             color: #333333;
         }
-        .giatri{
+        /* .giatri{
             
-        }
+        }*/
+        } 
     }
     .button-area{
+        display: flex;
         width: 100%;
         height: 64.8px;
-    }
+        padding: 12px 0px;
+        border-top: #333;
+        border-top-style:solid;
+        border-top-width: 1px;
+        border-radius: 0 0 8px 8px;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        button{
+          width: 80%;
+          height: 40px;  
+          border-radius: 8px;
+          background:linear-gradient(90deg, rgb(249,165,26) 0%, rgb(255,221,0) 100%);
+          align-items: center;
+          justify-content: center;
+          border-style: none;
+        }
+        
     }
 }
 
