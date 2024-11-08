@@ -23,7 +23,7 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     }
     .bg-img {
         background-size: auto;
-        background-image: url(/static/media/bay_vao_tuong_lai_bg_mb.9d307f6a.webp);
+        background-image: url(../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp);
         background-repeat: repeat;
         background-position: top center, top center;
     }

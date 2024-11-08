@@ -2,7 +2,7 @@
 .bg-img{
     background-image: url('../image/background/bg-donate.40a2c077.webp');
     width: 100%;
-    margin-top: -8%;
+    margin-top: -12%;
     display: flex;
     padding: 15px 0;
     flex-direction: column;
@@ -70,6 +70,12 @@
     width: 100%;
     padding: 20px 60px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.001) 100%);
+}
+.bg-blur2 .container-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow: hidden;
 }
 .prize-item{
     margin-top :-60px ;
