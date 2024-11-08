@@ -361,21 +361,38 @@ h4{
        width: 100%;
        height:212px;
        .content-row{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height:40px;
+            padding: 8px 0px;
+                .tieude{
+                    color: #333333;
+                }
+                .giatri{
+                position: absolute;
+                right:0;
+                color:#333333;
+                font-weight: bold;
+                }
+       }
+       .row-soluong{
+        width: 100%;
+        height: 40px;
+        padding: 8px 0px;
         display: flex;
         position: relative;
-        width: 100%;
-        height:40px;
-        padding: 8px 0px;
         .tieude{
             color: #333333;
         }
         .giatri{
-            position: absolute;
-            right:0;
-            color:#333333;
-            font-weight: bold;
+            
         }
-       }
+    }
+    .button-area{
+        width: 100%;
+        height: 64.8px;
+    }
     }
 }
 
