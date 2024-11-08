@@ -272,7 +272,7 @@ a {
 
 .chat-amy {
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     bottom: 60px;
     right: 20px;
 }
