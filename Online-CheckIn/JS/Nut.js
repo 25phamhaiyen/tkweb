@@ -13,7 +13,7 @@ function activateTab(tabId) {
         // Cập nhật nội dung cho tab "Tìm kiếm mã đặt chỗ"
         content.innerHTML = `
             <div class="khungtrai">
-                    <p style="font-size: 20px;"> CHECK-IN </p>
+                    <p style="font-size: 20px; font-weight: 600;"> CHECK-IN </p>
                     <br>
                     <div>Sẵn sàng cho chuyến bay vui vẻ, thoải mái, bạn có thể làm thủ tục chuyến bay trực
                         tuyến nhanh chóng và đơn giản.
@@ -32,9 +32,7 @@ function activateTab(tabId) {
 
                     </div>
                 </div>
-                
                 <hr class="vertical-line">
-
                 <div class="khungphai" style="line-height: 1.5;">
                     Quý khách có thể tự làm thủ tục chuyến bay thông qua chức năng làm thủ tục trực tuyến (Online
                     Check-in) tại trang web của Vietjet hoặc ứng dụng Vietjet trên thiết bị di động. Đây là tính năng

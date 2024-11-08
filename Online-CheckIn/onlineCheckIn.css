@@ -6,14 +6,10 @@
 }
 
 html {
-    background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
+    background: url(../image/background/bg-donate.40a2c077.webp) no-repeat center fixed;
     background-size: cover;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 /* Container chính cho phần chuyến bay */
 .container-chuyenbay{
@@ -131,7 +127,7 @@ input {
     object-fit: contain;
 }
 
-.button {
+.form-input .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +202,7 @@ input {
         width: 90%;
         border-radius: 9px;
         height: fit-content;
-        background-color: var(--secondary-color);
+        background-color:  rgba(255, 255, 255, 0.6);
     }
 
     .khungtrai {
@@ -216,7 +212,6 @@ input {
 
     .khungphai {
         width: 100%;
-        padding-left: 0;
     }
 
     .khungphai .khunganh {
