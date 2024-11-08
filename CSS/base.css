@@ -8,10 +8,11 @@
     --gradient-end: var(--secondary-color);
 }
 
-html{
+/* html{
         background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
         background-size: cover;
-}
+} */
+ 
 /* media : truy van phuong tien 
 Truy vấn phương tiện bao gồm một loại phương tiện và có thể chứa một hoặc nhiều tính năng phương tiện, có giá trị trả về là đúng hoặc sai
 @media not|only mediatype and (media feature) and (media feature) {

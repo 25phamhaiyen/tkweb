@@ -6,14 +6,10 @@
 }
 
 html {
-    background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
+    background: url(../image/background/bg-donate.40a2c077.webp) no-repeat center fixed;
     background-size: cover;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 /* Container chính cho phần chuyến bay */
 .container-chuyenbay{
@@ -24,6 +20,7 @@ body {
     font-weight: 500;
     z-index: 999;
     padding:130px 0 ;
+    font-size: 16px;
 }
 .madatvachuyenbay{
     max-width: 1200px;
@@ -80,13 +77,21 @@ input {
 
 .khungtrai {
     box-sizing: border-box;
-    padding: 45px 30px 30px 50px;
+    padding: 45px 30px 0px 50px;
     width: 40%;
 }
 
-.khungtrai .form {
+.khungtrai .form-input {
     width: 100%;
     text-align: center;
+}
+.text-maudo{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.text-mauden{
+    color: #000;
+    font-weight: 700;
 }
 
 .khunginput {
@@ -100,10 +105,14 @@ input {
     background-color: #fff;
     border-radius: 4px;
 }
-
+.vertical-line {
+    margin-top: 20px;
+    border: none;
+    border-left: 1px solid rgb(206, 205, 205); /* Đường kẻ dọc */
+}
 .khungphai {
     width: 60%;
-    padding: 20px 0 0 100px;
+    padding: 40px;
 }
 
 .khungphai .khunganh {
@@ -118,7 +127,7 @@ input {
     object-fit: contain;
 }
 
-.button {
+.form-input .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +202,7 @@ input {
         width: 90%;
         border-radius: 9px;
         height: fit-content;
-        background-color: var(--secondary-color);
+        background-color:  rgba(255, 255, 255, 0.6);
     }
 
     .khungtrai {
@@ -203,7 +212,6 @@ input {
 
     .khungphai {
         width: 100%;
-        padding-left: 0;
     }
 
     .khungphai .khunganh {
