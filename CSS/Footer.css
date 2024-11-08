@@ -1,3 +1,12 @@
+
+.bg-img{
+    background-image: url('../image/background/bg-donate.40a2c077.webp');
+    width: 100%;
+    margin-top: -8%;
+    display: flex;
+    padding: 15px 0;
+    flex-direction: column;
+}
 /* Giai thuong */
 .container-img{
     padding-top: 40px;
