@@ -12,8 +12,8 @@
     min-height: 315px;
 } */
 .DatVe .inner-wrap{
-        width: 100%;
-        margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 .DatVe .inner-wrap .form{
     position: relative;
@@ -21,6 +21,10 @@
 }
 .DatVe .title {
     display: flex;
+    min-height: 45px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
 }
 
 .DatVe .title .title-content {
@@ -34,6 +38,7 @@
 }
 
 .DatVe .title .title-content-yellow {
+    flex: 1;
     color: var(--fifth-color);
     background: linear-gradient(135deg, #FFDD00 39.58%, #E99F24 100%);
 }
@@ -218,6 +223,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
+    z-index: 11;
     top: 100%;
     left: 0;
     width: 100%;

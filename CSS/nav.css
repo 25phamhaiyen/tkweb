@@ -68,7 +68,7 @@
     display: flex;
     box-sizing: border-box;
     margin: 0;
-    padding:  10px 0;
+    padding:  10px 0 3px 0;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -161,12 +161,13 @@
 .menu ul li {
     display: none;
     padding: 4px 4px;
-    min-height: 33px;
+    /* min-height: 33px; */
     text-align:center;
     align-items: center;
     justify-content: space-between;
 }
 .menu ul li a{
+    
     color: inherit;
     width: 100%
 }
@@ -201,7 +202,16 @@
     /* padding: 10px 20px; */
     color: var(--fifth-color);
     display: block;
+    /* align-content: center; */
 }
+.dropdown-item a span{
+    width: 32px;
+    display: inline-block;
+}
+.dropdown-item a span img{
+    width: 100%;
+}
+
 .menu li .title , .hotro a{
     text-decoration: none;
     color: var(--third-color);
