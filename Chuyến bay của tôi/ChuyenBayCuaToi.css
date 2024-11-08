@@ -119,13 +119,13 @@ input{
     font-weight: bold;
     border: none;
 }
-/* @media screen and (max-width: 900px) {
+ @media screen and (max-width: 900px) {
     .khungtrang{
         align-items: center;
         width: 100%;
         border-radius: 9px;
         position:center;
-        /* width:fit-content;
+         width:fit-content;
         height:fit-content; 
         background-color:  rgba(255, 255, 255, 0.5);
         display:block;
@@ -142,7 +142,7 @@ input{
     } 
     
     
-} */
+} 
  @media screen and (max-width: 992px) {
     .container-chuyenbay{
         width: 90%;
