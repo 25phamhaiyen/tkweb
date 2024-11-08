@@ -177,6 +177,7 @@ h3{
     overflow-y: auto;
 }
 .content-box{
+    padding: 20px;
     width: 100%;
     height: 110vh;
     border-top: 1px solid rgb(211, 210, 210);
@@ -185,8 +186,7 @@ h3{
 }
 .tab-content{
     display: none;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 17px;
 }
 .tab-content.active{
     display: block;
@@ -297,5 +297,46 @@ h4{
     font-size: 30px;
     cursor: pointer;
 }
+.quocgia-grid{
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-gap: 8px; */
+    column-gap: 1.5rem;
+    row-gap: 1.25rem;
+}
+.quocgia-grid .quocgia-card{
+    position: relative;
+    width: 100%;
+    height: 66.75;
+    padding:18px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    img{
+        width: 41px;
+        height:30.75px;
+        margin-right: 5px;
+    }
+    .khungMuiTen{
+        margin-right: 18px;
+        position:absolute;
+        right:0;
+        img{
+            width: 10px;
+            height: auto;
+            margin: 0;
+        }
+        cursor: pointer;
+    }
+    
+}
+.quocgia-grid .quocgia-card .khung-content{
+    width: 100%;
+    height: auto;
 
-
+    
+}
