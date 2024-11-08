@@ -25,16 +25,16 @@ body{
 }
 .chontimkiem{
     width:fit-content;
-    color: rgb(139,139,139);
     font-weight: 600;
     font-size: 15px;
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.6);
     border: none;
     border-radius: 10px 10px 0 0;
     padding: 2%;
     filter: grayscale(100%);
+    color: rgb(139,139,139);
+    background-color: rgba(255, 255, 255, 0.375);
 }
 .chontimkiem.active {
     background-color: rgba(255, 255, 255, 0.6); /* Đổi màu nền khi được chọn */
