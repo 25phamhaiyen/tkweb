@@ -69,7 +69,7 @@
 }
 
 .ten {
-    font-size: 12px;
+    font-size: 16px;
     color: #ff0000;
     font-weight: 700;
     text-align: center;
@@ -99,19 +99,20 @@
 .ptext p:first-child {
     color: #ec2029;
     margin: 0 25px;
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 500;
 }
 .ptext p:nth-child(2) {
     color: #ec2029;
     margin: 0px 20px 0px 20px;
-    font-size: 12px;
+    
+    font-size: 180%; 
+    font-style: italic;
     font-family: JambonoMedium;
-    font-weight: 400;
+    font-weight: 600;
 }
-.jss779 p:last-child {
-    color: #ec2029;
+/* .jss779 p:last-child {
     margin: 0px 25px;
     font-size: 8px;
     font-style: italic;
-}
+} */
