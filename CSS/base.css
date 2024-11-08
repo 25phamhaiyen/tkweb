@@ -183,15 +183,7 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         margin: 0 -15px;
         padding: 0;
     }
-    .container-flex .content{
-        width: 100%;
-        display: block;
-    }
-    .container-flex .content .content1{
-        /* width: 100%; */
-        /* display: flex; */
-        justify-content: space-between;  
-    }
+    
 }
 @media (min-width: 1024px) and (max-width: 1439.95px) {
     .carousel2, .container-flex {
@@ -201,7 +193,7 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 }
 @media screen and (max-width: 992px) {
     body {
-        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 480 pixel hoặc rộng hơn (nếu khung nhìn lon hơn 480 pixel, màu nền sẽ là màu hồng) */
+        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 992 pixel hoặc nhỏ hơn (nếu khung nhìn rộng hơn 992 pixel, màu nền sẽ là màu hồng) */
         background: url(../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp) no-repeat center fixed;
         background-size: cover; /* giá trị "cover" giữ nguyên tỷ lệ khung hình và một số phần của hình nền có thể bị cắt bớt */
         font-size: 12px;
@@ -227,6 +219,11 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 @media screen and (min-width: 992px) {
     header .nav-bar {
         padding: 0px 40px;
+    }
+    .container-flex .content{
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
     }
 }
 
