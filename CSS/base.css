@@ -21,6 +21,12 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     .logo {
         max-width: 84px;
     }
+    .bg-img {
+        background-size: auto;
+        background-image: url(/static/media/bay_vao_tuong_lai_bg_mb.9d307f6a.webp);
+        background-repeat: repeat;
+        background-position: top center, top center;
+    }
 }
 @media (max-width: 1023.95px) {
     .noidung {
@@ -49,6 +55,9 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
     }
     .topbanner .inner-wrap{
         min-height: 630px;
+    }
+    .noidung{
+        padding-bottom: 7%;
     }
 }
 @media (max-width: 1269.95px) {
@@ -172,8 +181,7 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         padding-top: 180px;
         padding-bottom: 200px;
         background-size: cover;
-        background-color: transparent;
-        background-image: url(/static/media/bgBannerHomePage.72a61446.webp);
+        background-image: url(../image/background/bgBannerHomePage.72a61446.webp);
         background-repeat: no-repeat;
         background-position: right top;
         background-attachment: fixed;
@@ -183,15 +191,17 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         margin: 0 -15px;
         padding: 0;
     }
-    .container-flex .content{
-        width: 100%;
-        display: block;
+    .bg-img {
+        /* z-index: 1; */
+        position: relative;
+        margin-top: -160px;
+        background-size: cover;
+        background-color: unset;
+        background-image: url(../image/background/bg-donate.40a2c077.webp);
+        background-repeat: repeat;
+        background-position: top center;
     }
-    .container-flex .content .content1{
-        /* width: 100%; */
-        /* display: flex; */
-        justify-content: space-between;  
-    }
+  
 }
 @media (min-width: 1024px) and (max-width: 1439.95px) {
     .carousel2, .container-flex {
@@ -201,8 +211,8 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 }
 @media screen and (max-width: 992px) {
     body {
-        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 480 pixel hoặc rộng hơn (nếu khung nhìn lon hơn 480 pixel, màu nền sẽ là màu hồng) */
-        background: url(../image/background/bay_vao_tuong_lai_bg_mb.9d307f6a.webp) no-repeat center fixed;
+        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 992 pixel hoặc nhỏ hơn (nếu khung nhìn rộng hơn 992 pixel, màu nền sẽ là màu hồng) */
+        background: url(../image/background/bg-mb.b54724f5.webp) no-repeat center fixed;
         background-size: cover; /* giá trị "cover" giữ nguyên tỷ lệ khung hình và một số phần của hình nền có thể bị cắt bớt */
         font-size: 12px;
     }
@@ -227,6 +237,11 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
 @media screen and (min-width: 992px) {
     header .nav-bar {
         padding: 0px 40px;
+    }
+    .container-flex .content{
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
     }
 }
 
@@ -289,12 +304,6 @@ a {
     visibility: visible;
 }
 
-.bg-img{
-    background-image: url('../image/background/bg-donate.40a2c077.webp');
-    width: 100%;
-    background-size: cover;
-    
-}
 .grid{
     margin: 0 40px;  
     max-width: 1200px;

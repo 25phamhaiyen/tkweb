@@ -1,10 +1,11 @@
 .container-flex .content{
     width: 100%;
-    padding: 0 40px;
+    width: calc(100% + 84px);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.container-flex .content .content1{
+/* .container-flex .content .content1{
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -15,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     padding-left:35px;
-}
+} */
 .container-flex .bg{
     background-color: rgba(255,255,255,0.6);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);

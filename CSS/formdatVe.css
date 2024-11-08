@@ -424,6 +424,6 @@
 /* WHITE BOOK TICKET END */
 
 .noidung{
-        background: url(../image/background/bg-mb.b54724f5.webp) no-repeat center top;
-        background-size: cover;
+    /* background: url(../image/background/bg-mb.b54724f5.webp) no-repeat center top; */
+    background-size: cover;
 }
