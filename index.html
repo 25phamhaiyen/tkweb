@@ -31,567 +31,273 @@
   <link rel="stylesheet" href="./CSS/Slider_Utilities.css">
   <link rel="stylesheet" href="./CSS/Service.css">
   <link rel="stylesheet" href="./CSS/Footer.css">
+  <link rel="stylesheet" href="./CSS/HieuUngTai.css">
 </head>
 
 <body>
 
-  <div class="container">
+  <div id="loading-screen">
+    <img id="loading-image" src="./image/icon/loading.png" alt="Loading Image">
+    <div id="progress-bar"></div>
+  </div>
 
-    <!-- header -->
-    <header class="header">
+  <div>
+    <div class="container">
 
-      <div class="nav-bar grid">
+      <!-- header -->
+      <header class="header">
 
-        <a class="logo" href="">
-          <div>
-            <img src="./image/icon/vj-logo.0f71c68b.svg" alt="VietJet Air" class="logo" />
-          </div>
-        </a>
+        <div class="nav-bar grid">
 
-        <div class="top-right">
+          <a class="logo" href="">
+            <div>
+              <img src="./image/icon/vj-logo.0f71c68b.svg" alt="VietJet Air" class="logo" />
+            </div>
+          </a>
 
-          <div class="sign-in">
-            <div class="hotro">
-              <span>
-                <i class="fa-solid fa-headset"></i>
-                <a href="">Hỗ trợ</a>
-              </span>
-              <span>
+          <div class="top-right">
+
+            <div class="sign-in">
+              <div class="hotro">
+                <span>
+                  <i class="fa-solid fa-headset"></i>
+                  <a href="">Hỗ trợ</a>
+                </span>
+                <span>
+                  <i class="fa-solid fa-user" style="color: #ff0000"></i>
+                  <span>
+                    <a href="./Đăng ký/DangKy.html" target="_blank">Đăng ký</a> |
+                    <a href="./Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
+                  </span>
+                </span>
+              </div>
+
+              <div class="language-switcher">
+                <button type="button">
+                  <span>
+                    <div>Tiếng Việt</div>
+                    <i class="fa fa-caret-down"></i>
+                  </span>
+                </button type="button">
+              </div>
+
+              <div class="hamburger" onclick="toggleMenu()">
+                <button>
+                  <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="dropdown-menu-bar" id="dropdownMenu">
+
+              <div class="dangky-dangnhap">
                 <i class="fa-solid fa-user" style="color: #ff0000"></i>
                 <span>
-                  <a href="./Đăng ký/DangKy.html" target="_blank">Đăng ký</a> |
+                  <a href="./Đăng ký/DangKy.html" target="_blank">Đăng ký</a>
+                  <span style="color: #ffffff;">/</span>
                   <a href="./Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
                 </span>
-              </span>
+              </div>
+              <hr>
+              <a class="title" href="./index.html">Trang chủ</a>
+              <a class="title" href="">SKYJOY</a>
+              <a class="title" href="./Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA
+                TÔI</a>
+              <a class="title" target="_blank" href="./Online-CheckIn/onlineCheckIn.html">ONLINE CHECK-IN</a>
+              <a class="title" href="./Menu/Menu.html" target="_blank">E-MENU</a>
+              <a class="title" href="./E-VISA/Evisa.html">E-VISA</a>
+              <hr>
+              <h4>Kết nối với Vietjet</h4>
+              <div class="flex-content">
+                <a class=" img" href="" target="_blank"><img src="./image/icon/fb.png" alt="facebook"></a>
+                <a class=" img" href="" target="_blank"><img src="./image//icon/instagram.png" alt="instagram"></a>
+                <a class=" img" href="" target="_blank"><img src="./image//icon/twitter.png" alt="twitter"></a>
+                <a class=" img" href="" target="_blank"><img src="./image//icon/line.png" alt="line"></a>
+                <a class=" img" href="" target="_blank"><img src="./image//icon/wechat.png" alt="wechat"></a>
+                <a class=" img" href="" target="_blank"><img src="./image//icon/zalo.png" alt="zalo"></a>
+                <a class=" img" href="" target="_blank"><img src="./image//icon/youtube.png" alt="youtube"></a>
+              </div>
             </div>
 
-            <div class="language-switcher">
-              <button type="button">
-                <span>
-                  <div>Tiếng Việt</div>
-                  <i class="fa fa-caret-down"></i>
-                </span>
-              </button type="button">
-            </div>
-
-            <div class="hamburger" onclick="toggleMenu()">
-              <button>
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-              </button>
-            </div>
-          </div>
-
-          <div class="dropdown-menu-bar" id="dropdownMenu">
-
-            <div class="dangky-dangnhap">
-              <i class="fa-solid fa-user" style="color: #ff0000"></i>
-              <span>
-                <a href="./Đăng ký/DangKy.html" target="_blank">Đăng ký</a>
-                <span style="color: #ffffff;">/</span>
-                <a href="./Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
-              </span>
-            </div>
-            <hr>
-            <a class="title" href="./index.html">Trang chủ</a>
-            <a class="title" href="">SKYJOY</a>
-            <a class="title" href="./Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA
-              TÔI</a>
-            <a class="title" target="_blank" href="./Online-CheckIn/onlineCheckIn.html">ONLINE CHECK-IN</a>
-            <a class="title" href="./Menu/Menu.html" target="_blank">E-MENU</a>
-            <a class="title" href="./E-VISA/Evisa.html">E-VISA</a>
-            <hr>
-            <h4>Kết nối với Vietjet</h4>
-            <div class="flex-content">
-              <a class=" img" href="" target="_blank"><img src="./image/icon/fb.png" alt="facebook"></a>
-              <a class=" img" href="" target="_blank"><img src="./image//icon/instagram.png" alt="instagram"></a>
-              <a class=" img" href="" target="_blank"><img src="./image//icon/twitter.png" alt="twitter"></a>
-              <a class=" img" href="" target="_blank"><img src="./image//icon/line.png" alt="line"></a>
-              <a class=" img" href="" target="_blank"><img src="./image//icon/wechat.png" alt="wechat"></a>
-              <a class=" img" href="" target="_blank"><img src="./image//icon/zalo.png" alt="zalo"></a>
-              <a class=" img" href="" target="_blank"><img src="./image//icon/youtube.png" alt="youtube"></a>
-            </div>
-          </div>
-
-          <div class="menu">
-            <ul>
-              <li><a class="title" href="">SKYJOY</a></li>
-              <li><a class="title" href="./Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA
-                  TÔI</a></li>
-              <li><a class="title" target="_blank" href="./Online-CheckIn/onlineCheckIn.html">ONLINE CHECK-IN</a></li>
-              <li><a class="title" href="./Menu/Menu.html" target="_blank">E-MENU</a></li>
-              <li><a class="title" href="./E-VISA/Evisa.html">E-VISA</a></li>
-              <li class="hover-a">
-                <p class="title">DỊCH VỤ CHUYẾN BAY</p>
-                <div class="container-dropdown">
-                  <div class="dropdown">
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...<span><img src="./image/icon/hot.png" alt="hot"></span></h3>
-                        </a>
-                        <hr>
-                        <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
+            <div class="menu">
+              <ul>
+                <li><a class="title" href="">SKYJOY</a></li>
+                <li><a class="title" href="./Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA
+                    TÔI</a></li>
+                <li><a class="title" target="_blank" href="./Online-CheckIn/onlineCheckIn.html">ONLINE CHECK-IN</a></li>
+                <li><a class="title" href="./Menu/Menu.html" target="_blank">E-MENU</a></li>
+                <li><a class="title" href="./E-VISA/Evisa.html">E-VISA</a></li>
+                <li class="hover-a">
+                  <p class="title">DỊCH VỤ CHUYẾN BAY</p>
+                  <div class="container-dropdown">
+                    <div class="dropdown">
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...<span><img
+                                  src="./image/icon/hot.png" alt="hot"></span></h3>
+                          </a>
+                          <hr>
+                          <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="./Bảo hiểm/BaoHiem.html" target="_blank">
+                            <h3>Bảo hiểm</h3>
+                          </a>
+                          <hr>
+                          <p>Thật yên tâm và thoải mái với các chương trình bảo hiểm uy tín đến từ các đối tác bảo hiểm
+                            tin cậy của Vietjet</p>
+                        </div>
                       </div>
-                      <div class="dropdown-item">
-                        <a href="./Bảo hiểm/BaoHiem.html" target="_blank">
-                          <h3>Bảo hiểm</h3>
-                        </a>
-                        <hr>
-                        <p>Thật yên tâm và thoải mái với các chương trình bảo hiểm uy tín đến từ các đối tác bảo hiểm
-                          tin cậy của Vietjet</p>
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="./Khách sạn/khachsan.html" target="_blank">
+                            <h3>Khách sạn</h3>
+                          </a>
+                          <hr>
+                          <p>Sẵn sàng tận hưởng ưu đãi giảm giá lên đến 70% các khách sạn trên toàn thế giới</p>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Săn vé giá rẻ <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
+                          </a>
+                          <hr>
+                          <p>Nhanh tay săn vé bay Vietjet giá tốt nhất! Tìm kiếm các chặng bay hot nhất!</p>
+                        </div>
                       </div>
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Dịch vụ đặc biệt</h3>
+                          </a>
+                          <hr>
+                          <p>Vận chuyển thú cưng, trẻ em đi một mình, hỗ trợ thủ tục tại sân bay và hơn thế nữa!</p>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="./eSim/esim.html" target="_blank">
+                            <h3>eSIM <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
+                          </a>
+                          <hr>
+                          <p>Với SkyFi eSIM, hãy tận thưởng kết nối internet tốc độ cao trong mọi chuyến đi của bạn tới
+                            bất cứ nơi đâu</p>
+                        </div>
+
+                      </div>
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Taxi đón sân bay <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
+                          </a>
+                          <hr>
+                          <p>Dễ dàng đặt trước xe taxi Xanh SM đón tại sân bay với các gói cước tiết kiệm.</p>
+                        </div>
+
+                      </div>
+
                     </div>
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="./Khách sạn/khachsan.html" target="_blank">
-                          <h3>Khách sạn</h3>
-                        </a>
-                        <hr>
-                        <p>Sẵn sàng tận hưởng ưu đãi giảm giá lên đến 70% các khách sạn trên toàn thế giới</p>
-                      </div>
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Săn vé giá rẻ <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
-                        </a>
-                        <hr>
-                        <p>Nhanh tay săn vé bay Vietjet giá tốt nhất! Tìm kiếm các chặng bay hot nhất!</p>
-                      </div>
-                    </div>
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Dịch vụ đặc biệt</h3>
-                        </a>
-                        <hr>
-                        <p>Vận chuyển thú cưng, trẻ em đi một mình, hỗ trợ thủ tục tại sân bay và hơn thế nữa!</p>
-                      </div>
-                      <div class="dropdown-item">
-                        <a href="./eSim/esim.html" target="_blank">
-                          <h3>eSIM <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
-                        </a>
-                        <hr>
-                        <p>Với SkyFi eSIM, hãy tận thưởng kết nối internet tốc độ cao trong mọi chuyến đi của bạn tới
-                          bất cứ nơi đâu</p>
-                      </div>
-                      
-                    </div>
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Taxi đón sân bay <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
-                        </a>
-                        <hr>
-                        <p>Dễ dàng đặt trước xe taxi Xanh SM đón tại sân bay với các gói cước tiết kiệm.</p>
-                      </div>
-                      
-                    </div>
-
                   </div>
-                </div>
-              </li>
-              <li class="hover-a">
-                <p class="title">DỊCH VỤ KHÁC</p>
-                <div class="container-dropdown">
-                  <div class="dropdown">
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>"Bay trước-Trả sau" MOVI-Vietjet</h3>
-                        </a>
-                        <hr>
-                        <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
+                </li>
+                <li class="hover-a">
+                  <p class="title">DỊCH VỤ KHÁC</p>
+                  <div class="container-dropdown">
+                    <div class="dropdown">
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>"Bay trước-Trả sau" MOVI-Vietjet</h3>
+                          </a>
+                          <hr>
+                          <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Thẻ tín dụng du lịch HDBank Vietjet</h3>
+                          </a>
+                          <hr>
+                          <p>Với vô vàn ưu đãi hấp dẫn, tặng tiền khi mua vé máy bay, giảm đến 50% các dịch vụ mua sắm,
+                            khách sạn, resort, trả góp 0% lãi suất,.. [Mở thẻ 100% online]</p>
+                        </div>
                       </div>
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Thẻ tín dụng du lịch HDBank Vietjet</h3>
-                        </a>
-                        <hr>
-                        <p>Với vô vàn ưu đãi hấp dẫn, tặng tiền khi mua vé máy bay, giảm đến 50% các dịch vụ mua sắm,
-                          khách sạn, resort, trả góp 0% lãi suất,.. [Mở thẻ 100% online]</p>
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Bay trước, thanh toán sau <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
+                          </a>
+                          <hr>
+                          <p>Sẵn sàng bay vui, vé để Vietjet lo. Cùng tận hưởng sản phẩm mua vé máy bay trả góp với thời
+                            hạn cho vay đến 6 tháng và không cần chứng minh thu nhập</p>
+                        </div>
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Đặt trước Hàng miễn thuế</h3>
+                          </a>
+                          <hr>
+                          <p>Tận hưởng mua sắm hàng hiệu chỉ với nút đặt hàng và nhận ngay trên chuyến bay của Quý
+                            khách.
+                            Nhiều món đồ ưng ý với mức giá ưu đãi đặc biệt đang chờ. Đặt ngay thôi!</p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Bay trước, thanh toán sau <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
-                        </a>
-                        <hr>
-                        <p>Sẵn sàng bay vui, vé để Vietjet lo. Cùng tận hưởng sản phẩm mua vé máy bay trả góp với thời
-                          hạn cho vay đến 6 tháng và không cần chứng minh thu nhập</p>
-                      </div>
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Đặt trước Hàng miễn thuế</h3>
-                        </a>
-                        <hr>
-                        <p>Tận hưởng mua sắm hàng hiệu chỉ với nút đặt hàng và nhận ngay trên chuyến bay của Quý khách.
-                          Nhiều món đồ ưng ý với mức giá ưu đãi đặc biệt đang chờ. Đặt ngay thôi!</p>
-                      </div>
-                    </div>
-                    <div class="flex-content">
-                      <div class="dropdown-item">
-                        <a href="" target="_blank">
-                          <h3>Mua ngoại tệ <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
-                        </a>
-                        <hr>
-                        <p>Đặt mua ngoại tệ ngay hôm nay và tận hưởng hành trình an tâm, tiện lợi hơn bao giờ hết!</p>
+                      <div class="flex-content">
+                        <div class="dropdown-item">
+                          <a href="" target="_blank">
+                            <h3>Mua ngoại tệ <span><img src="./image/icon/hot.png" alt="hot"></span></h3>
+                          </a>
+                          <hr>
+                          <p>Đặt mua ngoại tệ ngay hôm nay và tận hưởng hành trình an tâm, tiện lợi hơn bao giờ hết!</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- header end -->
+      </header>
+      <!-- header end -->
 
-    <div class="banner-slideshow">
-      <div class="fade myslide">
-        <a href="#">
-          <img src="./image/banner/webvie-1725983454736.jpg" alt="VietJet Air" />
-        </a>
+      <div class="banner-slideshow">
+        <div class="fade myslide">
+          <a href="#">
+            <img src="./image/banner/webvie-1725983454736.jpg" alt="VietJet Air" />
+          </a>
+        </div>
+        <div class="fade myslide">
+          <a href="#">
+            <img src="./image/banner/skyfi1920x960vn-1726632778598.jpg" alt="VietJet Air" />
+          </a>
+        </div>
+        <div class="fade myslide">
+          <a href="#">
+            <img src="./image/banner/qsswwsx-1724233851279.jpg" alt="VietJet Air" />
+          </a>
+        </div>
+        <div class="fade myslide">
+          <a href="#">
+            <img src="./image/banner/anhviber20240917110241272-1727233273083.jpg" alt="VietJet Air" />
+          </a>
+        </div>
+        <!-- Các dấu chấm chỉ số slide -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
       </div>
-      <div class="fade myslide">
-        <a href="#">
-          <img src="./image/banner/skyfi1920x960vn-1726632778598.jpg" alt="VietJet Air" />
-        </a>
-      </div>
-      <div class="fade myslide">
-        <a href="#">
-          <img src="./image/banner/qsswwsx-1724233851279.jpg" alt="VietJet Air" />
-        </a>
-      </div>
-      <div class="fade myslide">
-        <a href="#">
-          <img src="./image/banner/anhviber20240917110241272-1727233273083.jpg" alt="VietJet Air" />
-        </a>
-      </div>
-      <!-- Các dấu chấm chỉ số slide -->
-      <div class="dot-container">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
+
     </div>
 
-  </div>
+    <!-- book ticket start -->
+    <div class="DatVe grid">
+      <div class="inner-wrap">
 
-  <!-- book ticket start -->
-  <div class="DatVe grid">
-    <div class="inner-wrap">
-
-      <div class="form">
-        <div class="title">
-          <div class="title-content" style="width: 53%;">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</div>
-          <div class="title-content title-content-yellow">Đổi thưởng & My SkyPoint</div>
-          <div class="title-content" style="width: 20%;">Gửi hàng nhanh</div>
-        </div>
-        <div class="book-ticket__content">
-
-          <div class="ChieuBay">
-            <div class="Chieu">
-              <input type="radio" name="object">
-              <lable for="Khuhoi">Khứ hồi</lable>
-              </lable>
-              <div></div>
-              <input type="radio" name="object">
-              <lable for="Motchieu">Một chiều</lable>
-              </lable>
-            </div>
-            <span style="cursor: not-allowed;">VND <i class="fa fa-caret-down"></i></span>
+        <div class="form">
+          <div class="title">
+            <div class="title-content" style="width: 53%;">Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</div>
+            <div class="title-content title-content-yellow">Đổi thưởng & My SkyPoint</div>
+            <div class="title-content" style="width: 20%;">Gửi hàng nhanh</div>
           </div>
-
-          <div class="book-ticket__middle">
-
-            <div class="middle__point-start">
-              <div class="point-start__left">
-                <i class="fas fa-plane"></i>
-                <input type="text" placeholder="Điểm khởi hành" id="fromInput" autocomplete="off">
-                <ul class="dropdown-options" id="fromOptions">
-                  <li onclick="selectOption('fromInput', 'toInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
-                    <span>SGN</span>
-                  </li>
-                  <li onclick="selectOption('fromInput', 'toInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
-                  <li onclick="selectOption('fromInput', 'toInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
-                  <li onclick="selectOption('fromInput', 'toInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
-                  <li onclick="selectOption('fromInput', 'toInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
-                  <li onclick="selectOption('fromInput', 'toInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
-                </ul>
-              </div>
-              <div>
-                <span>
-                  <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
-                  <div class="calendar di">
-                    <div class="header-calender">
-                      <button id="previous-month">«</button>
-                      <div>
-                        <span id="content-month"></span> <span id="content-year"></span>
-                      </div>
-                      <button id="next-month">»</button>
-                    </div>
-                    <div class="days"></div>
-                  </div>
-                </span>
-              </div>
-            </div>
-
-            <div class="middle__point-end">
-              <div class="point-start__right">
-                <i class="fas fa-plane"></i>
-                <input type="text" id="toInput" placeholder="Điểm đến" autocomplete="off">
-                <ul class="dropdown-options" id="toOptions">
-                  <li onclick="selectOption('toInput', 'fromInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
-                    <span>SGN</span>
-                  </li>
-                  <li onclick="selectOption('toInput', 'fromInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
-                  <li onclick="selectOption('toInput', 'fromInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
-                  <li onclick="selectOption('toInput', 'fromInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
-                  <li onclick="selectOption('toInput', 'fromInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
-                  <li onclick="selectOption('toInput', 'fromInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
-                </ul>
-              </div>
-              <div>
-                <span>
-                  <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
-                  <div class="calendar den">
-                    <div class="header-calender">
-                      <button id="previous-month">«</button>
-                      <div>
-                        <span id="content-month"></span> <span id="content-year"></span>
-                      </div>
-                      <button id="next-month">»</button>
-                    </div>
-                    <div class="days"></div>
-                  </div>
-                </span>
-              </div>
-            </div>
-
-            <div class="middle__client">
-              <i class="fas fa-user passenger-icon"></i>
-              <span class="client__title">Hành khách</span>
-              <button class="dropdown-btn" onclick="toggleDropdown()">
-                <span id="passenger-count">1 người lớn</span>
-                <span class="dropdown-arrow">▼</span>
-              </button>
-
-              <div id="dropdown-menu" class="dropdown-menu">
-                <a href="#" class="special-request">Yêu cầu trợ giúp đặc biệt</a>
-
-                <div class="passenger-option">
-                  <span class="passenger-type">
-                    <i class="fa-solid fa-person" style="color: #77797e; font-size: 32px;"></i>
-                    <div class="passenger">
-                      Người lớn
-                      <small>12 tuổi trở lên</small>
-                    </div>
-                  </span>
-                  <div class="counter">
-                    <button onclick="decreaseCount('adult')" class="counter-btn">−</button>
-                    <span id="adult-count" style="color: var(--primary-color);">1</span>
-                    <button onclick="increaseCount('adult')" class="counter-btn">+</button>
-                  </div>
-                </div>
-
-                <div class="passenger-option">
-                  <span class="passenger-type">
-                    <i class="fa-solid fa-child-reaching " style="color: #77797e;"></i>
-                    <div class="passenger">
-                      Trẻ em
-                      <small>2-11 tuổi</small>
-                    </div>
-                  </span>
-                  <div class="counter">
-                    <button onclick="decreaseCount('child')" class="counter-btn">−</button>
-                    <span id="child-count" style="color: var(--primary-color);">0</span>
-                    <button onclick="increaseCount('child')" class="counter-btn">+</button>
-                  </div>
-                </div>
-
-                <div class="passenger-option">
-                  <span class="passenger-type">
-                    <i class="fa-solid fa-baby" style="color: #77797e;"></i>
-                    <div class="passenger">
-                      Em bé
-                      <small>Dưới 2 tuổi</small>
-                    </div>
-                  </span>
-                  <div class="counter">
-                    <button onclick="decreaseCount('infant')" class="counter-btn">−</button>
-                    <span id="infant-count" style="color: var(--primary-color);">0</span>
-                    <button onclick="increaseCount('infant')" class="counter-btn">+</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="middle__sale-ticket">
-              <i class="fas fa-ticket-alt" style="color: #263b5f;"></i>
-              <input type="text" id="MaKM" placeholder="Mã khuyến mãi" style="border: none;">
-            </div>
-
-          </div>
-
-          <div class="checkbox">
-            <input type="checkbox" id="DongY" required>
-            <label for="DongY">Tìm vé rẻ nhất</label>
-          </div>
-
-          <div class="button"><a href="" class="button__find-fly">Tìm chuyến bay</a></div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- book ticket end -->
-
-  <!-- chat amy start -->
-  <div class="chat-amy">
-    <div class="button">
-      <img src="./image/icon/chat.png" alt="Chatbot AI">
-      <span class="button-content">Chat với Amy</span>
-    </div>
-  </div>
-  <!-- chat amy end -->
-
-  <!-- topbanner start -->
-  <div class="topbanner">
-    <div class="inner-wrap "
-      style="background: url(./image/background/topnen-1610536365157.png) center top / cover no-repeat;">
-      <!-- <div class="img-cloud">
-        <img src="./image/background/topnen-1610536365157.png" alt="">
-      </div> -->
-      <div class="inner-wrap-boxYellow">
-        <div class="boxYellow">
-          <div class="listboxYellow" style="width: 1055px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-            <div class="boxYellow-item">
-              <div class="boxYellow-content">
-                <a href="">
-                  <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
-                  <div class="boxYellow-img">
-                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                    <div class="ptext">
-                      <p>Chỉ từ </p>
-                      <p>390,000 </p>
-                      <p>VND</p>
-                    </div>
-                  </div>
-                  <div class="ten"><span class="black-text">Đến</span> Tây An</div>
-                </a>
-              </div>
-            </div>
-            <div class="boxYellow-item">
-              <div class="boxYellow-content">
-                <a href="">
-                  <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
-                  <div class="boxYellow-img">
-                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                    <div class="ptext">
-                      <p>Chỉ từ </p>
-                      <p>900,000 </p>
-                      <p>VND</p>
-                    </div>
-                  </div>
-                  <div class="ten"><span class="black-text">Đến</span> Melbourne</div>
-                </a>
-              </div>
-            </div>
-            <div class="boxYellow-item">
-              <div class="boxYellow-content">
-                <a href="">
-                  <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
-                  <div class="boxYellow-img">
-                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                    <div class="ptext">
-                      <p>Chỉ từ </p>
-                      <p style="">900,000 </p>
-                      <p>VND</p>
-                    </div>
-                  </div>
-                  <div class="ten"><span class="black-text">Đến</span> Sydney</div>
-                </a>
-              </div>
-            </div>
-            <div class="boxYellow-item">
-              <div class="boxYellow-content">
-                <a href="">
-                  <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
-                  <div class="boxYellow-img">
-                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                    <div class="ptext">
-                      <p>Chỉ từ </p>
-                      <p>690,000 </p>
-                      <p>VND</p>
-                    </div>
-                  </div>
-                  <div class="ten"><span class="black-text">Đến</span> Thượng Hải</div>
-                </a>
-              </div>
-            </div>
-            <div class="boxYellow-item">
-              <div class="boxYellow-content">
-                <a href="">
-                  <div class="ten"><span class="black-text">Từ</span> Đà Nẵng</div>
-                  <div class="boxYellow-img">
-                    <img src="./image/icon/bg-fare.svg" alt="YellowBox">
-                    <div class="ptext">
-                      <p>Chỉ từ </p>
-                      <p>260,000 </p>
-                      <p>VND</p>
-                    </div>
-                  </div>
-                  <div class="ten"><span class="black-text">Đến</span> Ahmedabd</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- topbanner end -->
-
-  <!-- white book ticket start -->
-  <div class="white-bookTicket grid" style="height: 0px;">
-    <div class="sticky-box">
-      <div class="thanhTittle">
-        <div class="content">
-          <div class="text">
-            <img src="./image/icon/flightHorizontal.edd0202a.svg" alt="">
-            <a href="" class="text">
-              Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
-            </a>
-          </div>
-          <div class="text">
-            <img src="./image/icon/SendFast.0966cc94.svg" alt="">
-            <a href="" class="text">
-              Gửi hàng nhanh
-            </a>
-          </div>
-          <div class="text">
-            <i class="fa-solid fa-ticket"></i>
-            <a href="" class="text">
-              Đổi thưởng và mua SkyPoint
-            </a>
-          </div>
-          <div class="text">
-            <img src="./image/icon/CheckIn.94f94d4b.svg" alt="">
-            <a href="" class="text">
-              Check in
-            </a>
-          </div>
-        </div>
-        <img class="thanhmaudolon" src="./image/icon/mauthanhdolon.png" alt="mauDo">
-        <img class="thanhmauvang" src="./image/icon/mauthanhvang.png" alt="mauVang">
-      </div>
-
-      <div class="centerbox">
-        <div class="DatVe2">
           <div class="book-ticket__content">
 
             <div class="ChieuBay">
@@ -599,11 +305,12 @@
                 <input type="radio" name="object">
                 <lable for="Khuhoi">Khứ hồi</lable>
                 </lable>
+                <div></div>
                 <input type="radio" name="object">
                 <lable for="Motchieu">Một chiều</lable>
                 </lable>
               </div>
-              <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+              <span style="cursor: not-allowed;">VND <i class="fa fa-caret-down"></i></span>
             </div>
 
             <div class="book-ticket__middle">
@@ -611,18 +318,18 @@
               <div class="middle__point-start">
                 <div class="point-start__left">
                   <i class="fas fa-plane"></i>
-                  <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                  <input type="text" placeholder="Điểm khởi hành" id="fromInput" autocomplete="off">
                   <ul class="dropdown-options" id="fromOptions">
-                    <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                    <li onclick="selectOption('fromInput', 'toInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
                       <span>SGN</span>
                     </li>
-                    <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
-                    <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
-                    <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span>
+                    <li onclick="selectOption('fromInput', 'toInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                    <li onclick="selectOption('fromInput', 'toInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                    <li onclick="selectOption('fromInput', 'toInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span>
                     </li>
-                    <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span>
+                    <li onclick="selectOption('fromInput', 'toInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span>
                     </li>
-                    <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                    <li onclick="selectOption('fromInput', 'toInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
                   </ul>
                 </div>
                 <div>
@@ -645,18 +352,18 @@
               <div class="middle__point-end">
                 <div class="point-start__right">
                   <i class="fas fa-plane"></i>
-                  <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                  <input type="text" id="toInput" placeholder="Điểm đến" autocomplete="off">
                   <ul class="dropdown-options" id="toOptions">
-                    <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                    <li onclick="selectOption('toInput', 'fromInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
                       <span>SGN</span>
                     </li>
-                    <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
-                    <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
-                    <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span>
+                    <li onclick="selectOption('toInput', 'fromInput', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                    <li onclick="selectOption('toInput', 'fromInput', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                    <li onclick="selectOption('toInput', 'fromInput', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span>
                     </li>
-                    <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span>
+                    <li onclick="selectOption('toInput', 'fromInput', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span>
                     </li>
-                    <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                    <li onclick="selectOption('toInput', 'fromInput', 'Vinh', 'VII')">Vinh <span>VII</span></li>
                   </ul>
                 </div>
                 <div>
@@ -676,620 +383,935 @@
                 </div>
               </div>
 
-              <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
+              <div class="middle__client">
+                <i class="fas fa-user passenger-icon"></i>
+                <span class="client__title">Hành khách</span>
+                <button class="dropdown-btn" onclick="toggleDropdown()">
+                  <span id="passenger-count">1 người lớn</span>
+                  <span class="dropdown-arrow">▼</span>
+                </button>
+
+                <div id="dropdown-menu" class="dropdown-menu">
+                  <a href="#" class="special-request">Yêu cầu trợ giúp đặc biệt</a>
+
+                  <div class="passenger-option">
+                    <span class="passenger-type">
+                      <i class="fa-solid fa-person" style="color: #77797e; font-size: 32px;"></i>
+                      <div class="passenger">
+                        Người lớn
+                        <small>12 tuổi trở lên</small>
+                      </div>
+                    </span>
+                    <div class="counter">
+                      <button onclick="decreaseCount('adult')" class="counter-btn">−</button>
+                      <span id="adult-count" style="color: var(--primary-color);">1</span>
+                      <button onclick="increaseCount('adult')" class="counter-btn">+</button>
+                    </div>
+                  </div>
+
+                  <div class="passenger-option">
+                    <span class="passenger-type">
+                      <i class="fa-solid fa-child-reaching " style="color: #77797e;"></i>
+                      <div class="passenger">
+                        Trẻ em
+                        <small>2-11 tuổi</small>
+                      </div>
+                    </span>
+                    <div class="counter">
+                      <button onclick="decreaseCount('child')" class="counter-btn">−</button>
+                      <span id="child-count" style="color: var(--primary-color);">0</span>
+                      <button onclick="increaseCount('child')" class="counter-btn">+</button>
+                    </div>
+                  </div>
+
+                  <div class="passenger-option">
+                    <span class="passenger-type">
+                      <i class="fa-solid fa-baby" style="color: #77797e;"></i>
+                      <div class="passenger">
+                        Em bé
+                        <small>Dưới 2 tuổi</small>
+                      </div>
+                    </span>
+                    <div class="counter">
+                      <button onclick="decreaseCount('infant')" class="counter-btn">−</button>
+                      <span id="infant-count" style="color: var(--primary-color);">0</span>
+                      <button onclick="increaseCount('infant')" class="counter-btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="middle__sale-ticket">
+                <i class="fas fa-ticket-alt" style="color: #263b5f;"></i>
+                <input type="text" id="MaKM" placeholder="Mã khuyến mãi" style="border: none;">
+              </div>
+
             </div>
 
+            <div class="checkbox">
+              <input type="checkbox" id="DongY" required>
+              <label for="DongY">Tìm vé rẻ nhất</label>
+            </div>
+
+            <div class="button"><a href="" class="button__find-fly">Tìm chuyến bay</a></div>
 
           </div>
         </div>
       </div>
-      <div class="thanhFooter">
-        <img classs="thanhmaudonho" src="./image/icon/mauthanhdonho.png" alt="mauDo">
+
+    </div>
+    <!-- book ticket end -->
+
+    <!-- chat amy start -->
+    <div class="chat-amy">
+      <div class="button">
+        <img src="./image/icon/chat.png" alt="Chatbot AI">
+        <span class="button-content">Chat với Amy</span>
       </div>
     </div>
-  </div>
-  <!-- white book ticket end -->
+    <!-- chat amy end -->
 
-  <div class="noidung">
-    <div style="min-height: 25px;">
-    </div>
-
-    <!-- slide 2 ảnh start -->
-    <div style="min-height: 208.696px;">
-      <div class=" carousel2">
-        <div class="carousel-slide2">
-          <div class="slide2">
-            <div class="mySlides">
-              <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 1a"></a>
-            </div>
-            <div class="mySlides">
-              <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 2a"></a>
-            </div>
-          </div>
-          <div class="slide2">
-            <div class="mySlides ">
-              <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 1b"></a>
-            </div>
-            <div class="mySlides">
-              <a href=""><img src="./image/banner/artboard216418031278341695094349731-1715833806513.webp"
-                  alt="Slide 2b"></a>
-            </div>
-          </div>
-          <div class="slide2">
-            <div class="mySlides">
-              <a href=""><img src="./image/banner/artboard216418031278341695094349731-1715833806513.webp"
-                  alt="Slide 1c"></a>
-            </div>
-            <div class="mySlides">
-              <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 2c"></a>
+    <!-- topbanner start -->
+    <div class="topbanner">
+      <div class="inner-wrap "
+        style="background: url(./image/background/topnen-1610536365157.png) center top / cover no-repeat;">
+        <!-- <div class="img-cloud">
+          <img src="./image/background/topnen-1610536365157.png" alt="">
+        </div> -->
+        <div class="inner-wrap-boxYellow">
+          <div class="boxYellow">
+            <div class="listboxYellow" style="width: 1055px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+              <div class="boxYellow-item">
+                <div class="boxYellow-content">
+                  <a href="">
+                    <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
+                    <div class="boxYellow-img">
+                      <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                      <div class="ptext">
+                        <p>Chỉ từ </p>
+                        <p>390,000 </p>
+                        <p>VND</p>
+                      </div>
+                    </div>
+                    <div class="ten"><span class="black-text">Đến</span> Tây An</div>
+                  </a>
+                </div>
+              </div>
+              <div class="boxYellow-item">
+                <div class="boxYellow-content">
+                  <a href="">
+                    <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
+                    <div class="boxYellow-img">
+                      <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                      <div class="ptext">
+                        <p>Chỉ từ </p>
+                        <p>900,000 </p>
+                        <p>VND</p>
+                      </div>
+                    </div>
+                    <div class="ten"><span class="black-text">Đến</span> Melbourne</div>
+                  </a>
+                </div>
+              </div>
+              <div class="boxYellow-item">
+                <div class="boxYellow-content">
+                  <a href="">
+                    <div class="ten"><span class="black-text">Từ</span> Hà Nội</div>
+                    <div class="boxYellow-img">
+                      <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                      <div class="ptext">
+                        <p>Chỉ từ </p>
+                        <p style="">900,000 </p>
+                        <p>VND</p>
+                      </div>
+                    </div>
+                    <div class="ten"><span class="black-text">Đến</span> Sydney</div>
+                  </a>
+                </div>
+              </div>
+              <div class="boxYellow-item">
+                <div class="boxYellow-content">
+                  <a href="">
+                    <div class="ten"><span class="black-text">Từ</span> Tp. Hồ Chí Minh</div>
+                    <div class="boxYellow-img">
+                      <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                      <div class="ptext">
+                        <p>Chỉ từ </p>
+                        <p>690,000 </p>
+                        <p>VND</p>
+                      </div>
+                    </div>
+                    <div class="ten"><span class="black-text">Đến</span> Thượng Hải</div>
+                  </a>
+                </div>
+              </div>
+              <div class="boxYellow-item">
+                <div class="boxYellow-content">
+                  <a href="">
+                    <div class="ten"><span class="black-text">Từ</span> Đà Nẵng</div>
+                    <div class="boxYellow-img">
+                      <img src="./image/icon/bg-fare.svg" alt="YellowBox">
+                      <div class="ptext">
+                        <p>Chỉ từ </p>
+                        <p>260,000 </p>
+                        <p>VND</p>
+                      </div>
+                    </div>
+                    <div class="ten"><span class="black-text">Đến</span> Ahmedabd</div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <button class="prev" onclick="moveSlide2(-1)">
-          <img src="./image/icon/angle-left.svg" alt="angle left"
-            style="    display: block; width: 7.4px; height: 12px;">
+      </div>
+    </div>
+    <!-- topbanner end -->
+
+    <!-- white book ticket start -->
+    <div class="white-bookTicket grid" style="height: 0px;">
+      <div class="sticky-box">
+        <div class="thanhTittle">
+          <div class="content">
+            <div class="text">
+              <img src="./image/icon/flightHorizontal.edd0202a.svg" alt="">
+              <a href="" class="text">
+                Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
+              </a>
+            </div>
+            <div class="text">
+              <img src="./image/icon/SendFast.0966cc94.svg" alt="">
+              <a href="" class="text">
+                Gửi hàng nhanh
+              </a>
+            </div>
+            <div class="text">
+              <i class="fa-solid fa-ticket"></i>
+              <a href="" class="text">
+                Đổi thưởng và mua SkyPoint
+              </a>
+            </div>
+            <div class="text">
+              <img src="./image/icon/CheckIn.94f94d4b.svg" alt="">
+              <a href="" class="text">
+                Check in
+              </a>
+            </div>
+          </div>
+          <img class="thanhmaudolon" src="./image/icon/mauthanhdolon.png" alt="mauDo">
+          <img class="thanhmauvang" src="./image/icon/mauthanhvang.png" alt="mauVang">
+        </div>
+
+        <div class="centerbox">
+          <div class="DatVe2">
+            <div class="book-ticket__content">
+
+              <div class="ChieuBay">
+                <div class="Chieu">
+                  <input type="radio" name="object">
+                  <lable for="Khuhoi">Khứ hồi</lable>
+                  </lable>
+                  <input type="radio" name="object">
+                  <lable for="Motchieu">Một chiều</lable>
+                  </lable>
+                </div>
+                <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+              </div>
+
+              <div class="book-ticket__middle">
+
+                <div class="middle__point-start">
+                  <div class="point-start__left">
+                    <i class="fas fa-plane"></i>
+                    <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                    <ul class="dropdown-options" id="fromOptions">
+                      <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                        <span>SGN</span>
+                      </li>
+                      <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                      <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span>
+                      </li>
+                      <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng
+                        <span>HPH</span>
+                      </li>
+                      <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa
+                        <span>THD</span>
+                      </li>
+                      <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span>
+                      <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                      <div class="calendar di">
+                        <div class="header-calender">
+                          <button id="previous-month">«</button>
+                          <div>
+                            <span id="content-month"></span> <span id="content-year"></span>
+                          </div>
+                          <button id="next-month">»</button>
+                        </div>
+                        <div class="days"></div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="middle__point-end">
+                  <div class="point-start__right">
+                    <i class="fas fa-plane"></i>
+                    <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                    <ul class="dropdown-options" id="toOptions">
+                      <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                        <span>SGN</span>
+                      </li>
+                      <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                      <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span>
+                      </li>
+                      <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng
+                        <span>HPH</span>
+                      </li>
+                      <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa
+                        <span>THD</span>
+                      </li>
+                      <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <span>
+                      <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                      <div class="calendar den">
+                        <div class="header-calender">
+                          <button id="previous-month">«</button>
+                          <div>
+                            <span id="content-month"></span> <span id="content-year"></span>
+                          </div>
+                          <button id="next-month">»</button>
+                        </div>
+                        <div class="days"></div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="thanhFooter">
+          <img classs="thanhmaudonho" src="./image/icon/mauthanhdonho.png" alt="mauDo">
+        </div>
+      </div>
+    </div>
+    <!-- white book ticket end -->
+
+    <div class="noidung">
+      <div style="min-height: 25px;">
+      </div>
+
+      <!-- slide 2 ảnh start -->
+      <div style="min-height: 208.696px;">
+        <div class=" carousel2">
+          <div class="carousel-slide2">
+            <div class="slide2">
+              <div class="mySlides">
+                <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 1a"></a>
+              </div>
+              <div class="mySlides">
+                <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 2a"></a>
+              </div>
+            </div>
+            <div class="slide2">
+              <div class="mySlides ">
+                <a href=""><img src="./image/banner/1200x600vn1647922449867-1695094342588.webp" alt="Slide 1b"></a>
+              </div>
+              <div class="mySlides">
+                <a href=""><img src="./image/banner/artboard216418031278341695094349731-1715833806513.webp"
+                    alt="Slide 2b"></a>
+              </div>
+            </div>
+            <div class="slide2">
+              <div class="mySlides">
+                <a href=""><img src="./image/banner/artboard216418031278341695094349731-1715833806513.webp"
+                    alt="Slide 1c"></a>
+              </div>
+              <div class="mySlides">
+                <a href=""><img src="./image/banner/middle-banner-vi-1726542837614.jpg" alt="Slide 2c"></a>
+              </div>
+            </div>
+          </div>
+          <button class="prev" onclick="moveSlide2(-1)">
+            <img src="./image/icon/angle-left.svg" alt="angle left"
+              style="    display: block; width: 7.4px; height: 12px;">
+          </button>
+          <button class="next" onclick="moveSlide2(1)">
+            <img src="./image/icon/angle-right.svg" alt="angle-right">
+          </button>
+        </div>
+      </div>
+      <!-- slide 2 ảnh end -->
+
+      <!-- Tiện ich start -->
+      <div class="grid" style="min-height: 204px;">
+        <div class="container-flex" style="padding-top: 50px;">
+          <div class="content">
+            <a href="" target="_blank" class="img">
+              <div class="utilities-item">
+                <img src="./image/icon/booking-1634319183743.svg" alt="booking">
+
+                <p class="text">Đặt chuyến bay</p>
+              </div>
+            </a>
+            <a href="" target="_blank" class="img">
+              <div class="utilities-item">
+                <img src="./image/icon/buymore-1634319183745.svg" alt="buy more">
+                <p class="text">Mua hành lý, suất ăn, chọn chỗ...</p>
+              </div>
+            </a>
+            <a href="" target="_blank" class="img">
+              <div class="utilities-item">
+                <img src="./image/icon/checkin-1634319183747.svg" alt="check in">
+                <p class="text">Ưu tiên làm thủ tục nhanh</p>
+              </div>
+            </a>
+            <a href="" target="_blank" class="img">
+              <div class="utilities-item">
+                <img src="./image/icon/iconduty-1698718953200.svg" alt="duty">
+                <p class="text">Hàng miễn thuế</p>
+              </div>
+            </a>
+            <a href="" target="_blank" class="img">
+              <div class="utilities-item">
+                <img src="./image/icon/insurance-1634319183751.svg" alt="insurance">
+                <p class="text">Bảo hiểm</p>
+              </div>
+            </a>
+            <a href="" target="_blank" class="img">
+              <div class="utilities-item">
+                <img src="./image/icon/hotelbus-1634319183749.svg" alt="hotel bus">
+                <p class="text">Sky Holidays</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Tiện ich end -->
+
+      <!-- Slide 1 ảnh start -->
+      <div class="carousel">
+        <div class="slideshow-container carousel-slide">
+          <div class="slide">
+            <div class="Tag slide-tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>HDBank Vietjet Platinum</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="">
+              <div class="mySlide">
+                <img src="./image/banner/anhviber20240917110241929-1727233354235.jpg" alt="Slide 1">
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <div class="Tag slide-tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Vikki Digital Bank</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="">
+              <div class="mySlide">
+                <img src="./image/banner/1600x320-1729832853729.png" alt="Slide 1">
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <div class="Tag slide-tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Tận hưởng chuyến bay</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="">
+              <div class="mySlide">
+                <img src="./image/banner/pc1-1695094513048.webp" alt="Slide 1">
+              </div>
+            </a>
+          </div>
+          <div class="slide">
+            <div class="Tag slide-tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Tận hưởng chuyến bay</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="">
+              <div class="mySlide">
+                <img src="./image/banner/pc2-1695094522549.webp" alt="Slide 1">
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">
+          <img src="./image/icon/angle-left.svg" alt="angle left">
         </button>
-        <button class="next" onclick="moveSlide2(1)">
+        <button class="next" onclick="moveSlide(1)">
           <img src="./image/icon/angle-right.svg" alt="angle-right">
         </button>
       </div>
-    </div>
-    <!-- slide 2 ảnh end -->
+      <!-- Slide 1 ảnh end -->
 
-    <!-- Tiện ich start -->
-    <div class="grid" style="min-height: 204px;">
-      <div class="container-flex" style="padding-top: 50px;">
-        <div class="content">
-          <a href="" target="_blank" class="img">
-            <div class="utilities-item">
-              <img src="./image/icon/booking-1634319183743.svg" alt="booking">
-
-              <p class="text">Đặt chuyến bay</p>
+      <!-- Dịch vụ start -->
+      <div class=" grid">
+        <div class="container-flex">
+          <div class="Service-item bg">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Bảo hiểm</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
             </div>
-          </a>
-          <a href="" target="_blank" class="img">
-            <div class="utilities-item">
-              <img src="./image/icon/buymore-1634319183745.svg" alt="buy more">
-              <p class="text">Mua hành lý, suất ăn, chọn chỗ...</p>
-            </div>
-          </a>
-          <a href="" target="_blank" class="img">
-            <div class="utilities-item">
-              <img src="./image/icon/checkin-1634319183747.svg" alt="check in">
-              <p class="text">Ưu tiên làm thủ tục nhanh</p>
-            </div>
-          </a>
-          <a href="" target="_blank" class="img">
-            <div class="utilities-item">
-              <img src="./image/icon/iconduty-1698718953200.svg" alt="duty">
-              <p class="text">Hàng miễn thuế</p>
-            </div>
-          </a>
-          <a href="" target="_blank" class="img">
-            <div class="utilities-item">
-              <img src="./image/icon/insurance-1634319183751.svg" alt="insurance">
-              <p class="text">Bảo hiểm</p>
-            </div>
-          </a>
-          <a href="" target="_blank" class="img">
-            <div class="utilities-item">
-              <img src="./image/icon/hotelbus-1634319183749.svg" alt="hotel bus">
-              <p class="text">Sky Holidays</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Tiện ich end -->
-
-    <!-- Slide 1 ảnh start -->
-    <div class="carousel">
-      <div class="slideshow-container carousel-slide">
-        <div class="slide">
-          <div class="Tag slide-tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>HDBank Vietjet Platinum</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="">
-            <div class="mySlide">
-              <img src="./image/banner/anhviber20240917110241929-1727233354235.jpg" alt="Slide 1">
-            </div>
-          </a>
-        </div>
-        <div class="slide">
-          <div class="Tag slide-tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Vikki Digital Bank</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="">
-            <div class="mySlide">
-              <img src="./image/banner/1600x320-1729832853729.png" alt="Slide 1">
-            </div>
-          </a>
-        </div>
-        <div class="slide">
-          <div class="Tag slide-tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Tận hưởng chuyến bay</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="">
-            <div class="mySlide">
-              <img src="./image/banner/pc1-1695094513048.webp" alt="Slide 1">
-            </div>
-          </a>
-        </div>
-        <div class="slide">
-          <div class="Tag slide-tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Tận hưởng chuyến bay</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="">
-            <div class="mySlide">
-              <img src="./image/banner/pc2-1695094522549.webp" alt="Slide 1">
-            </div>
-          </a>
-        </div>
-      </div>
-      <button class="prev" onclick="moveSlide(-1)">
-        <img src="./image/icon/angle-left.svg" alt="angle left">
-      </button>
-      <button class="next" onclick="moveSlide(1)">
-        <img src="./image/icon/angle-right.svg" alt="angle-right">
-      </button>
-    </div>
-    <!-- Slide 1 ảnh end -->
-
-    <!-- Dịch vụ start -->
-    <div class=" grid">
-      <div class="container-flex">
-        <div class="Service-item bg">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Bảo hiểm</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img bdrs">
-              <img src="./image/banner/skycare380x260.webp" alt="skycare">
-            </div>
-            <div class="text">
-              <p><strong>An tâm trọn vẹn bay cùng Vietjet</strong></p>
-              <ul>
-                <li>Các chương trình bảo hiểm hấp dẫn đến từ các đối tác bảo hiểm uy tín của Vietjet</li>
-                <li>Thủ tục mua và bồi thường đơn giản, nhanh chóng</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="Service-item bg">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Gửi hàng nhanh</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img bdrs">
-              <img src="./image/banner/swift.webp" alt="swift">
-            </div>
-            <div class="text">
-              <p><strong>Vận chuyển Bắc - Trung - Nam siêu tốc, siêu tiện lợi</strong></p>
-              <ul>
-                <li>Rút ngắn khoảng cách hàng nghìn km trong thời gian ngắn nhất</li>
-                <li>Đặt đơn, gửi và nhận hàng 24/7</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="Service-item bg">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Bay cùng thẻ HDBank Vietjet</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img bdrs">
-              <img src="./image/banner/anhviber20240917110241588-1727233373363.jpg" alt="viber">
-            </div>
-            <div class="text">
-              <p><strong>Ưu đãi dành cho chủ thẻ mới</strong></p>
-              <ul>
-                <li>Ưu tiên check-in tại sân bay dành cho hạng thẻ Platinum</li>
-                <li>Giảm đến 50% mua sắm, du lịch, ăn uống</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="Service">
-        <div class="Service-item">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Mua sắm, giải trí trên mây</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/banner/banner1200x240vn-1698743606086.jpg" alt="skycare">
-            </div>
-          </a href="" target="_blank">
-        </div>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="container-flex" style="padding-bottom: 0;">
-        <div class="Service-item">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Khách sạn</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/banner/km2.webp" alt="km2">
-            </div>
-          </a>
-        </div>
-        <div class="Service-item">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Du lịch trọn gói</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/banner/km1.webp" alt="km1">
-            </div>
-          </a>
-        </div>
-        <div class="Service-item">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Săn vé giá rẻ</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/banner/km3.webp" alt="km3">
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Dịch vụ end -->
-
-    <!-- Du lịch start -->
-    <div class="grid">
-      <div class="container-flex" style="padding-bottom: 0;">
-        <div class="Service-item">
-          <div class="Tag">
-            <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-            <h3>Điểm đến hấp dẫn</h3>
-            <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-          </div>
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/img_province/quangbinhvi1621704971898-1695095145079.webp" alt="Quang Binh">
-            </div>
-          </a>
-        </div>
-        <div class="Service-item">
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/img_province/gialaivi1621704971875-1695095151485.webp" alt="Gia Lai">
-            </div>
-          </a>
-        </div>
-        <div class="Service-item ">
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/img_province/phuquocvi1621704971895-1695095158881.webp" alt="Phu Quoc">
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="container-flex">
-        <div class="Service-item">
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/img_province/thanhhoavi1624007210031-1695095164116.webp" alt="Thanh Hoa">
-            </div>
-          </a>
-        </div>
-        <div class="Service-item">
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/img_province/ngheanvi1621705324180-1695095172011.webp" alt="Nghe An">
-            </div>
-          </a>
-        </div>
-        <div class="Service-item">
-          <a href="" target="_blank">
-            <div class="img">
-              <img src="./image/img_province/hanoivi1621705324176-1695095180263.webp" alt="Ha Noi">
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Du lịch end -->
-
-    <!-- Câu hỏi thường gặp Start -->
-    <div class="grid">
-      <div class="Tag">
-        <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
-        <h3>Câu hỏi thường gặp</h3>
-        <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
-      </div>
-      <div class="container-flex" style="gap: 15px; padding-top: 30px; margin-left: 0;">
-        <a href="" target="_blank">
-          <div class="img-item"><img src="./image/icon/vibooking-1662643022630.svg" alt="booking"></div>
-        </a>
-        <a href="" target="_blank">
-          <div class="img-item"><img src="./image/icon/viseat-1662643028918.svg" alt="seat"></div>
-        </a>
-        <a href="" target="_blank">
-          <div class="img-item"><img src="./image/icon/vibaggage-1662643022627.svg" alt="bagage"></div>
-        </a>
-        <a href="" target="_blank">
-          <div class="img-item"><img src="./image/icon/vicheckin-1662643022633.svg" alt="checkin"></div>
-        </a>
-        <a href="" target="_blank">
-          <div class="img-item"><img src="./image/icon/noichuyen-1679894016134.svg" alt="noi chuyen"></div>
-        </a>
-        <a href="" target="_blank">
-          <div class="img-item"><img src="./image/icon/vimeal-1662643028915.svg" alt="meal"></div>
-        </a>
-      </div>
-    </div>
-    <!-- Câu hỏi thường gặp End -->
-
-  </div>
-
-
-
-  <!-- footer -->
-  <div class="bg-img" style="min-height: 307.079px;">
-
-    <!-- FlyGreen start -->
-    <div class="container" style="padding: 100px 0 50px ">
-      <div class="container">
-        <div class="container-img">
-          <img src="./image/logo_giaithuong/cungvietjetbayvaotuonglai-1592297893727.png"
-            alt="cungvietjetbayvaotuonglai">
-        </div>
-        <div class="container-item">
-          <table>
-            <td>
-              <p class="title">120+</p>
-              <p class="text">Đường bay nội địa và quốc tế</p>
-            </td>
-            <td style="width: 15%;">
-              <p class="title">400+</p>
-              <p class="text">Chuyến bay mỗi ngày</p>
-            </td>
-            <td>
-              <p class="title">6000+</p>
-              <p class="text">Nhân viên thân thiện, tận tình</p>
-            </td>
-            <td>
-              <p class="title">100+</p>
-              <p class="text">Tàu bay mới hiện đại, bảo vệ môi trường</p>
-            </td>
-            <td style="width: 24%;">
-              <p class="title">7 <i class="fa-solid fa-star" style="color: #ff0000;"></i></p>
-              <p class="text" ">Xếp hạng hàng không an toàn cao nhất thế giới mức 7 sao</p>
-            </td>
-          </table>
-        </div>
-      </div>
-      <div class=" container-img">
-                <img src="./image/logo_giaithuong/flygreenvi-1602759084211.png" alt="flygreen">
-      </div>
-    </div>
-    <!-- FlyGreen end -->
-
-    <!-- Giải thưởng start -->
-    <div class=" container">
-      <div class="bg-cloud">
-        <img src="./image/background/cloudBG-desktop.4a58264d.webp" alt="bg cloud">
-      </div>
-      <div class="bg-blur ">
-        <div class="container-flex grid">
-          <div class="prize-item">
-            <div class="img">
-              <img src="./image/logo_giaithuong/giai6-1592297512599.png" alt="Giai 6">
-            </div>
-            <div class="text">
-              <p>Hãng hàng không chi phí thấp dẫn đầu Châu Á Thái Bình Dương</p>
-            </div>
-          </div>
-          <div class="prize-item">
-            <div class="img">
-              <img src="./image/logo_giaithuong/giai5-1592297595995.png" alt="Giai 5">
-            </div>
-            <div class="text">
-              <p>Doanh nghiệp tốt nhất Ngành Hàng không tại Đông Nam Á</p>
-            </div>
-          </div>
-          <div class="prize-item">
-            <div class="img">
-              <img src="./image/logo_giaithuong/giai2-1592297520999.png" alt="Giai 2">
-            </div>
-            <div class="text">
-              <p>Top các công ty niêm yết tốt nhất theo xếp hạng Forbes</p>
-            </div>
-          </div>
-          <div class="prize-item">
-            <div class="img">
-              <img src="./image/logo_giaithuong/giai3-1592297547966.png" alt="Giai 3">
-            </div>
-            <div class="text">
-              <p>Thương hiệu tốt nhất Châu Á</p>
-            </div>
-          </div>
-          <div class="prize-item">
-            <div class="img">
-              <img src="./image/logo_giaithuong/giai1-1592297529179.png" alt="Giai 1">
-            </div>
-            <div class="text">
-              <p>Môi trường làm việc tốt nhất Châu Á</p>
-            </div>
-          </div>
-          <div class="prize-item">
-            <div class="img">
-              <img src="./image/logo_giaithuong/giai4-1592297571379.png" alt="Giai 4">
-            </div>
-            <div class="text">
-              <p>Doanh nghiệp phát triển bền vững</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Giải thưởng end -->
-
-    <!-- Tin tức & ưu đãi start -->
-    <div class="bg-blur2" style="margin-top: 10px;">
-      <div class="container-flex grid">
-        <div class="text-item">
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Để có chuyến bay tốt đẹp</h3>
-          <a href="">Điều lệ vận chuyển</a><br>
-          <a href="">Điều kiện vé</a><br>
-          <a href="">Vietjet e-Voucher</a><br>
-          <a href="">Vietjet e-Forms</a><br>
-          <a href="">Thông tin bồi thường</a><br>
-          <a href="">Phí và lệ phí</a><br>
-          <a href="">Giấy tờ tùy thân</a><br>
-          <a href="">Sân bay và nhà ga quốc tế</a><br>
-          <a href="">Quy định hành lý</a><br>
-          <a href="">Tìm kiếm hành lý</a><br>
-          <a href="">Hành lý tồn kho Quốc tế</a><br>
-          <a href="">Thông tin nối chuyến</a><br>
-          <a href="">Kênh thanh toán</a><br>
-          <a href="">Hóa đơn VAT</a><br>
-          <a href="">Hướng dẫn làm thủ tục chuyến bay</a><br>
-          <a href="">Khuyến cáo di chuyển</a><br>
-        </div>
-        <div class="text-item" style="max-width: 200px;">
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Mua hành lý, suất ăn, chọn chỗ
-            ngồi và hơn thế nữa...</h3>
-          <a href="">Chọn chỗ ngồi ưu tiên</a><br>
-          <a href="">Mua trước hành lý</a><br>
-          <a href="">Đặt trước suất ăn - Jet cafe</a><br>
-          <a href="">Hàng miễn thuế</a><br>
-          <a href="">Quà lưu niệm</a><br>
-          <a href="">Giải trí</a><br>
-          <a href="">Dịch vụ vận chuyển thú cưng</a><br>
-          <a href="">Dịch vụ trẻ em đi một mình</a><br>
-          <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
-        </div>
-        <div class="text-item">
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Dịch vụ cao cấp</h3>
-          <a href="">Hạng vé thương gia - Business</a><br>
-          <a href="">Hạng vé Skyboss</a><br>
-          <a href="">Phòng chờ sang trọng</a><br>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Về Vietjet</h3>
-          <a href="">Giới thiệu công ty</a><br>
-          <a href="">Nhà đàu tư</a><br>
-          <a href="">Cơ hội nghề nghiệp</a><br>
-          <a href="">Tin tức</a><br>
-          <a href="">Khuyến mại</a><br>
-          <a href="">Cẩm nang du lịch</a><br>
-          <a href="">Tổng đài phục vụ khách hàng</a><br>
-          <a href="">Dịch vụ trẻ em đi một mình</a><br>
-          <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
-        </div>
-        <div class="text-item">
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Mua vé ở đâu ?</h3>
-          <a href="">Tổng đài bán vé</a><br>
-          <a href="">Phòng bán vé</a><br>
-          <a href="">Pại lý bán vé</a><br>
-          <a href="">GDS/ Chuyến Bay Liên Danh</a><br>
-          <a href="">Đăng ký khách hàng Doanh nghiệp</a><br>
-          <a href="">Đăng ký làm đại lý online</a><br>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Thẻ tín dụng HDBank Vietjet</h3>
-        </div>
-        <div class="text-item">
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Đăng nhập đại lý</h3>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Câu hỏi thường gặp</h3>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Nhà đàu tư</h3>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Cơ hội nghề nghiệp</h3>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Dịch vụ hàng hóa</h3>
-          <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Chính sách về quyền riêng tư</h3>
-        </div>
-      </div>
-    </div>
-    <!-- Tin tức & ưu đãi end -->
-
-    <!-- Thong tin start -->
-    <div class=" grid" style="margin: auto; overflow: hidden;">
-      <div class="container-flex">
-        <div class="contact">
-          <h4>Kết nối với Vietjet</h4>
-          <div class="flex-content">
-            <a class=" img-contact" href="" target="_blank"><img src="./image/icon/fb.png" alt="facebook"></a>
-            <a class=" img-contact" href="" target="_blank"><img src="./image//icon/instagram.png"
-                alt="instagram"></a>
-            <a class=" img-contact" href="" target="_blank"><img src="./image//icon/twitter.png" alt="twitter"></a>
-            <a class=" img-contact" href="" target="_blank"><img src="./image//icon/line.png" alt="line"></a>
-            <a class=" img-contact" href="" target="_blank"><img src="./image//icon/wechat.png" alt="wechat"></a>
-            <a class=" img-contact" href="" target="_blank"><img src="./image//icon/zalo.png" alt="zalo"></a>
-            <a class=" img-contact" href="" target="_blank"><img src="./image//icon/youtube.png" alt="youtube"></a>
-          </div>
-
-          <div class="flex-content">
-            <h4 style="padding-right: 10px;">Cập nhật thông tin chuyến bay <br> Flightradar</h4>
-            <img src="./image/icon/flight-rada.38e79fd2.svg" alt="rada">
-          </div>
-        </div>
-        <div class="instructions">
-          <div>
-            <a class="flex-content hover" href="" target="_blank">
-              <div class="img-instruction"><img src="./image/icon/huongdan-1634321105674.svg" alt="huong dan"></div>
-              <h4>Hướng dẫn đặt chuyến bay</h4>
+            <a href="" target="_blank">
+              <div class="img bdrs">
+                <img src="./image/banner/skycare380x260.webp" alt="skycare">
+              </div>
+              <div class="text">
+                <p><strong>An tâm trọn vẹn bay cùng Vietjet</strong></p>
+                <ul>
+                  <li>Các chương trình bảo hiểm hấp dẫn đến từ các đối tác bảo hiểm uy tín của Vietjet</li>
+                  <li>Thủ tục mua và bồi thường đơn giản, nhanh chóng</li>
+                </ul>
+              </div>
             </a>
           </div>
-          <div>
-            <h4>Tải ứng dụng di động Vietjet Air</h4>
-            <div class="flex-content">
-              <a class="img-download-app" href="" target="_blank"><img src="./image/icon/applestore-1607148441670.png"
-                  alt="appstore"></a>
-              <a class="img-download-app" href="" target="_blank"><img src="./image/icon/googleplay-1607148441674.png"
-                  alt="google play"></a>
+          <div class="Service-item bg">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Gửi hàng nhanh</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
             </div>
-          </div>
-        </div>
-        <div class="instructions">
-          <div>
-            <a class="flex-content hover" href="" target="_blank">
-              <div class="img-instruction"><img src="./image/icon/pay-1634321105685.svg" alt="pay"></div>
-              <h4>Hướng dẫn thanh toán</h4>
+            <a href="" target="_blank">
+              <div class="img bdrs">
+                <img src="./image/banner/swift.webp" alt="swift">
+              </div>
+              <div class="text">
+                <p><strong>Vận chuyển Bắc - Trung - Nam siêu tốc, siêu tiện lợi</strong></p>
+                <ul>
+                  <li>Rút ngắn khoảng cách hàng nghìn km trong thời gian ngắn nhất</li>
+                  <li>Đặt đơn, gửi và nhận hàng 24/7</li>
+                </ul>
+              </div>
             </a>
           </div>
-
+          <div class="Service-item bg">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Bay cùng thẻ HDBank Vietjet</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="" target="_blank">
+              <div class="img bdrs">
+                <img src="./image/banner/anhviber20240917110241588-1727233373363.jpg" alt="viber">
+              </div>
+              <div class="text">
+                <p><strong>Ưu đãi dành cho chủ thẻ mới</strong></p>
+                <ul>
+                  <li>Ưu tiên check-in tại sân bay dành cho hạng thẻ Platinum</li>
+                  <li>Giảm đến 50% mua sắm, du lịch, ăn uống</li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="address">
-          <h4>CÔNG TY CỔ PHẦN HÀNG KHÔNG VIETJET</h4>
-          <p>302/3 Phố Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, TP. Hà Nội, Việt Nam</p>
-          <p>Chịu trách nhiệm nội dung: Ông Nguyễn Thanh Sơn</p>
+      </div>
+
+      <div class="grid">
+        <div class="Service">
+          <div class="Service-item">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Mua sắm, giải trí trên mây</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/banner/banner1200x240vn-1698743606086.jpg" alt="skycare">
+              </div>
+            </a href="" target="_blank">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="container-flex" style="padding-bottom: 0;">
+          <div class="Service-item">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Khách sạn</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/banner/km2.webp" alt="km2">
+              </div>
+            </a>
+          </div>
+          <div class="Service-item">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Du lịch trọn gói</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/banner/km1.webp" alt="km1">
+              </div>
+            </a>
+          </div>
+          <div class="Service-item">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Săn vé giá rẻ</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/banner/km3.webp" alt="km3">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Dịch vụ end -->
+
+      <!-- Du lịch start -->
+      <div class="grid">
+        <div class="container-flex" style="padding-bottom: 0;">
+          <div class="Service-item">
+            <div class="Tag">
+              <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+              <h3>Điểm đến hấp dẫn</h3>
+              <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+            </div>
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/img_province/quangbinhvi1621704971898-1695095145079.webp" alt="Quang Binh">
+              </div>
+            </a>
+          </div>
+          <div class="Service-item">
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/img_province/gialaivi1621704971875-1695095151485.webp" alt="Gia Lai">
+              </div>
+            </a>
+          </div>
+          <div class="Service-item ">
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/img_province/phuquocvi1621704971895-1695095158881.webp" alt="Phu Quoc">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="container-flex">
+          <div class="Service-item">
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/img_province/thanhhoavi1624007210031-1695095164116.webp" alt="Thanh Hoa">
+              </div>
+            </a>
+          </div>
+          <div class="Service-item">
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/img_province/ngheanvi1621705324180-1695095172011.webp" alt="Nghe An">
+              </div>
+            </a>
+          </div>
+          <div class="Service-item">
+            <a href="" target="_blank">
+              <div class="img">
+                <img src="./image/img_province/hanoivi1621705324176-1695095180263.webp" alt="Ha Noi">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Du lịch end -->
+
+      <!-- Câu hỏi thường gặp Start -->
+      <div class="grid">
+        <div class="Tag">
+          <img class="boderTag" src="./image/icon/borderTag.4b2fbd2d.svg" alt="bodertag">
+          <h3>Câu hỏi thường gặp</h3>
+          <img class="arrow-half" src="./image/icon/arrow-half.dccbb122.svg" alt="arrow-half">
+        </div>
+        <div class="container-flex" style="gap: 15px; padding-top: 30px; margin-left: 0;">
           <a href="" target="_blank">
-            <div class="img-dathongbao"><img src="./image/icon/dathongbao.407800de.webp" alt="da thong bao"></div>
+            <div class="img-item"><img src="./image/icon/vibooking-1662643022630.svg" alt="booking"></div>
+          </a>
+          <a href="" target="_blank">
+            <div class="img-item"><img src="./image/icon/viseat-1662643028918.svg" alt="seat"></div>
+          </a>
+          <a href="" target="_blank">
+            <div class="img-item"><img src="./image/icon/vibaggage-1662643022627.svg" alt="bagage"></div>
+          </a>
+          <a href="" target="_blank">
+            <div class="img-item"><img src="./image/icon/vicheckin-1662643022633.svg" alt="checkin"></div>
+          </a>
+          <a href="" target="_blank">
+            <div class="img-item"><img src="./image/icon/noichuyen-1679894016134.svg" alt="noi chuyen"></div>
+          </a>
+          <a href="" target="_blank">
+            <div class="img-item"><img src="./image/icon/vimeal-1662643028915.svg" alt="meal"></div>
           </a>
         </div>
       </div>
-    </div>
-    <!-- Thong tin end -->
-  </div>
-    <!-- footer end -->
+      <!-- Câu hỏi thường gặp End -->
 
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="bg-img" style="min-height: 307.079px;">
+
+      <!-- FlyGreen start -->
+      <div class="container" style="padding: 100px 0 50px ">
+        <div class="container">
+          <div class="container-img">
+            <img src="./image/logo_giaithuong/cungvietjetbayvaotuonglai-1592297893727.png"
+              alt="cungvietjetbayvaotuonglai">
+          </div>
+          <div class="container-item">
+            <table>
+              <td>
+                <p class="title">120+</p>
+                <p class="text">Đường bay nội địa và quốc tế</p>
+              </td>
+              <td style="width: 15%;">
+                <p class="title">400+</p>
+                <p class="text">Chuyến bay mỗi ngày</p>
+              </td>
+              <td>
+                <p class="title">6000+</p>
+                <p class="text">Nhân viên thân thiện, tận tình</p>
+              </td>
+              <td>
+                <p class="title">100+</p>
+                <p class="text">Tàu bay mới hiện đại, bảo vệ môi trường</p>
+              </td>
+              <td style="width: 24%;">
+                <p class="title">7 <i class="fa-solid fa-star" style="color: #ff0000;"></i></p>
+                <p class="text" ">Xếp hạng hàng không an toàn cao nhất thế giới mức 7 sao</p>
+              </td>
+            </table>
+          </div>
+        </div>
+        <div class=" container-img">
+                  <img src="./image/logo_giaithuong/flygreenvi-1602759084211.png" alt="flygreen">
+          </div>
+        </div>
+        <!-- FlyGreen end -->
+
+        <!-- Giải thưởng start -->
+        <div class=" container">
+          <div class="bg-cloud">
+            <img src="./image/background/cloudBG-desktop.4a58264d.webp" alt="bg cloud">
+          </div>
+          <div class="bg-blur ">
+            <div class="container-flex grid">
+              <div class="prize-item">
+                <div class="img">
+                  <img src="./image/logo_giaithuong/giai6-1592297512599.png" alt="Giai 6">
+                </div>
+                <div class="text">
+                  <p>Hãng hàng không chi phí thấp dẫn đầu Châu Á Thái Bình Dương</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="./image/logo_giaithuong/giai5-1592297595995.png" alt="Giai 5">
+                </div>
+                <div class="text">
+                  <p>Doanh nghiệp tốt nhất Ngành Hàng không tại Đông Nam Á</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="./image/logo_giaithuong/giai2-1592297520999.png" alt="Giai 2">
+                </div>
+                <div class="text">
+                  <p>Top các công ty niêm yết tốt nhất theo xếp hạng Forbes</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="./image/logo_giaithuong/giai3-1592297547966.png" alt="Giai 3">
+                </div>
+                <div class="text">
+                  <p>Thương hiệu tốt nhất Châu Á</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="./image/logo_giaithuong/giai1-1592297529179.png" alt="Giai 1">
+                </div>
+                <div class="text">
+                  <p>Môi trường làm việc tốt nhất Châu Á</p>
+                </div>
+              </div>
+              <div class="prize-item">
+                <div class="img">
+                  <img src="./image/logo_giaithuong/giai4-1592297571379.png" alt="Giai 4">
+                </div>
+                <div class="text">
+                  <p>Doanh nghiệp phát triển bền vững</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Giải thưởng end -->
+
+        <!-- Tin tức & ưu đãi start -->
+        <div class="bg-blur2" style="margin-top: 10px;">
+          <div class="container-flex grid">
+            <div class="text-item">
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Để có chuyến bay tốt đẹp</h3>
+              <a href="">Điều lệ vận chuyển</a><br>
+              <a href="">Điều kiện vé</a><br>
+              <a href="">Vietjet e-Voucher</a><br>
+              <a href="">Vietjet e-Forms</a><br>
+              <a href="">Thông tin bồi thường</a><br>
+              <a href="">Phí và lệ phí</a><br>
+              <a href="">Giấy tờ tùy thân</a><br>
+              <a href="">Sân bay và nhà ga quốc tế</a><br>
+              <a href="">Quy định hành lý</a><br>
+              <a href="">Tìm kiếm hành lý</a><br>
+              <a href="">Hành lý tồn kho Quốc tế</a><br>
+              <a href="">Thông tin nối chuyến</a><br>
+              <a href="">Kênh thanh toán</a><br>
+              <a href="">Hóa đơn VAT</a><br>
+              <a href="">Hướng dẫn làm thủ tục chuyến bay</a><br>
+              <a href="">Khuyến cáo di chuyển</a><br>
+            </div>
+            <div class="text-item" style="max-width: 200px;">
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Mua hành lý, suất ăn, chọn chỗ
+                ngồi và hơn thế nữa...</h3>
+              <a href="">Chọn chỗ ngồi ưu tiên</a><br>
+              <a href="">Mua trước hành lý</a><br>
+              <a href="">Đặt trước suất ăn - Jet cafe</a><br>
+              <a href="">Hàng miễn thuế</a><br>
+              <a href="">Quà lưu niệm</a><br>
+              <a href="">Giải trí</a><br>
+              <a href="">Dịch vụ vận chuyển thú cưng</a><br>
+              <a href="">Dịch vụ trẻ em đi một mình</a><br>
+              <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
+            </div>
+            <div class="text-item">
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Dịch vụ cao cấp</h3>
+              <a href="">Hạng vé thương gia - Business</a><br>
+              <a href="">Hạng vé Skyboss</a><br>
+              <a href="">Phòng chờ sang trọng</a><br>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Về Vietjet</h3>
+              <a href="">Giới thiệu công ty</a><br>
+              <a href="">Nhà đàu tư</a><br>
+              <a href="">Cơ hội nghề nghiệp</a><br>
+              <a href="">Tin tức</a><br>
+              <a href="">Khuyến mại</a><br>
+              <a href="">Cẩm nang du lịch</a><br>
+              <a href="">Tổng đài phục vụ khách hàng</a><br>
+              <a href="">Dịch vụ trẻ em đi một mình</a><br>
+              <a href="">Dịch vụ hỗ trợ "Bay cùng bạn"</a><br>
+            </div>
+            <div class="text-item">
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Mua vé ở đâu ?</h3>
+              <a href="">Tổng đài bán vé</a><br>
+              <a href="">Phòng bán vé</a><br>
+              <a href="">Pại lý bán vé</a><br>
+              <a href="">GDS/ Chuyến Bay Liên Danh</a><br>
+              <a href="">Đăng ký khách hàng Doanh nghiệp</a><br>
+              <a href="">Đăng ký làm đại lý online</a><br>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Thẻ tín dụng HDBank Vietjet
+              </h3>
+            </div>
+            <div class="text-item">
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Đăng nhập đại lý</h3>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Câu hỏi thường gặp</h3>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Nhà đàu tư</h3>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Cơ hội nghề nghiệp</h3>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Dịch vụ hàng hóa</h3>
+              <h3><img src="./image/icon/flight-icon-red.95351c38.svg" alt="flight icon">Chính sách về quyền riêng tư
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Tin tức & ưu đãi end -->
+
+        <!-- Thong tin start -->
+        <div class=" grid" style="margin: auto; overflow: hidden;">
+          <div class="container-flex">
+            <div class="contact">
+              <h4>Kết nối với Vietjet</h4>
+              <div class="flex-content">
+                <a class=" img-contact" href="" target="_blank"><img src="./image/icon/fb.png" alt="facebook"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="./image//icon/instagram.png"
+                    alt="instagram"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="./image//icon/twitter.png" alt="twitter"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="./image//icon/line.png" alt="line"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="./image//icon/wechat.png" alt="wechat"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="./image//icon/zalo.png" alt="zalo"></a>
+                <a class=" img-contact" href="" target="_blank"><img src="./image//icon/youtube.png" alt="youtube"></a>
+              </div>
+
+              <div class="flex-content">
+                <h4 style="padding-right: 10px;">Cập nhật thông tin chuyến bay <br> Flightradar</h4>
+                <img src="./image/icon/flight-rada.38e79fd2.svg" alt="rada">
+              </div>
+            </div>
+            <div class="instructions">
+              <div>
+                <a class="flex-content hover" href="" target="_blank">
+                  <div class="img-instruction"><img src="./image/icon/huongdan-1634321105674.svg" alt="huong dan"></div>
+                  <h4>Hướng dẫn đặt chuyến bay</h4>
+                </a>
+              </div>
+              <div>
+                <h4>Tải ứng dụng di động Vietjet Air</h4>
+                <div class="flex-content">
+                  <a class="img-download-app" href="" target="_blank"><img
+                      src="./image/icon/applestore-1607148441670.png" alt="appstore"></a>
+                  <a class="img-download-app" href="" target="_blank"><img
+                      src="./image/icon/googleplay-1607148441674.png" alt="google play"></a>
+                </div>
+              </div>
+            </div>
+            <div class="instructions">
+              <div>
+                <a class="flex-content hover" href="" target="_blank">
+                  <div class="img-instruction"><img src="./image/icon/pay-1634321105685.svg" alt="pay"></div>
+                  <h4>Hướng dẫn thanh toán</h4>
+                </a>
+              </div>
+
+            </div>
+            <div class="address">
+              <h4>CÔNG TY CỔ PHẦN HÀNG KHÔNG VIETJET</h4>
+              <p>302/3 Phố Kim Mã, Phường Ngọc Khánh, Quận Ba Đình, TP. Hà Nội, Việt Nam</p>
+              <p>Chịu trách nhiệm nội dung: Ông Nguyễn Thanh Sơn</p>
+              <a href="" target="_blank">
+                <div class="img-dathongbao"><img src="./image/icon/dathongbao.407800de.webp" alt="da thong bao"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Thong tin end -->
+      </div>
+      <!-- footer end -->
+
+    </div>
 
 
 
@@ -1302,6 +1324,7 @@
     <script src="./JS/SlideBaner.js"></script>
     <script src="./JS/Slide1.js"></script>
     <script src="./JS/Slide2.js"></script>
+    <script src="./JS/HieuUngTai.js"></script>
 
 </body>
 

@@ -1,0 +1,51 @@
+ /* Màn hình tải với hình ảnh và thanh tiến độ */
+ #loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Hình ảnh hiển thị khi tải */
+#loading-image {
+    width: 100px; /* Điều chỉnh kích thước hình ảnh nếu cần */
+    margin-bottom: 20px;
+}
+
+/* Thanh tiến độ */
+#progress-bar {
+    width: 10%;
+    height: 4px;
+    background: #cf0606;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hiệu ứng chạy của thanh tiến độ */
+#progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background: #ffc933;
+    animation: load 1.1s linear infinite;
+}
+
+@keyframes load {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Ẩn màn hình tải sau khi trang đã tải xong */
+.loaded #loading-screen {
+    display: none;
+}
