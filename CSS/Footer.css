@@ -70,6 +70,7 @@
     width: 100%;
     padding: 20px 60px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.001) 100%);
+    /* background: #FFF; */
 }
 .bg-blur2 .container-flex{
         display: flex;
