@@ -40,8 +40,10 @@
 /* CONTENT START */
 
 .noidung{
+    font-size: 16px;
     margin: auto;
-    background-size: cover;
+    background-size: cover;  
+    background-image: url(../img/bgBannerHomePage.72a61446.webp) ;
 }
 .center-box{
     margin: auto;
@@ -117,6 +119,80 @@
 .frame{
     border: 1px solid #cfc3c3;
     border-radius: 5px;
+    padding:10px 20px;
+}
+.fisrt-content{
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.fisrt-content span{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.fisrt-content img{
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+    object-fit: cover;
+}
+.arow-down{
+    margin-left: 10px;
+}
+.wrap3 {
+    height: 100%;
+    padding: 20px 30px;
+    background: #FFF;
+    box-shadow: 0px 3px 12px 0px rgba(0, 31, 62, 0.12);
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+.input .frame{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #fff;
+    width: 180px;
+    height: 48px;
+}
+.link{
+    color: #000000;
+    text-decoration:underline;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+button{
+    padding: 13px 20px;
+    background: #1b1a1a;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background: #194bb8;
 }
 /* CONTENT END */
 
