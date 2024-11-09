@@ -18,10 +18,15 @@
     <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="stylesheet" href="../CSS/base.css">
     <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/HieuUngTai.css">
 
 </head>
 
 <body>
+    <div id="loading-screen">
+        <img id="loading-image" src="./image/icon/loading.png" alt="Loading Image">
+        <div id="progress-bar"></div>
+    </div>
     <div class="container">
         <!-- header -->
         <header class="header" style="background: rgb(202, 22, 28);">
@@ -80,7 +85,7 @@
                             TÔI</a>
                         <a class="title" href="./onlineCheckIn.html">ONLINE CHECK-IN</a>
                         <a class="title" href="../Menu/Menu.html" target="_blank">E-MENU</a>
-                        <a class="title" href="">E-VISA</a>
+                        <a class="title" href="../E-VISA/Evisa.html">E-VISA</a>
                         <hr>
                         <h4>Kết nối với Vietjet</h4>
                         <div class="flex-content">
@@ -105,7 +110,7 @@
                                     TÔI</a></li>
                             <li><a class="title" href="./onlineCheckIn.html">ONLINE CHECK-IN</a></li>
                             <li><a class="title" href="../Menu/Menu.html" target="_blank">E-MENU</a></li>
-                            <li><a class="title" href="">E-VISA</a></li>
+                            <li><a class="title" href="../E-VISA/Evisa.html">E-VISA</a></li>
                             <li class="hover-a">
                                 <p class="title">DỊCH VỤ CHUYẾN BAY</p>
                                 <div class="container-dropdown">
@@ -264,7 +269,7 @@
                     trước giờ bay..
 
                     <div class="text-maudo">I. Các chuyến bay khai thác bởi Vietjet</div>
-                    
+
                     <div class="text-mauden">1. Chuyến bay nội địa:</div>
                     <br>
                     <ul style="padding-left: 15px;">
@@ -273,15 +278,17 @@
                     </ul>
                     <br>
                     <p class="text-mauden">2. Chuyến bay quốc tế:</p>
-                    
+
                     <p>Áp dụng các chuyến bay xuất phát từ:</p>
                     <br>
                     <ul style="padding-left:15px">
-                        <li>Australia: Sân bay Melbourne (MEL), Sydney (SYD), Brisbane (BNE), Perth (PER), Adelaide (ADL)
+                        <li>Australia: Sân bay Melbourne (MEL), Sydney (SYD), Brisbane (BNE), Perth (PER), Adelaide
+                            (ADL)
                         </li>
                         <li>Ấn Độ: Sân bay New Delhi (DEL), Ahmedabad (AMD), Mumbai (BOM), Cochin (COK), Tiruchirappalli
                             (TRZ)</li>
-                        <li>Nhật Bản: Sân bay Narita (NRT), Haneda (HND), Fukuoka (FUK), Kansai (KIX), Nagoya Chubu (NGO)
+                        <li>Nhật Bản: Sân bay Narita (NRT), Haneda (HND), Fukuoka (FUK), Kansai (KIX), Nagoya Chubu
+                            (NGO)
                         </li>
                         <p>Hàn Quốc: Sân bay Incheon (ICN), Daegu (TAE), Sân bay Gimhae (PUS)</p>
                         <p>Malaysia: Sân bay Kuala Lumpur (KUL)</p>
@@ -309,58 +316,67 @@
                             Từ 24 tiếng đến 90 phút trước giờ khởi hành (Chuyến bay Quốc tế xuất phát từ sân bayTân Sơn
                             Nhất:
                             từ 24 tiếng đến 3 tiếng trước giờ khởi hành)
-                            Chuyến bay quốc tế xuất phát từ Sydney (SYD), Melbourne (MEL), Brisbane (BNE) : 04 giờ trước giờ
+                            Chuyến bay quốc tế xuất phát từ Sydney (SYD), Melbourne (MEL), Brisbane (BNE) : 04 giờ trước
+                            giờ
                             khởi hành dự kiến.
                         </li>
                     </ul>
                     <br>
 
-                    
+
                     <p>Quy định chung:</p>
                     <br>
-                        <ul style="padding-left: 15px;">
-                            <li>
-                            
-    
-                            Quý khách cần chuẩn bị đầy đủ giấy tờ du lịch, còn hạn, phù hợp quy định Xuất/Nhập cảnh và lưu
+                    <ul style="padding-left: 15px;">
+                        <li>
+
+
+                            Quý khách cần chuẩn bị đầy đủ giấy tờ du lịch, còn hạn, phù hợp quy định Xuất/Nhập cảnh và
+                            lưu
                             trú.
-                            Khởi hành từ Tp.HCM: Quý khách làm thủ tục trực tuyến (Online Check-in) và in ra Thẻ lên tàu bay
-                            dưới dạng khổ giấy A4 trước khi ra sân bay. Thẻ lên tàu bay định dạng điện tử lưu trên thiết bị
+                            Khởi hành từ Tp.HCM: Quý khách làm thủ tục trực tuyến (Online Check-in) và in ra Thẻ lên tàu
+                            bay
+                            dưới dạng khổ giấy A4 trước khi ra sân bay. Thẻ lên tàu bay định dạng điện tử lưu trên thiết
+                            bị
                             di
                             động (điện thoại, máy tính bảng, email,...) đều không có giá trị sử dụng trên các chuyến bay
                             Quốc
                             tế.
                         </li>
                         <li>
-                            Tại sân bay: Quý khách có mặt tại quầy phục vụ khách Online Check-in trước giờ khởi hành 60 phút
+                            Tại sân bay: Quý khách có mặt tại quầy phục vụ khách Online Check-in trước giờ khởi hành 60
+                            phút
                             để
-                            nhân viên xác thực thông tin: Giấy tờ du lịch, Giấy tờ xuất/nhập cảnh và các giấy tờ khác theo
+                            nhân viên xác thực thông tin: Giấy tờ du lịch, Giấy tờ xuất/nhập cảnh và các giấy tờ khác
+                            theo
                             quy
                             định từ Nhà chức trách, Cơ quan xuất/nhập cảnh trước khi Quý khách vào khu vực xuất cảnh bên
                             trong.
                             Quy định này áp dụng bao gồm cả Quý khách không có hành lý ký gửi.
                             Quý khách ký gửi hành lý (nếu có): Quầy ký gửi hành lý đóng 60 phút trước giờ khởi hành.
                         </li>
-                        </ul>
+                    </ul>
 
                     <br>
                     <p class="text-mauden">3. Lưu ý:</p>
-                    
-                    <p class="text-mauden" style="font-style: italic;">a. Làm thủ tục trực tuyến không áp dụng đối với:</p>
+
+                    <p class="text-mauden" style="font-style: italic;">a. Làm thủ tục trực tuyến không áp dụng đối với:
+                    </p>
                     <br>
                     <ul style="padding-left: 15px;">
 
                         <li> Hành khách đi cùng trẻ sơ sinh (<2 tuổi) hoặc hành khách mang thai. </li>
                         <li>Hành khách bị hạn chế khả năng di chuyển hoặc cần hỗ trợ đặc biệt. </li>
                     </ul>
-                    <p class="text-mauden" style="font-style: italic;">b. Quý khách vui lòng kiểm tra và sắp xếp hành lý xách tay, hành lý ký gửi 
+                    <p class="text-mauden" style="font-style: italic;">b. Quý khách vui lòng kiểm tra và sắp xếp hành lý
+                        xách tay, hành lý ký gửi
                         theo quy định kèm theo vé. </p>
-                        <br>
+                    <br>
                     <ul style="padding-left: 15px;">
                         <li>
                             Nếu Quý khách cần ký gửi hành lý hoặc kiểm tra giấy tờ
-                            du lịch liên quan đến thị thực, điều kiện xuất nhập cảnh của chuyến bay quốc tế, Quý khách nên
-                            có mặt tại quầy làm thủ tục 
+                            du lịch liên quan đến thị thực, điều kiện xuất nhập cảnh của chuyến bay quốc tế, Quý khách
+                            nên
+                            có mặt tại quầy làm thủ tục
                             <span>tối thiểu 30 phút trước giờ đóng quầy. </span>
                         </li>
                     </ul>
@@ -404,6 +420,7 @@
         <script src="./JS/input.js"></script>
         <script src="./JS/Nut.js"></script>
         <script src="./JS/inputDangnhap.js"></script>
+        <script src="../JS/HieuUngTai.js"></script>
 </body>
 
 </html>
