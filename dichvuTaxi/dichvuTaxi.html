@@ -162,7 +162,7 @@
         </header>
       
         <div class="banner">
-          <img src="./img/main-img.jpg" alt="">
+          <img src="./img/TaxiBanner.png" alt="">
         </div>
   
         <div class="chat-amy">
@@ -172,5 +172,128 @@
           </div>
         </div>
   
+        <div class="white-bookTicket grid">
+          <div class="sticky-box">
+            <div class="thanhTittle">
+              <div class="content">
+                <div class="text">
+                  <img src="../image/icon/flightHorizontal.edd0202a.svg" alt="">
+                  <a href="" class="text">
+                    Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
+                  </a>
+                </div>
+                <div class="text">
+                  <img src="../image/icon/SendFast.0966cc94.svg" alt="">
+                  <a href="" class="text">
+                    Gửi hàng nhanh
+                  </a>
+                </div>
+                <div class="text">
+                  <i class="fa-solid fa-ticket"></i>
+                  <a href="" class="text">
+                    Đổi thưởng và mua SkyPoint
+                  </a>
+                </div>
+                <div class="text">
+                  <img src="../image/icon/CheckIn.94f94d4b.svg" alt="">
+                  <a href="" class="text">
+                    Check in
+                  </a>
+                </div>
+              </div>
+              <img class="thanhmaudolon" src="../image/icon/mauthanhdolon.png" alt="mauDo">
+              <img class="thanhmauvang" src="../image/icon/mauthanhvang.png" alt="mauVang">
+            </div>
+      
+            <div class="centerbox">
+              <div class="DatVe2">
+                <div class="book-ticket__content">
+      
+                  <div class="ChieuBay">
+                    <div class="Chieu">
+                      <input type="radio" name="object">
+                      <lable for="Khuhoi">Khứ hồi</lable>
+                      </lable>
+                      <input type="radio" name="object">
+                      <lable for="Motchieu">Một chiều</lable>
+                      </lable>
+                    </div>
+                    <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+                  </div>
+      
+                  <div class="book-ticket__middle">
+      
+                    <div class="middle__point-start">
+                      <div class="point-start__left">
+                        <i class="fas fa-plane"></i>
+                        <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                        <ul class="dropdown-options" id="fromOptions">
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                            <span>SGN</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <span>
+                          <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                          <div class="calendar di">
+                            <div class="header-calender">
+                              <button id="previous-month">«</button>
+                              <div>
+                                <span id="content-month"></span> <span id="content-year"></span>
+                              </div>
+                              <button id="next-month">»</button>
+                            </div>
+                            <div class="days"></div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+      
+                    <div class="middle__point-end">
+                      <div class="point-start__right">
+                        <i class="fas fa-plane"></i>
+                        <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                        <ul class="dropdown-options" id="toOptions">
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                            <span>SGN</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <span>
+                          <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                          <div class="calendar den">
+                            <div class="header-calender">
+                              <button id="previous-month">«</button>
+                              <div>
+                                <span id="content-month"></span> <span id="content-year"></span>
+                              </div>
+                              <button id="next-month">»</button>
+                            </div>
+                            <div class="days"></div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thanhFooter">
+              <img classs="thanhmaudonho" src="../image/icon/mauthanhdonho.png" alt="mauDo">
+            </div>
+          </div>
+        </div>
+
         
 </body>
