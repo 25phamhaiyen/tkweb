@@ -7,22 +7,32 @@
     height: auto;
 }
 .main-box{
+    display: flex;
     width: 82%;
     height: auto;
     background-color: white;
-    padding: 170px 40px 170px 30px;
+    padding: 120px 40px 170px 30px;
     margin-top: -5px;
 }
+
 .main-box-content{
-    width: 100%;
+    width: 75%;
     height: auto;
+}
+.leftcolum{
+    width: 25%;
+    height: auto;
+    /* border-left: solid; */
+    border-left-style: solid;
+    border-left-color: #ccc;
+    border-left-width: 1;
 }
 h1{
     font-size: 36px;
     color: red;
 }
 .pre-heading1{
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .p-heading1{
     font-weight: bold;
@@ -40,7 +50,7 @@ h1{
     margin-bottom: 20px;
 }
 .list{
-    margin-left: 35px;
+    /* margin-left: 35px; */
     line-height: 27px;
     font-size: 16px;
 }
