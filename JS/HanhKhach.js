@@ -40,9 +40,18 @@ function decreaseCount(type) {
   updatePassengerCount();
 }
 
-document.addEventListener('click', function(event) {
-  const isClickInside = document.querySelector('.passenger-selector').contains(event.target);
-  if (!isClickInside) {
-    document.getElementById("dropdown-menu").style.display = "none";
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('click', function(event) {
+    const passengerSelector = document.querySelector('.dropdown-btn');
+    const dropdownMenu = document.getElementById("dropdown-menu");
+    
+    // Kiểm tra nếu passengerSelector và dropdownMenu tồn tại
+    if (passengerSelector && dropdownMenu) {
+      const isClickInside = passengerSelector.contains(event.target);
+      if (!isClickInside) {
+        dropdownMenu.style.display = "none";
+      }
+    }
+  });
 });
+
