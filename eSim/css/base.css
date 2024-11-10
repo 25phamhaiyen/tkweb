@@ -268,7 +268,7 @@ a {
     right: 20px;
 }
 
-.chat-amy .button .button-content {
+.chat-amy .button2 .button-content {
     visibility: hidden;
     background-color: #ffffff;
     text-align: center;
@@ -282,7 +282,7 @@ a {
 
 }
 
-.chat-amy .button .button-content::after {
+.chat-amy .button2 .button-content::after {
     top: 50%;
     left: 100%;
     margin-top: -5px;
@@ -291,7 +291,7 @@ a {
     border-color: transparent rgb(255, 255, 255);
 }
 
-.chat-amy .button:hover .button-content {
+.chat-amy .button2:hover .button-content {
     visibility: visible;
 }
 
