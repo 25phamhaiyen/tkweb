@@ -1,13 +1,14 @@
 .calendar {
     display: none; /* Ẩn lịch ban đầu */
     border-radius: 8px;
-    top: 225px;
-    right: 15px;
+    left: 18%;
+    top: 100%;
     padding: 30px;
     position: absolute; 
-    z-index: 1;
+    z-index: 13;
     background: var(--third-color);
 }
+
 
 .header-calender {
     display: flex;
