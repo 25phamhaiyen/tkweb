@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dịch vụ Taxi</title>
+
+  <link rel="icon" href="./img/favicon.ico" />
+
+  <script src="https://kit.fontawesome.com/bc5aad3a99.js" crossorigin="anonymous"></script>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+  <!-- Koho -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400&family=Poppins:wght@100;300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/base.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/nav.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/formdatVe.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/dichvuTaxi.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Footer.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Slider_Utilities.css">
+  <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="./css/Calendar.css">
+  
+</head>
+<body>
+    <div class="container">
+  
+        <!-- header -->
+        <header class="header">
+    
+          <div class="nav-bar grid">
+    
+            <a class="logo" href="../index.html">
+              <div >
+                <img src="./img/vj-logo.svg" alt="VietJet Air" />
+              </div>
+            </a>
+    
+            <div class="top-right">
+              <div class="sign-in">
+                <div class="hotro">
+                  <span>
+                    <i class="fa-solid fa-headset"></i>
+                    <a href="">Hỗ trợ</a>
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-user" style="color: #ff0000"></i>
+                    <span>
+                      <a href="../Đăng ký/DangKy.html" target="_blank">Đăng ký</a> |
+                      <a href="../Đăng nhập/DangNhap.html" target="_blank">Đăng nhập</a>
+                    </span>
+                  </span>
+                </div>
+                <div class="language-switcher">
+                  <button type="button">
+                    <span>
+                      <div>Tiếng Việt</div>
+                      <i class="fa fa-caret-down"></i>
+                    </span>
+                </div>
+                <div class="bar">
+                  </button type="button">
+                  <button>
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li><a class="title" href="">SKYJOY</a></li>
+                  <li><a class="title" href="../Chuyến bay của tôi/ChuyenBayCuaToi.html" target="_blank">CHUYẾN BAY CỦA TÔI</a></li>
+                  <li><a class="title" href="">ONLINE CHECK-IN</a></li>
+                  <li><a class="title" href="../Menu/Menu.html" target="_blank">E-MENU</a></li>
+                  <li><a class="title" href="">E-VISA</a></li>
+                  <li class="hover-a">
+                    <p class="title">DỊCH VỤ CHUYẾN BAY</p>
+                    <div class="container-dropdown">
+                      <div class="dropdown">
+                        <div class="flex-content">
+                          <div class="dropdown-item">
+                            <a href="" target="_blank"><h3>Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...</h3></a>
+                            <hr>
+                            <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
+                          </div>
+                          <div class="dropdown-item">
+                            <a href="../Bảo hiểm/BaoHiem.html" target="_blank"><h3>Bảo hiểm</h3></a>
+                            <hr>
+                            <p>Thật yên tâm và thoải mái với các chương trình bảo hiểm uy tín đến từ các đối tác bảo hiểm tin cậy của Vietjet</p>
+                          </div>
+                        </div>
+                        <div class="flex-content">
+                          <div class="dropdown-item">
+                            <a href="../Khách sạn/khachsan.html" target="_blank"><h3>Khách sạn</h3></a>
+                            <hr>
+                            <p>Sẵn sàng tận hưởng ưu đãi giảm giá lên đến 70% các khách sạn trên toàn thế giới</p>
+                          </div>
+                          <div class="dropdown-item">
+                            <a href="" target="_blank"><h3>Săn vé giá rẻ</h3></a>
+                            <hr>
+                            <p>Nhanh tay săn vé bay Vietjet giá tốt nhất! Tìm kiếm các chặng bay hot nhất!</p>
+                          </div>
+                        </div>
+                        <div class="flex-content">
+                          <div class="dropdown-item">
+                            <a href="../Dich vu dac biet/dichvudacbiet.html" target="_blank"><h3>Dịch vụ đặc biệt</h3></a>
+                            <hr>
+                            <p>Vận chuyển thú cưng, trẻ em đi một mình, hỗ trợ thủ tục tại sân bay và hơn thế nữa!</p>
+                          </div>
+                          <div class="dropdown-item">
+                            <a href="../Esim/esim.html" target="_blank"><h3>eSIM</h3></a>
+                            <hr>
+                            <p>Với SkyFi eSIM, hãy tận thưởng kết nối internet tốc độ cao trong mọi chuyến đi của bạn tới bất cứ nơi đâu</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="hover-a">
+                    <p class="title">DỊCH VỤ KHÁC</p>
+                    <div class="container-dropdown">
+                      <div class="dropdown">
+                        <div class="flex-content">
+                          <div class="dropdown-item">
+                            <a href="" target="_blank"><h3>"Bay trước-Trả sau" MOVI-Vietjet</h3></a>
+                            <hr>
+                            <p>Đặt trước những dịch vụ tiện ích để tận hưởng chuyến bay một cách trọn vẹn</p>
+                          </div>
+                          <div class="dropdown-item">
+                            <a href="" target="_blank"><h3>Thẻ tín dụng du lịch HDBank Vietjet</h3></a>
+                            <hr>
+                            <p>Với vô vàn ưu đãi hấp dẫn, tặng tiền khi mua vé máy bay, giảm đến 50% các dịch vụ mua sắm, khách sạn, resort, trả góp 0% lãi suất,.. [Mở thẻ 100% online]</p>
+                          </div>
+                        </div>
+                        <div class="flex-content">
+                          <div class="dropdown-item">
+                            <a href="" target="_blank"><h3>Bay trước, thanh toán sau</h3></a>
+                            <hr>
+                            <p>Sẵn sàng bay vui, vé để Vietjet lo. Cùng tận hưởng sản phẩm mua vé máy bay trả góp với thời hạn cho vay đến 6 tháng và không cần chứng minh thu nhập</p>
+                          </div>
+                          <div class="dropdown-item">
+                            <a href="" target="_blank"><h3>Đặt trước Hàng miễn thuế</h3></a>
+                            <hr>
+                            <p>Tận hưởng mua sắm hàng hiệu chỉ với nút đặt hàng và nhận ngay trên chuyến bay của Quý khách. Nhiều món đồ ưng ý với mức giá ưu đãi đặc biệt đang chờ. Đặt ngay thôi!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      
+        <div class="banner">
+          <img src="./img/TaxiBanner.png" alt="">
+        </div>
+  
+        <div class="chat-amy">
+          <div class="button">
+            <img src="./img/amy.png" alt="Chatbot AI">
+            <span class="button-content">Chat với Amy</span>
+          </div>
+        </div>
+  
+        <div class="white-bookTicket grid">
+          <div class="sticky-box">
+            <div class="thanhTittle">
+              <div class="content">
+                <div class="text">
+                  <img src="../image/icon/flightHorizontal.edd0202a.svg" alt="">
+                  <a href="" class="text">
+                    Mua hành lý, suất ăn, chọn chỗ ngồi và hơn thế nữa...
+                  </a>
+                </div>
+                <div class="text">
+                  <img src="../image/icon/SendFast.0966cc94.svg" alt="">
+                  <a href="" class="text">
+                    Gửi hàng nhanh
+                  </a>
+                </div>
+                <div class="text">
+                  <i class="fa-solid fa-ticket"></i>
+                  <a href="" class="text">
+                    Đổi thưởng và mua SkyPoint
+                  </a>
+                </div>
+                <div class="text">
+                  <img src="../image/icon/CheckIn.94f94d4b.svg" alt="">
+                  <a href="" class="text">
+                    Check in
+                  </a>
+                </div>
+              </div>
+              <img class="thanhmaudolon" src="../image/icon/mauthanhdolon.png" alt="mauDo">
+              <img class="thanhmauvang" src="../image/icon/mauthanhvang.png" alt="mauVang">
+            </div>
+      
+            <div class="centerbox">
+              <div class="DatVe2">
+                <div class="book-ticket__content">
+      
+                  <div class="ChieuBay">
+                    <div class="Chieu">
+                      <input type="radio" name="object">
+                      <lable for="Khuhoi">Khứ hồi</lable>
+                      </lable>
+                      <input type="radio" name="object">
+                      <lable for="Motchieu">Một chiều</lable>
+                      </lable>
+                    </div>
+                    <span class="VND">VND <i class="fa fa-caret-down"></i></span>
+                  </div>
+      
+                  <div class="book-ticket__middle">
+      
+                    <div class="middle__point-start">
+                      <div class="point-start__left">
+                        <i class="fas fa-plane"></i>
+                        <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                        <ul class="dropdown-options" id="fromOptions">
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                            <span>SGN</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                          <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <span>
+                          <div class="select-start-date" id="select-start-date">Ngày đi</div> <!-- Nút chọn ngày -->
+                          <div class="calendar di">
+                            <div class="header-calender">
+                              <button id="previous-month">«</button>
+                              <div>
+                                <span id="content-month"></span> <span id="content-year"></span>
+                              </div>
+                              <button id="next-month">»</button>
+                            </div>
+                            <div class="days"></div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+      
+                    <div class="middle__point-end">
+                      <div class="point-start__right">
+                        <i class="fas fa-plane"></i>
+                        <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                        <ul class="dropdown-options" id="toOptions">
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">Tp. Hồ Chí Minh
+                            <span>SGN</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội <span>HAN</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng <span>DAD</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải Phòng <span>HPH</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh Hóa <span>THD</span></li>
+                          <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh <span>VII</span></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <span>
+                          <div class="select-end-date" id="select-end-date">Ngày đến</div> <!-- Nút chọn ngày -->
+                          <div class="calendar den">
+                            <div class="header-calender">
+                              <button id="previous-month">«</button>
+                              <div>
+                                <span id="content-month"></span> <span id="content-year"></span>
+                              </div>
+                              <button id="next-month">»</button>
+                            </div>
+                            <div class="days"></div>
+                          </div>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thanhFooter">
+              <img classs="thanhmaudonho" src="../image/icon/mauthanhdonho.png" alt="mauDo">
+            </div>
+          </div>
+        </div>
+
+        <div class="main-box">
+          <div class="main-box-content">
+              <div class="heading">
+                  <h1>Hướng dẫn đặt mua và sử dụng Dịch Vụ Xe Taxi đón sân bay cung cấp bởi Taxi Xanh SM</h1>
+              </div>
+
+              <div class="pre-heading1">
+                  <div class="pre-heading-title1">
+                      <p class="p-heading1">I. Hướng dẫn đặt mua dịch vụ:</p>
+
+                  </div>
+                  <div class="pre-heading-content1">
+                      <div class="content-pre-heading-title1">
+                          <ul>
+                              <li class="list">
+                                Bước 1: Đặt vé máy bay trên website hoặc app Vietjet Air; 
+                              </li>
+                            
+                              <li class="list">
+                                Bước 2: Chọn mua dịch vụ đi kèm chuyến bay “Xe Taxi đón sân bay”;
+                              </li>
+
+                              <li class="list">
+                                Bước 3: Chọn mua các gói đón sân bay phù hợp với hành trình chuyến đi hoặc/và chuyến về;
+                              </li>
+
+                              <li class="list">
+                                Bước 4: Tiến hành thanh toán cho toàn bộ giao dịch gồm vé máy bay và các dịch vụ đi kèm;
+                              </li>
+
+                              <li class="list">
+                                Bước 5: Nhận email thông tin chuyến bay và email mã voucher để sử dụng dịch vụ.
+                              </li>
+                          </ul>
+                      </div>
+
+
+
+                  </div>
+              </div>
+
+              <div class="pre-heading1">
+                  <div class="pre-heading-title1">
+                      <p class="p-heading1">II. Hướng dẫn sử dụng dịch vụ:</p>
+                      
+                  </div>
+                  <div class="pre-heading-content1">
+                      <div class="content-pre-heading-title1">
+                          <ul>
+                              <li class="list">
+                                Bước 1: Tìm tài xế Xanh SM tại các điểm đón theo bảng hướng dẫn bên dưới;
+
+                              </li>
+                              <li class="list">
+                                Bước 2: Đưa mã voucher đã nhận qua email cho tài xế để xác nhận hành trình hợp lệ;
+                              </li>
+
+                              <li class="list">
+                                Bước 3: Lên xe và thực hiện chuyến đi;
+                              </li>
+
+                              <li class="list">
+                                Bước 4: Kết thúc hành trình và thực hiện thanh toán phí phát sinh (nếu có).                             
+                              </li>
+
+                          </ul>
+                      </div>
+
+
+                  </div>
+
+                  <p class="p-heading-content-title1" style="font-weight: 500;">
+                      Vietjet giới thiệu dịch vụ mua ngoại tệ với nhiều ưu điểm vượt trội, hợp tác cùng Ngân hàng Số Vikki.
+              </div>
+
+              <div class="pre-heading1">
+                <div class="pre-heading-title1">
+                    <p class="p-heading1">III. Hướng dẫn Khách hàng di chuyển tới điểm đón taxi sân bay của Xanh SM:</p>
+                    
+                </div>
+                <table>
+                  <thead>
+                      <tr>
+                          <th>Sân bay</th>
+                          <th>Nhà ga</th>
+                          <th>Hướng dẫn</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td rowspan="2" id="td1" >Sân bay Nội Bài<br>(Hà Nội)</td>
+                          <td id="td1">Ga Quốc Nội (T1) </td>
+                          <td id="col2">- Từ Sảnh A-B, đi chuyển ra khỏi các cửa 1 – 5, hướng tới làn đường đi bộ. Đi thẳng tới làn đón taxi ở phía đối diện. Tìm taxi Xanh SM và lên xe.<br>
+                              - Hoặc từ Sảnh E, đi chuyển ra khỏi các cửa E1 – E5, đi thẳng qua làn đường ưu tiên tới làn đón taxi. Tìm taxi Xanh SM và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td id="td1">Ga Quốc Tế (T2)</td>
+                          <td id="col2">- Từ Sảnh A1, đi chuyển ra khỏi cửa và rẽ trái. Tìm taxi Xanh SM tại Cột số 5 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="2" id="td1">Sân bay Tân Sơn Nhất<br>(TP. Hồ Chí Minh)</td>
+                          <td id="td1">Ga Quốc Nội</td>
+                          <td id="col2">- Từ cửa A1 và A2, đi thẳng đến Làn C và rẽ phải. Tìm taxi Xanh SM tại các Cột C03 – C20 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td id="td1">Ga Quốc Tế</td>
+                          <td id="col2">- Từ cửa A1 và A2, đi thẳng đến Làn A và rẽ trái. Tìm taxi Xanh SM tại các Cột A04 – A01 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="2" id="td1" >Sân bay Phú Bài<br>(Huế)</td>
+                          <td id="td1">Ga Quốc Nội</td>
+                          <td id="col2">- Đi thẳng ra từ cửa A2 và A3. Tìm taxi Xanh SM tại các Cột A05 – A01 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td id="td1">Ga Quốc Tế</td>
+                          <td id="col2">- Đi thẳng ra từ cửa A1. Tìm taxi Xanh SM tại các Cột A01 – A03 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="2" id="td1">Sân bay Đà Nẵng</td>
+                          <td id="td1">Ga Quốc Nội</td>
+                          <td id="col2">- Rẽ trái khi ra khỏi cửa ga, rồi rẽ phải tại Cột 8, 9. Tìm taxi Xanh SM tại Ô số 9 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td id="td1">Ga Quốc Tế</td>
+                          <td id="col2">- Đi thẳng từ cổng ra. Tìm taxi Xanh SM tại các Ô 1, 2, 3 và lên xe.</td>
+                      </tr>
+
+                      <tr>
+                          <td rowspan="1" id="td1">Sân bay Cam Ranh<br>(Nha Trang)</td>
+                          <td id="td1">Ga Quốc Nội</td>
+                          <td id="col2">- Đi thẳng từ cổng ra, hướng về phía bên trái. Tìm taxi Xanh SM và lên xe.</td>
+                      </tr>
+
+                  </tbody>
+              </table>
+
+                <p class="p-heading-content-title1" style="font-weight: 500; margin-top: 3%; margin-bottom: 3%;">
+                  **Trong trường hợp không tìm được xe ở sân bay, vui lòng tìm đến quầy hỗ trợ Xanh SM tại sảnh hoặc gọi hotline để được hỗ trợ sắp xếp xe.
+            </div>
+              
+              <div class="pre-heading1">
+                <div class="pre-heading-title1">
+                    <p class="p-heading1">IV. Điều kiện, điều khoản áp dụng:</p>
+            
+                </div>
+                <div class="pre-heading-content1">
+                    <div class="content-pre-heading-title1">
+                        <ul>
+                            <li class="list">
+                              Áp dụng với các chuyến bay nội địa do Vietjet khai thác trên các nền tảng website 
+                              hoặc ứng dụng Vietjet, áp dụng tại các sân bay có triển khai dịch vụ:
+                               sân bay Nội Bài (Hà Nội), sân bay Tân Sơn Nhất (TP. Hồ Chí Minh), 
+                               sân bay Phú Bài (Huế), sân bay Đà Nẵng, sân bay Cam Ranh (Nha Trang), sân bay Phú Quốc.
+                            </li>
+                          
+                            <li class="list">
+                              Áp dụng cho các chuyến đi đặt trước tối đa 2 năm và tối thiểu 3 tiếng trước giờ bay.
+                            </li>
+            
+                            <li class="list">
+                              Khách hàng có thể mua bổ sung dịch vụ sau khi đã hoàn thành thanh toán cho mã đặt chỗ 
+                              vé máy bay (tương tự mua bổ sung hành lý).
+                            </li>
+            
+                            <li class="list">
+                              Mỗi khách hàng được mua tối đa 03 mã voucher đưa đón sân bay với mỗi mã đặt chỗ thành công.
+                            </li>
+            
+                            <li class="list">
+                              Giá dịch vụ đã bao gồm thuế VAT.
+                            </li>
+            
+                            <li class="list">
+                              Chi phí cuốc đi thực tế phụ thuộc vào số km thực tế, phụ phí cầu đường (nếu có) và các phụ phí khác (nếu có) phát sinh trong chuyến đi.
+                            </li>
+            
+                            <li class="list">
+                              Trong trường hợp sử dụng dịch vụ, nếu thực tế quãng đường di chuyển 
+                              ngắn hơn số km quy định thì giá cước tính theo giá gói đưa đón sân bay VJA x Xanh 
+                              SMkhách hàng đã mua. Nếu thực tế quãng đường di chuyển dài hơn số 
+                              km quy định thì khách hàng thanh toán phụ phí phát sinh với tài xế.
+                            </li>
+            
+                            <li class="list">
+                              Dịch vụ không có giá trị quy đổi thành tiền mặt trong bất kỳ trường hợp nào.
+                            </li>
+            
+                            <li class="list">
+                              Dịch vụ có giá trị sử dụng trong vòng 07 ngày kể từ ngày bay.
+                            </li>
+            
+                            <li class="list">
+                              Dịch vụ có giá trị sử dụng trong vòng 07 ngày kể từ ngày bay.
+                            </li>
+            
+                            Đối với trường hợp khách hàng có nhu cầu hoàn/hủy sẽ áp dụng tương tự chính sách hoãn,
+                             hủy và hoàn trả dịch vụ theo chính sách, quy định của Vietjet.
+                        </ul>
+                    </div>
+            
+            
+            
+                </div>
+            </div>
+
+              <div class="end">
+                <div class="line"></div>
+                <div class="fb-img">
+                  <img src="https://www.vietjetair.com/static/media/social-facebook.8b87db9d.svg" alt="">
+                </div>
+                <div class="twit-img">
+                  <img src="https://www.vietjetair.com/static/media/social-twitter.2013caeb.svg" alt="">
+                </div>
+              </div>  
+          </div>
+      </div>
+      </div>
+      <div class="bg-img">
+        <div class="first-cloud-img">
+          <img src="../image/background/bg-donate.40a2c077.webp" alt="">
+        </div>
+        <!-- FlyGreen start -->
+        <div class="container-footer" style="padding: 100px 0 50px ">
+          <div class="container">
+            <div class="container-img">
+              <img src="../image/logo_giaithuong/cungvietjetbayvaotuonglai-1592297893727.png"
+                alt="cungvietjetbayvaotuonglai">
+            </div>
+            <div class="container-item">
+              <table>
+                <td>
+                  <p class="title">120+</p>
+                  <p class="text">Đường bay nội địa và quốc tế</p>
+                </td>
+                <td style="width: 15%;">
+                  <p class="title">400+</p>
+                  <p class="text">Chuyến bay mỗi ngày</p>
+                </td>
+                <td>
+                  <p class="title">6000+</p>
+                  <p class="text">Nhân viên thân thiện, tận tình</p>
+                </td>
+                <td>
+                  <p class="title">100+</p>
+                  <p class="text">Tàu bay mới hiện đại, bảo vệ môi trường</p>
+                </td>
+                <td style="width: 24%;">
+                  <p class="title">7 <i class="fa-solid fa-star" style="color: #ff0000;"></i></p>
+                  <p class="text" >Xếp hạng hàng không an toàn cao nhất thế giới mức 7 sao</p>
+                </td>
+              </table>
+            </div>
+          </div>
+          
+        </div>
+        <!-- FlyGreen end -->
+    
+        
+</body>
