@@ -1,9 +1,16 @@
 
-
 .container {
     width: 100%;
     background-size: cover;
     justify-items: center;
+}
+/* logo */
+.logo{
+    width: 100%;
+    cursor: pointer;
+    height: auto;
+    max-width: 115px;
+    object-fit: contain;
 }
 /* Slide Banner Start */
 .banner-slideshow {
@@ -16,7 +23,8 @@
 }
 .myslide img{
     width: 100%;
-    height: auto;
+    height: 720px;
+    object-fit: cover;
 }
 /* Hiệu ứng fade */
 .fade {
@@ -32,6 +40,7 @@
     padding: 10px;
     margin-top: -150px;
     position: relative;
+    z-index: 13;
 }
 
 .dot {
@@ -60,7 +69,7 @@
     display: flex;
     box-sizing: border-box;
     margin: 0;
-    padding:  10px 0;
+    padding:  10px 0 3px 0;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -79,24 +88,27 @@
     object-fit: contain;
 }
 
-.header .navbar .top-right {
-    margin-left: auto;
-    width: calc(100% - 265px);
+.header .navbar .top-right { 
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-end;
 }
 
 .top-right .sign-in {
+    width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: flex-end;
-    color: var(--third-color);
-    font-weight: bold;
-    padding-right: 10px;
 
 }
 
 .top-right .sign-in .hotro {
-    display: inline-flex;
-    gap: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .top-right .sign-in .hotro span {
@@ -133,20 +145,38 @@
 
 
 .header .navbar .top-right .menu {
+    position: relative;
     margin: 0;
 }
 
 .menu ul {
     display: flex;
     align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    justify-content: flex-end;
 
 }
 
 .menu ul li {
-    display: block;
+    display: none;
     padding: 4px 4px;
-    text-align: center;
+    /* min-height: 33px; */
+    text-align:center;
+    align-items: center;
     justify-content: space-between;
+}
+.menu ul li a{
+    
+    color: inherit;
+    width: 100%
+}
+.menu .title{
+    overflow: hidden;
+    transition: all .35s;
+    text-overflow: ellipsis;
+    cursor: pointer;
 }
 .hover-a .container-dropdown {
     display: none;
@@ -162,8 +192,8 @@
     border-radius: 8px;
     right: 160px;
     width: 900px;
-    position: absolute;
-    z-index: 2;
+    position: absolute;  
+    z-index: 1;
 }
 .dropdown-item{
     width: 450px;
@@ -173,7 +203,16 @@
     /* padding: 10px 20px; */
     color: var(--fifth-color);
     display: block;
+    /* align-content: center; */
 }
+.dropdown-item a span{
+    width: 32px;
+    display: inline-block;
+}
+.dropdown-item a span img{
+    width: 100%;
+}
+
 .menu li .title , .hotro a{
     text-decoration: none;
     color: var(--third-color);
@@ -236,4 +275,5 @@
 }
 .dropdown-menu-bar .flex-content img{
     width: 26px;
+
 }

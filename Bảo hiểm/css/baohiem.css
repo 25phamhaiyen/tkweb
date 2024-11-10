@@ -35,8 +35,8 @@ body{
 .main-content{
     width: 82%;
     background-color: white;
-    margin-left: 137px;
-    padding: 180px 0px 0px 60px;
+    margin-left: 9%;
+    padding: 170px 0px 0px 30px;
     height: auto;
 }
 .heading-title{
@@ -49,24 +49,24 @@ body{
     font-size: 36px;
 }
 .main-box {
-    margin-right: 30px;
+    margin-right: 15px;
 }
 .vietjet-travel-safe, .sky-care {
     display: inline-block;
     vertical-align: top; /* Đảm bảo các thẻ sẽ căn hàng từ đỉnh */
-    width: 47%; /* Đảm bảo chúng có cùng kích thước */
+    width: 48.5%; /* Đảm bảo chúng có cùng kích thước */
     border: 1px solid rgb(197, 196, 196);
     border-radius: 10px;
     padding: 25px 15px; /* Cân đối lại padding */
 }
 .vietjet-travel-safe {
     position: relative;
-    padding-bottom: 170px;
+    height: 65vh;
 }
 .sky-care {
     position: relative;
-    padding-bottom: auto;
-    margin-left: 25px;
+    height: 65vh;
+    margin-left: 15px;
 }
 .h2{
     text-align: center;
@@ -83,7 +83,7 @@ body{
 }
 .line{
     position: relative;
-    margin: 20px 50px 0px 0px;
+    margin: 20px 20px 0px 0px;
     padding-bottom: 150px;
 }
 .hr{
