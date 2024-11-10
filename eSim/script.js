@@ -32,4 +32,20 @@ function hienthikhung() {
 
 function dongkhung() {
     document.getElementById("close").style.display = "none";
-}    
+} 
+
+function ticket(){
+    document.querySelector('.decrement').onclick = function () {
+        const valueElement = document.querySelector('.value');
+        let currentValue = parseInt(valueElement.value);
+        if (currentValue > 1) {
+            valueElement.value = currentValue - 1;
+        }
+    };
+    
+    document.querySelector('.increment').onclick = function () {
+        const valueElement = document.querySelector('.value');
+        let currentValue = parseInt(valueElement.value);
+        valueElement.value = currentValue + 1;
+    };
+}
