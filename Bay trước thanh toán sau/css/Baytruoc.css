@@ -18,6 +18,7 @@
 .main-box-content{
     width: 75%;
     height: auto;
+    padding:0px 20px 0 10px
 }
 .leftcolum{
     width: 25%;
@@ -25,7 +26,7 @@
     /* border-left: solid; */
     border-left-style: solid;
     border-left-color: #ccc;
-    border-left-width: 1;
+    border-left-width: 1px;
 }
 h1{
     font-size: 36px;
@@ -37,12 +38,20 @@ h1{
 .p-heading1{
     font-weight: bold;
     font-size: 16px;
+    margin: 5px;
 }
 .pre-heading-content1{
     margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 27px;
 }
 .p-heading-content-title1{
     font-weight: bold;
+    font-size: 16px;
+    
+}
+#notbold{
+    font-weight: normal;
     font-size: 16px;
 }
 .content-pre-heading-title1{
