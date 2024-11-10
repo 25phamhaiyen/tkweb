@@ -1,14 +1,16 @@
 
-html{
+/* html{
     background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
     background-size: cover;
-}
+} */
 body{
     margin: 0;
     padding: 0;
+    background-image: url(../bgBannerHomePage.72a61446.webp) ;
 }
 
 .container-chuyenbay{
+    
     align-content: center;
     margin: auto; 
     box-sizing: border-box;
@@ -75,10 +77,11 @@ input{
         padding:45px 30px 30px 50px;
         width: 40%;
         
-        .form{
+        .form-in{
             width:100%;
             justify-content: center;
             text-align: center;
+            padding-top: 20px;
             .khunginput{
                 text-align: left;
                 margin-top: 15px;
