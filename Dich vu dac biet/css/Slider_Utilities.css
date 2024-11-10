@@ -3,9 +3,10 @@
 /* Tien ich */
 .container-flex {
     display: flex;
-    margin: 40px;
     gap: 30px;
     justify-content: space-between;
+    width: 100%;
+    margin: 40px auto;
 }
 
 .container-flex .img-item {
@@ -86,8 +87,13 @@
     width: 100%;
     height: auto;
 }
-
-.carousel, .carousel2 {
+.carousel2 {
+    padding-top: 30px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.carousel{
     position: relative;
     max-width: 1200px;
     margin: auto;
@@ -95,11 +101,17 @@
     border-radius: 10px;
 }
 
-.carousel-slide, .carousel-slide2 {
+.carousel-slide{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
+.carousel-slide2 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
 .slide {
     box-sizing: border-box;
     position: relative;
@@ -111,33 +123,33 @@
 }
 /* Slide 2 anh */
 .slide2 {
+    max-width: 1200px;
     justify-content: space-between;
 }
 .mySlides {
-    border-radius: 5px;
+    /* width: 50%; */
     width: 600px;
-    padding: 20px;
+    border-radius: 5px;
+    padding: 4px 15px;
 }
 
 .mySlides img {
     border-radius: 5px;
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 button.prev,
 button.next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top:50%;    
     border: none;
     font-size: 24px;
-    padding: 10px;
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
 }
 button.prev{
-    left: -10px;
+    left: 0px;
 }
 button.next{
-    right: -10px;
+    right: 0px;
 }
