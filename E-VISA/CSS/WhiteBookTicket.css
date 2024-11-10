@@ -153,12 +153,11 @@
     margin-right: -40px;
 }
 
+
 .dropdown-options {
     display: none;
-    position: absolute;
-    z-index: 1;
-    top: 48%;
-    left: 15px;
+    /* position: absolute; */
+    /* z-index: 1; */
     max-width: 350px;
     width: 100%;
     background-color: #fff;
@@ -167,7 +166,11 @@
     max-height: 200px;
     overflow-y: auto;
     border-radius: 8px;
+    top: 100%;
+    left: 30%;
+    margin: auto;
 }
+
 
 .dropdown-options li {
     padding: 10px;

@@ -141,8 +141,6 @@
     display: none;
     position: absolute;
     z-index: 1;
-    top: 48%;
-    left: 15px;
     max-width: 350px;
     width: 100%;
     background-color: #fff;
@@ -151,6 +149,7 @@
     max-height: 200px;
     overflow-y: auto;
     border-radius: 8px;
+    margin: auto;
 }
 
 .dropdown-options li {
@@ -168,6 +167,7 @@
 
 .show {
     display: block;
+    
 }
  /* HANH KHACH */
 .middle__client {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vietjet Air</title>
+    <title>Vietjet Air | E-VISA</title>
 
     <link rel="icon" href="../image/icon/favicon.ico" />
 
@@ -326,27 +326,24 @@
                             <div class="middle__point-start">
                                 <div class="point-start__left">
                                     <i class="fas fa-plane"></i>
-                                    <input type="text" placeholder="Điểm khởi hành" id="fromInput2" autocomplete="off">
+                                    <input type="text" placeholder="Điểm khởi hành" id="fromInput" autocomplete="off">
                                     <ul class="dropdown-options" id="fromOptions">
-                                        <li onclick="selectOption('fromInput2', 'toInput2', 'Tp. Hồ Chí Minh', 'SGN')">
-                                            Tp. Hồ Chí Minh
+                                        <li onclick="selectOption('fromInput', 'toInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp.
+                                            Hồ Chí Minh
                                             <span>SGN</span>
                                         </li>
-                                        <li onclick="selectOption('fromInput2', 'toInput2', 'Hà Nội', 'HAN')">Hà Nội
-                                            <span>HAN</span>
+                                        <li onclick="selectOption('fromInput', 'toInput', 'Hà Nội', 'HAN')">Hà Nội
+                                            <span>HAN</span></li>
+                                        <li onclick="selectOption('fromInput', 'toInput', 'Đà Nẵng', 'DAD')">Đà Nẵng
+                                            <span>DAD</span></li>
+                                        <li onclick="selectOption('fromInput', 'toInput', 'Hải Phòng', 'HPH')">Hải Phòng
+                                            <span>HPH</span>
                                         </li>
-                                        <li onclick="selectOption('fromInput2', 'toInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng
-                                            <span>DAD</span>
+                                        <li onclick="selectOption('fromInput', 'toInput', 'Thanh Hóa', 'THD')">Thanh Hóa
+                                            <span>THD</span>
                                         </li>
-                                        <li onclick="selectOption('fromInput2', 'toInput2', 'Hải Phòng', 'HPH')">Hải
-                                            Phòng <span>HPH</span>
-                                        </li>
-                                        <li onclick="selectOption('fromInput2', 'toInput2', 'Thanh Hóa', 'THD')">Thanh
-                                            Hóa <span>THD</span>
-                                        </li>
-                                        <li onclick="selectOption('fromInput2', 'toInput2', 'Vinh', 'VII')">Vinh
-                                            <span>VII</span>
-                                        </li>
+                                        <li onclick="selectOption('fromInput', 'toInput', 'Vinh', 'VII')">Vinh
+                                            <span>VII</span></li>
                                     </ul>
                                 </div>
                                 <div>
@@ -370,27 +367,24 @@
                             <div class="middle__point-end">
                                 <div class="point-start__right">
                                     <i class="fas fa-plane"></i>
-                                    <input type="text" id="toInput2" placeholder="Điểm đến" autocomplete="off">
+                                    <input type="text" id="toInput" placeholder="Điểm đến" autocomplete="off">
                                     <ul class="dropdown-options" id="toOptions">
-                                        <li onclick="selectOption('toInput2', 'fromInput2', 'Tp. Hồ Chí Minh', 'SGN')">
-                                            Tp. Hồ Chí Minh
+                                        <li onclick="selectOption('toInput', 'fromInput', 'Tp. Hồ Chí Minh', 'SGN')">Tp.
+                                            Hồ Chí Minh
                                             <span>SGN</span>
                                         </li>
-                                        <li onclick="selectOption('toInput2', 'fromInput2', 'Hà Nội', 'HAN')">Hà Nội
-                                            <span>HAN</span>
+                                        <li onclick="selectOption('toInput', 'fromInput', 'Hà Nội', 'HAN')">Hà Nội
+                                            <span>HAN</span></li>
+                                        <li onclick="selectOption('toInput', 'fromInput', 'Đà Nẵng', 'DAD')">Đà Nẵng
+                                            <span>DAD</span></li>
+                                        <li onclick="selectOption('toInput', 'fromInput', 'Hải Phòng', 'HPH')">Hải Phòng
+                                            <span>HPH</span>
                                         </li>
-                                        <li onclick="selectOption('toInput2', 'fromInput2', 'Đà Nẵng', 'DAD')">Đà Nẵng
-                                            <span>DAD</span>
+                                        <li onclick="selectOption('toInput', 'fromInput', 'Thanh Hóa', 'THD')">Thanh Hóa
+                                            <span>THD</span>
                                         </li>
-                                        <li onclick="selectOption('toInput2', 'fromInput2', 'Hải Phòng', 'HPH')">Hải
-                                            Phòng <span>HPH</span>
-                                        </li>
-                                        <li onclick="selectOption('toInput2', 'fromInput2', 'Thanh Hóa', 'THD')">Thanh
-                                            Hóa <span>THD</span>
-                                        </li>
-                                        <li onclick="selectOption('toInput2', 'fromInput2', 'Vinh', 'VII')">Vinh
-                                            <span>VII</span>
-                                        </li>
+                                        <li onclick="selectOption('toInput', 'fromInput', 'Vinh', 'VII')">Vinh
+                                            <span>VII</span></li>
                                     </ul>
                                 </div>
                                 <div>
@@ -413,8 +407,6 @@
 
                             <div class="button"><a href="#" class="button__find-fly">Tìm chuyến bay</a></div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -438,6 +430,7 @@
                 Quy định xuất nhập cảnh
             </h1>
 
+            <!-- Chu y quan trong -->
             <div class="wrap">
                 <div class="thanh-do">
                     <div class="inner-thanhdo">
@@ -471,6 +464,7 @@
                 </div>
             </div>
 
+            <!-- Yeu cau ve di lai va thi thuc -->
             <div class="wrap2">
                 <div class="inner-wrap">
 
@@ -528,6 +522,7 @@
                 </div>
             </div>
 
+            <!-- Luu y -->
             <div class="wrap3">
                 <div class="content">
 
@@ -739,7 +734,7 @@
 
     <!-- custom file js -->
     <script src="../JS/dropdownBarMenu.js"></script>
-    <script src="../JS/placeInput.js"></script>
+    <script src="./JS/placeInput.js"></script>
     <script src="./JS/Calendar.js"></script>
     <script src="../JS/HieuUngTai.js"></script>
 
