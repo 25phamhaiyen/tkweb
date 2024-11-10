@@ -8,19 +8,202 @@
     --gradient-end: var(--secondary-color);
 }
 
-html{
-        background: url(../img/dammayhong.jpg) no-repeat center fixed;
+/* html{
+        background: url(../image/background/dammayhong.jpg) no-repeat center fixed;
         background-size: cover;
-}
+} */
+ 
 /* media : truy van phuong tien 
 Truy vấn phương tiện bao gồm một loại phương tiện và có thể chứa một hoặc nhiều tính năng phương tiện, có giá trị trả về là đúng hoặc sai
 @media not|only mediatype and (media feature) and (media feature) {
   CSS-Code;
 }*/
+
+@media (max-width: 1023.95px) {
+    .noidung {
+        margin-top: -80px;
+        padding-top: 80px;
+    }
+}
+@media (max-width: 1099.95px) {
+    .menu ul li {
+        padding: 4px 1.5px;
+    }
+}
+@media (max-width: 1199.95px) {
+    .DatVe .inner-wrap, .container-flex  {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .white-bookTicket, .carousel2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .topbanner {
+        min-height: 630px;
+    }
+    .topbanner .inner-wrap{
+        min-height: 630px;
+    }
+    .noidung{
+        padding-bottom: 7%;
+    }
+}
+@media (max-width: 1269.95px) {
+    .menu ul li {
+        min-height: 20px;
+    }
+    .menu .title{
+        font-size: 12px;
+    }
+}
+@media (min-width: 1280px) {
+    .DatVe .inner-wrap, .container-flex {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .white-bookTicket {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .carousel2 {
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 1299.95px) {
+    .menu ul li {
+        padding: 4px 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .topbanner{
+        min-height: 550px;
+    }
+    .topbanner .inner-wrap {
+        z-index: 2;
+        background: url(../image/banner/mb_cloud_bg.9d4927e2.webp) no-repeat center top;
+        margin-top: -90px;
+        min-height: 550px;
+        margin-bottom: -75px;
+        background-size: cover;
+    }
+    .logo{
+        max-width: 265px;
+    }
+    .top-right {
+        width: calc(100% - 265px);
+        padding-right: 0;
+        flex-direction: column;
+    }
+    .sign-in {
+        margin-bottom: 15px;
+        padding-right: 10px;
+    }
+    .hotro {
+        width: 100%;
+    }
+    .language-switcher {
+        z-index: 101;
+        margin-right: 0;
+        margin-right: 8px;
+    }
+    .menu ul li {
+        display: block !important;
+    }
+    .DatVe{
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            bottom: 0;
+            height: 100%;
+            position: absolute;
+    }
+    .DatVe .inner-wrap{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-left: 40px;
+            padding-right: 40px;
+    
+    }
+    .DatVe .inner-wrap .form{
+            right: 0;
+            max-width: 380px;
+            margin-top: 0;
+    }
+    .inner-wrap-boxYellow{
+            margin: 0 auto;
+            max-width: 1095px;
+            padding-top: 100px;
+    }
+    .boxYellow-content .content {
+        grid-template-rows: 1fr auto 1fr;
+    }
+    .ten{
+            font-size: 16px;
+    }
+    .boxYellow-content .boxYellow-img img {
+        width: 120px;
+        height: auto;
+    }
+    .ptext p:first-child {
+        font-size: 12px;
+    }
+    .ptext p:nth-child(2) {
+        font-size: 20px;
+    }
+    .ptext p:last-child {
+        margin: 0px 36px;
+        font-size: 14px;
+    }
+    /* .white-bookTicket {
+        padding-left: 20px;
+        padding-right: 20px;
+    } */
+    .noidung {
+        padding-top: 180px;
+        padding-bottom: 200px;
+        background-size: cover;
+        background-image: url(../image/background/bgBannerHomePage.72a61446.webp);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-attachment: fixed;
+    }
+    .carousel-slide2 {
+        background: transparent;
+        margin: 0 -15px;
+        padding: 0;
+    }
+    .bg-img {
+        /* z-index: 1; */
+        position: relative;
+        margin-top: -160px;
+        background-size: cover;
+        background-color: unset;
+        background-image: url(../image/background/bg-donate.40a2c077.webp);
+        background-repeat: repeat;
+        background-position: top center;
+    }
+  
+}
+@media (min-width: 1024px) and (max-width: 1439.95px) {
+    .carousel2, .container-flex {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
 @media screen and (max-width: 992px) {
     body {
-        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 480 pixel hoặc rộng hơn (nếu khung nhìn lon hơn 480 pixel, màu nền sẽ là màu hồng) */
-        background: url(../img/bay_vao_tuong_lai_bg_mb.9d307f6a.webp) no-repeat center fixed;
+        /* thay đổi màu nền thành màu xanh duong nếu khung nhìn rộng 992 pixel hoặc nhỏ hơn (nếu khung nhìn rộng hơn 992 pixel, màu nền sẽ là màu hồng) */
+        background: url(../image/background/bg-mb.b54724f5.webp) no-repeat center fixed;
         background-size: cover; /* giá trị "cover" giữ nguyên tỷ lệ khung hình và một số phần của hình nền có thể bị cắt bớt */
         font-size: 12px;
     }
@@ -33,18 +216,23 @@ Truy vấn phương tiện bao gồm một loại phương tiện và có thể 
         height: auto;
     }
     .top-right .menu ul{
-    display: none;
+        display: none;
+    }
+    .hamburger {
+        display:block !important;
     }
     .white-bookTicket{
         display: none;
     }
 }
 @media screen and (min-width: 992px) {
-    .top-right .sign-in .bar button{
-        display: none;
-    }
     header .nav-bar {
         padding: 0px 40px;
+    }
+    .container-flex .content{
+        width: 100%;
+        display: flex;
+        flex-wrap:nowrap;
     }
 }
 
@@ -75,6 +263,7 @@ a {
 
 .chat-amy {
     position: fixed;
+    z-index: 99;
     bottom: 60px;
     right: 20px;
 }
@@ -87,7 +276,6 @@ a {
     width: max-content;
     position: absolute;
     right: 95px;
-    z-index: 1;
     padding: 5px 10px;
     border-radius: 15px 0px;
     color: black;
@@ -107,11 +295,6 @@ a {
     visibility: visible;
 }
 
-.bg-img{
-    background-image: url('../image/background/bg-donate.40a2c077.webp');
-    width:100%;
-    background-size: cover;
-}
 .grid{
     margin: 0 40px;  
     max-width: 1200px;
